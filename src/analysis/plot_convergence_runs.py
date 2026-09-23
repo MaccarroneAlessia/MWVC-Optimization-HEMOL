@@ -9,9 +9,7 @@ Genera un grafico a 3 subplot (SPI, MPI, LPI) mostrando:
 
 import sys
 import os
-import time
 from pathlib import Path
-from typing import List, Tuple, Dict, Any
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns

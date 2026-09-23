@@ -87,7 +87,6 @@ class MMAS_Solver:
         """
         sol = Solution(self.graph)
         weights = self.graph.weights
-        n = self.graph.n
 
         while sol.uncovered_count > 0:
             uncov_deg = sol.node_uncov_deg.astype(np.float64)

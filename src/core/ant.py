@@ -7,7 +7,6 @@ dove eta_v = d_S(v)^gamma / w(v) (euristica di Chvatal).
 """
 
 import numpy as np
-from typing import Optional
 from .graph import Graph
 from .solution import Solution
 from .pheromone import PheromoneManager

@@ -244,7 +244,7 @@ def main():
             "rho": [robust_winner["rho"]],
         }
         combos_fase2 = list(generate_combinations(PARAM_GRID_FASE2))
-        fase2_sorted = run_phase_parallel("FASE 2 (n_ants)", graph_path_str, combos_fase2, writer, all_results, global_idx_start=len(combos_fase1) + 1, seed=42)
+        run_phase_parallel("FASE 2 (n_ants)", graph_path_str, combos_fase2, writer, all_results, global_idx_start=len(combos_fase1) + 1, seed=42)
         csvfile.flush()
 
     top_5_unique = get_top_unique_configs(all_results, param_keys=("n_ants", "alpha", "beta", "rho"), top_n=5)

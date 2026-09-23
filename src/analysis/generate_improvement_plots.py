@@ -13,7 +13,6 @@ import sys
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 from pathlib import Path
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
@@ -30,10 +29,6 @@ if str(_src_dir) not in sys.path:
 
 from src.core.graph import Graph
 from src.core.mmas import MMAS_Solver
-from src.core.evaluator import Evaluator
-from src.core.pheromone import PheromoneManager
-from src.core.ant import Ant
-from src.core.pruning import pruning_greedy
 
 plt.style.use("seaborn-v0_8-whitegrid")
 plt.rcParams.update({

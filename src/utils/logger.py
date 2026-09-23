@@ -7,9 +7,8 @@ un'analisi post-esecuzione dettagliata e la tracciabilità delle anomalie.
 """
 
 import logging
-import os
 from pathlib import Path
-from typing import List, Dict, Any, Sequence, Tuple
+from typing import List, Dict, Any, Sequence
 
 def setup_logger(name="HEMOL", log_file="esecuzione.log"):
     """

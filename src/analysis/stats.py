@@ -29,7 +29,6 @@ Uso:
 
 import csv
 import sys
-import os
 from pathlib import Path
 from statistics import mean, stdev
 

@@ -16,11 +16,9 @@ Uso:
 
 import csv
 import sys
-import os
 from pathlib import Path
 from collections import defaultdict
 import numpy as np
-import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import seaborn as sns

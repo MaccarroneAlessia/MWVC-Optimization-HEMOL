@@ -10,7 +10,6 @@ ordinate rigorosamente per:
   4. Tempo di Esecuzione (efficienza computazionale)
 """
 
-import os
 import sys
 import csv
 from pathlib import Path

@@ -1,0 +1,152 @@
+========================================================================
+ ISTRUZIONI PER L'ESECUZIONE DEL PROGETTO — MWVC OPTIMIZATION (HEMOL)
+========================================================================
+
+Questo progetto risolve il Minimum Weight Vertex Cover Problem (MWVCP)
+mediante la metaeuristica Max-Min Ant System (MMAS) con euristica dinamica 
+di Chvátal eta(v) = d_uncov(v)^gamma / w_v, Daemon Action di Pruning Greedy 
+deterministico e calcolo vettoriale in NumPy.
+
+------------------------------------------------------------------------
+ 1. STRUTTURA MODULARE DEL PROGETTO (src/)
+------------------------------------------------------------------------
+
+  src/
+    ├── main.py                     ← Script CLI Principale: esegue il benchmark
+    │                                  ufficiale su tutte e 3 le classi (SPI/MPI/LPI).
+    ├── compute_exact_bounds.py     ← Calcolo dei bound esatti ILP e rilassamenti LP.
+    ├── tune_parameters.py          ← Grid Search esaustiva (Fase 1 e 2) su alpha, beta, rho.
+    ├── run_multiseed_validation.py ← Validazione Multi-Seed (5 seed) sui candidati top.
+    ├── run_multiseed_population.py ← Studio dedicato sulla dimensione colonia N_ants.
+    ├── run_ablation_switch.py      ← Ablation Study sulle modalità di switch di stagnazione.
+    ├── rank_phase1_top5.py         ← Script per estrarre ed eleggere la Top 5 delle configurazioni.
+    ├── aggregate_results.py        ← Aggrega i dati dei CSV per classe (SPI, MPI, LPI).
+    │
+    ├── core/                       ├── Moduli dell'Algoritmo MMAS Core:
+    │   ├── graph.py                │   - Caricamento e rappresentazione del grafo.
+    │   ├── solution.py             │   - Tracciamento della copertura nodi/archi.
+    │   ├── ant.py                  │   - Costruzione stocastica con euristica Chvátal.
+    │   ├── pheromone.py            │   - Gestione ed evaporazione feromone MAX-MIN.
+    │   ├── evaluator.py            │   - Controllo budget 20.000 FE.
+    │   ├── pruning.py              │   - Pruning Greedy deterministico di ridondanza.
+    │   ├── exact_solver.py         │   - Solutore esatto ILP (scipy.optimize.milp).
+    │   └── mmas.py                 │   - Modulo Solver principale MMAS.
+    │
+    ├── analysis/                   ├── Moduli di Analisi Grafica e Statistica:
+    │   ├── stats.py                │   - Calcolo metriche di sintesi (media, std, FE).
+    │   ├── plot_convergence.py     │   - Curve di convergenza su istanze di test.
+    │   ├── plot_convergence_runs.py│   - Plot traiettorie di convergenza su 10 run LPI.
+    │   ├── plot_ablation.py        │   - Plot dell'Ablation Study sulle componenti.
+    │   ├── plot_tuning.py          │   - Heatmap di tuning parametri e dimensione colonia.
+    │   ├── plot_scalability.py     │   - Scatterplot log-log di scalabilità temporale.
+    │   └── generate_improvement_plots.py ← Plot traiettorie e tradeoff miglioramento vs tempo.
+    │
+    └── utils/                      ├── Utility Generiche:
+        └── logger.py               │   - Logger duale (Console + File) e formattazione tabelle.
+
+------------------------------------------------------------------------
+ 2. PREREQUISITI ED AMBIENTE
+------------------------------------------------------------------------
+
+  Requisiti: Python 3.10 o superiore.
+
+  Installazione Dipendenze:
+    > pip install numpy matplotlib seaborn scipy pandas
+
+  Oppure tramite virtual environment:
+    > python -m venv .venv
+    > .venv\Scripts\activate
+    > pip install numpy matplotlib seaborn scipy pandas
+
+------------------------------------------------------------------------
+ 3. ESECUZIONE DEGLI SCRIPT CLI (PASSO PASSO)
+------------------------------------------------------------------------
+
+  PASSO 3.1 — Benchmark Principale Ufficiale
+    > python src/main.py
+    Cosa fa:
+    - Esegue l'algoritmo MMAS con la configurazione finale eletta (alpha=1.0, beta=2.0, rho=0.10, N_ants=80).
+    - Valuta le 3 classi: SPI (n<=25), MPI (n<=200), LPI (n=800, m=10000, 10 run).
+    - Genera i file CSV in `results/csv/` e salva i log in `results/log/esecuzione.log`.
+
+  PASSO 3.2 — Grid Search e Tuning Parametri
+    > python src/tune_parameters.py
+    Cosa fa:
+    - Esegue una Grid Search a 2 Fasi combinando alpha in {0.5, 1.0, 2.0}, beta in {0.5, 1.0, 2.0, 5.0}, rho in {0.02, 0.10, 0.15, 0.20}.
+    - Genera `results/csv/tuning_results.csv` e stampa la tabella delle top configurazioni uniche.
+
+  PASSO 3.3 — Validazione Multi-Seed dei Top Candidati
+    > python src/run_multiseed_validation.py
+    Cosa fa:
+    - Valuta su 5 seed indipendenti (42, 101, 202, 303, 404) i candidati emergenti dalla Grid Search.
+    - Genera `results/csv/multiseed_top_candidates.csv` ed elegge il vincitore per stabilità stocastica.
+
+  PASSO 3.4 — Validazione Dimensione Colonia (N_ants)
+    > python src/run_multiseed_population.py
+    Cosa fa:
+    - Valuta esaustivamente N_ants in {40, 60, 80, 120, 160} sia per rho=0.10 che per rho=0.15 su 5 seed.
+    - Integra il controllo automatico di sicurezza sul tempo e il resume automatico.
+    - Genera `results/csv/multiseed_population_results.csv`.
+
+  PASSO 3.5 — Ranking ed Elezione Top 5 Configurazioni
+    > python src/rank_phase1_top5.py
+    Cosa fa:
+    - Estrae ed aggrega i dati del tuning e multi-seed, ordinandoli per media peso, deviazione standard, FE a best e tempo.
+    - Genera `results/csv/top5_phase1_ranking.csv` e `results/csv/top5_multiseed_ranking.csv`.
+
+  PASSO 3.6 — Ablation Study sulle Modalità di Switch
+    > python src/run_ablation_switch.py
+    Cosa fa:
+    - Confronta le 4 strategie di stagnazione ('cycle', 'fixed_budget', 'never', 'always').
+    - Genera `results/csv/ablation_switch_results.csv` ordinando correttamente per media peso crescente.
+
+  PASSO 3.7 — Aggregazione e Calcolo Metriche
+    > python src/aggregate_results.py
+    > python src/analysis/stats.py
+    Cosa fa:
+    - Aggrega tutti i CSV per classe in `results/summary_by_class.csv` e genera `results/stats_report.csv`.
+    - Calcola le metriche di sintesi (media pesi $\mu$, deviazione standard $\sigma$, FE medio al best e tasso di re-inizializzazione).
+
+  PASSO 3.8 — Calcolo dei Bound Esatti ILP/LP
+    > python src/compute_exact_bounds.py
+    Cosa fa:
+    - Esegue il solutore esatto ILP e il rilassamento continuo LP su tutte le istanze del dataset.
+    - Genera `results/csv/exact_bounds.csv` con i valori esatti di riferimento e gap rilassato.
+
+------------------------------------------------------------------------
+ 4. GENERAZIONE DEI GRAFICI E DELLE FIGURE (`results/plots/`)
+------------------------------------------------------------------------
+
+  Tutti i grafici possono essere rigenerati singolarmente o in un unico comando:
+
+  1. Curve di Convergenza su 3 Classi:
+     > python src/analysis/plot_convergence.py
+
+  2. Convergenza sulle 10 Run LPI:
+     > python src/analysis/plot_convergence_runs.py
+
+  3. Studio di Ablazione Componenti MMAS:
+     > python src/analysis/plot_ablation.py
+
+  4. Heatmap di Tuning e Dimensione Colonia:
+     > python src/analysis/plot_tuning.py
+
+  5. Scalabilità Computazionale Log-Log:
+     > python src/analysis/plot_scalability.py
+
+  6. Traiettorie e Trade-off Miglioramento vs Tempo:
+     > python src/analysis/generate_improvement_plots.py
+
+  Comando unico PowerShell per generare TUTTI i grafici:
+    > python src/analysis/plot_convergence.py; python src/analysis/plot_convergence_runs.py; python src/analysis/plot_ablation.py; python src/analysis/plot_tuning.py; python src/analysis/plot_scalability.py; python src/analysis/generate_improvement_plots.py
+
+------------------------------------------------------------------------
+ 5. RISULTATI ED OUTPUT GENERATI
+------------------------------------------------------------------------
+
+  Al termine dell'esecuzione, la cartella `results/` conterrà:
+  - `results/csv/`      : Tutti i file CSV grezzi di benchmark, tuning, ablation e bound esatti (`exact_bounds.csv`).
+  - `results/plots/`    : Le 26 figure PNG ad alta risoluzione pronte per il report e il notebook.
+  - `results/log/`      : Il log di tracciamento completo `esecuzione.log`.
+  - `doc/report.ipynb`  : Il Jupyter Notebook interattivo con l'analisi completa e la visualizzazione di tutti i grafici.
+========================================================================

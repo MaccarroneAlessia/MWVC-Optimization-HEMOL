@@ -1,0 +1,4 @@
+class,n_runs,mean_best_weight,std_best_weight,min_best_weight,max_best_weight,mean_fe_at_best,std_fe_at_best,mean_fe_budget_pct,mean_cover_size,mean_reinits,mean_time_s,std_time_s,pct_stopped_early
+SPI,30,1054.67,198.2305,730.0,1450.0,6.9,9.7405,0.04,16.13,19.7,14.499,4.31,70.0
+MPI,40,7633.0,2683.4609,4370.0,12549.0,3048.0,4207.3612,15.24,116.45,8.9,118.076,34.7,0.0
+LPI,10,44489.9,78.9183,44428.0,44694.0,5776.9,4955.3757,28.88,666.3,7.3,1438.451,449.7396,0.0

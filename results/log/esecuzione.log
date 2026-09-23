@@ -1,0 +1,1441 @@
+2026-09-12 15:24:15 | INFO    | ============================================================
+2026-09-12 15:24:15 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-12 15:24:15 | INFO    | ============================================================
+2026-09-12 15:24:15 | INFO    | LEGENDA OUTPUT:
+2026-09-12 15:24:15 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-12 15:24:15 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-12 15:24:15 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-12 15:24:15 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-12 15:24:15 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-12 15:24:15 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-12 15:24:15 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-12 15:24:15 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-12 15:24:15 | INFO    | ============================================================
+2026-09-12 15:24:15 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-12 15:24:33 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=7 | fe_tot=20000 | reinits=19 | t=11.26s
+2026-09-12 15:24:43 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=10.22s
+2026-09-12 15:24:54 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=10.62s
+2026-09-12 15:25:04 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=15 | fe_tot=20000 | reinits=19 | t=10.68s
+2026-09-12 15:25:15 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=11.06s
+2026-09-12 15:25:26 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=10.69s
+2026-09-12 15:25:37 | INFO    |   vc_20_60 - Istanza  7/10 | w=972 | lb=620 (gap=56.8%) | opt=972 (gap=0.0%) | fe_best=13 | fe_tot=20000 | reinits=19 | t=11.14s
+2026-09-12 15:25:47 | INFO    |   vc_20_60 - Istanza  8/10 | w=867 | lb=672 (gap=29.0%) | opt=867 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=9.90s
+2026-09-12 15:25:58 | INFO    |   vc_20_60 - Istanza  9/10 | w=980 | lb=700 (gap=40.0%) | opt=980 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=11.03s
+2026-09-12 15:26:09 | INFO    |   vc_20_60 - Istanza 10/10 | w=875 | lb=618 (gap=41.6%) | opt=875 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=10.24s
+2026-09-12 15:26:09 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_60.csv
+2026-09-12 15:26:22 | INFO    |   vc_20_120 - Istanza  1/10 | w=844 | lb=551 (gap=53.2%) | opt=844 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=13.14s
+2026-09-12 15:26:35 | INFO    |   vc_20_120 - Istanza  2/10 | w=1009 | lb=625 (gap=61.4%) | opt=1009 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=13.39s
+2026-09-12 15:26:49 | INFO    |   vc_20_120 - Istanza  3/10 | w=994 | lb=630 (gap=57.8%) | opt=994 (gap=0.0%) | fe_best=11 | fe_tot=20000 | reinits=19 | t=13.65s
+2026-09-12 15:27:03 | INFO    |   vc_20_120 - Istanza  4/10 | w=1050 | lb=671 (gap=56.5%) | opt=1050 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=13.45s
+2026-09-12 15:27:07 | INFO    |   vc_200_750 - Istanza  9/10 | w=8422 | lb=5781 (gap=45.7%) | opt=N/A (gap=N/A) | fe_best=3660 | fe_tot=20000 | reinits=8 | t=262.61s
+2026-09-12 15:27:17 | INFO    |   vc_20_120 - Istanza  5/10 | w=997 | lb=579 (gap=72.2%) | opt=997 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=14.23s
+2026-09-12 15:27:31 | INFO    |   vc_20_120 - Istanza  6/10 | w=961 | lb=574 (gap=67.4%) | opt=961 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=13.85s
+2026-09-12 15:27:44 | INFO    |   vc_20_120 - Istanza  7/10 | w=991 | lb=617 (gap=60.6%) | opt=991 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=13.52s
+2026-09-12 15:27:57 | INFO    |   vc_20_120 - Istanza  8/10 | w=1142 | lb=695 (gap=64.3%) | opt=1142 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.97s
+2026-09-12 15:28:12 | INFO    |   vc_20_120 - Istanza  9/10 | w=1261 | lb=717 (gap=75.9%) | opt=1261 (gap=0.0%) | fe_best=38 | fe_tot=20000 | reinits=19 | t=14.20s
+2026-09-12 15:28:25 | INFO    |   vc_20_120 - Istanza 10/10 | w=1133 | lb=634 (gap=78.7%) | opt=1133 (gap=0.0%) | fe_best=23 | fe_tot=20000 | reinits=19 | t=13.69s
+2026-09-12 15:28:25 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_120.csv
+2026-09-12 15:28:42 | INFO    |   vc_25_150 - Istanza  1/10 | w=1312 | lb=807 (gap=62.6%) | opt=1312 (gap=0.0%) | fe_best=7 | fe_tot=20000 | reinits=19 | t=16.81s
+2026-09-12 15:28:59 | INFO    |   vc_25_150 - Istanza  2/10 | w=1132 | lb=728 (gap=55.5%) | opt=1132 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=16.60s
+2026-09-12 15:29:17 | INFO    |   vc_25_150 - Istanza  3/10 | w=1305 | lb=823 (gap=58.6%) | opt=1305 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=18.43s
+2026-09-12 15:29:35 | INFO    |   vc_25_150 - Istanza  4/10 | w=1425 | lb=857 (gap=66.3%) | opt=1425 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=17.13s
+2026-09-12 15:29:51 | INFO    |   vc_25_150 - Istanza  5/10 | w=1307 | lb=833 (gap=56.9%) | opt=1307 (gap=0.0%) | fe_best=19 | fe_tot=20000 | reinits=19 | t=16.39s
+2026-09-12 15:30:09 | INFO    |   vc_25_150 - Istanza  6/10 | w=1249 | lb=767 (gap=62.8%) | opt=1249 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=17.49s
+2026-09-12 15:30:25 | INFO    |   vc_25_150 - Istanza  7/10 | w=1450 | lb=913 (gap=58.8%) | opt=1450 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=16.83s
+2026-09-12 15:30:42 | INFO    |   vc_25_150 - Istanza  8/10 | w=1151 | lb=754 (gap=52.6%) | opt=1151 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=16.39s
+2026-09-12 15:30:58 | INFO    |   vc_25_150 - Istanza  9/10 | w=1248 | lb=846 (gap=47.5%) | opt=1248 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=16.00s
+2026-09-12 15:31:11 | INFO    |   vc_200_750 - Istanza 10/10 | w=8176 | lb=6064 (gap=34.8%) | opt=N/A (gap=N/A) | fe_best=1091 | fe_tot=20000 | reinits=9 | t=243.20s
+2026-09-12 15:31:11 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_750.csv
+2026-09-12 15:31:14 | INFO    |   vc_25_150 - Istanza 10/10 | w=1061 | lb=682 (gap=55.6%) | opt=1061 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=16.07s
+2026-09-12 15:31:14 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_25_150.csv
+2026-09-12 15:31:14 | INFO    | 
+[MPI] Elaborazione istanze in corso...
+2026-09-12 15:32:21 | INFO    |   vc_100_500 - Istanza  1/10 | w=4475 | lb=2992 (gap=49.6%) | opt=N/A (gap=N/A) | fe_best=634 | fe_tot=20000 | reinits=9 | t=66.74s
+2026-09-12 15:34:35 | INFO    |   vc_100_500 - Istanza  2/10 | w=4872 | lb=3199 (gap=52.3%) | opt=N/A (gap=N/A) | fe_best=3774 | fe_tot=20000 | reinits=8 | t=134.42s
+2026-09-12 15:36:25 | INFO    |   vc_100_500 - Istanza  3/10 | w=4370 | lb=2964 (gap=47.4%) | opt=N/A (gap=N/A) | fe_best=413 | fe_tot=20000 | reinits=9 | t=109.44s
+2026-09-12 15:38:25 | INFO    |   vc_100_500 - Istanza  4/10 | w=4608 | lb=3061 (gap=50.5%) | opt=N/A (gap=N/A) | fe_best=81 | fe_tot=20000 | reinits=9 | t=120.18s
+2026-09-12 15:39:27 | INFO    |   vc_100_500 - Istanza  5/10 | w=4807 | lb=3237 (gap=48.5%) | opt=N/A (gap=N/A) | fe_best=4319 | fe_tot=20000 | reinits=7 | t=61.67s
+2026-09-12 15:40:27 | INFO    |   vc_100_500 - Istanza  6/10 | w=4730 | lb=3303 (gap=43.2%) | opt=N/A (gap=N/A) | fe_best=4719 | fe_tot=20000 | reinits=8 | t=60.16s
+2026-09-12 15:41:27 | INFO    |   vc_100_500 - Istanza  7/10 | w=4637 | lb=3216 (gap=44.2%) | opt=N/A (gap=N/A) | fe_best=213 | fe_tot=20000 | reinits=9 | t=60.26s
+2026-09-12 15:42:29 | INFO    |   vc_100_500 - Istanza  8/10 | w=4592 | lb=3101 (gap=48.1%) | opt=N/A (gap=N/A) | fe_best=903 | fe_tot=20000 | reinits=9 | t=62.04s
+2026-09-12 15:43:30 | INFO    |   vc_100_500 - Istanza  9/10 | w=4556 | lb=3018 (gap=51.0%) | opt=N/A (gap=N/A) | fe_best=2981 | fe_tot=20000 | reinits=9 | t=60.54s
+2026-09-12 15:45:02 | INFO    |   vc_100_500 - Istanza 10/10 | w=4371 | lb=2929 (gap=49.2%) | opt=N/A (gap=N/A) | fe_best=4475 | fe_tot=20000 | reinits=9 | t=91.89s
+2026-09-12 15:45:02 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_500.csv
+2026-09-12 15:46:41 | INFO    |   vc_100_2000 - Istanza  1/10 | w=6057 | lb=3443 (gap=75.9%) | opt=N/A (gap=N/A) | fe_best=28 | fe_tot=20000 | reinits=9 | t=99.37s
+2026-09-12 15:48:20 | INFO    |   vc_100_2000 - Istanza  2/10 | w=5864 | lb=3323 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=215 | fe_tot=20000 | reinits=9 | t=98.88s
+2026-09-12 15:50:28 | INFO    |   vc_100_2000 - Istanza  3/10 | w=5738 | lb=3245 (gap=76.8%) | opt=N/A (gap=N/A) | fe_best=20 | fe_tot=20000 | reinits=9 | t=128.01s
+2026-09-12 15:52:50 | INFO    |   vc_100_2000 - Istanza  4/10 | w=5959 | lb=3360 (gap=77.3%) | opt=N/A (gap=N/A) | fe_best=655 | fe_tot=20000 | reinits=9 | t=141.13s
+2026-09-12 15:54:29 | INFO    |   vc_100_2000 - Istanza  5/10 | w=6292 | lb=3522 (gap=78.7%) | opt=N/A (gap=N/A) | fe_best=109 | fe_tot=20000 | reinits=9 | t=99.46s
+2026-09-12 15:56:07 | INFO    |   vc_100_2000 - Istanza  6/10 | w=5904 | lb=3345 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=53 | fe_tot=20000 | reinits=9 | t=98.18s
+2026-09-12 15:58:21 | INFO    |   vc_100_2000 - Istanza  7/10 | w=6297 | lb=3550 (gap=77.4%) | opt=N/A (gap=N/A) | fe_best=348 | fe_tot=20000 | reinits=9 | t=133.65s
+2026-09-12 16:01:25 | INFO    |   vc_100_2000 - Istanza  8/10 | w=6211 | lb=3481 (gap=78.4%) | opt=N/A (gap=N/A) | fe_best=108 | fe_tot=20000 | reinits=9 | t=183.78s
+2026-09-12 16:04:42 | INFO    |   vc_100_2000 - Istanza  9/10 | w=5957 | lb=3310 (gap=80.0%) | opt=N/A (gap=N/A) | fe_best=247 | fe_tot=20000 | reinits=9 | t=196.70s
+2026-09-12 16:06:19 | INFO    |   vc_100_2000 - Istanza 10/10 | w=6240 | lb=3527 (gap=76.9%) | opt=N/A (gap=N/A) | fe_best=24 | fe_tot=20000 | reinits=9 | t=97.16s
+2026-09-12 16:06:19 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_2000.csv
+2026-09-12 16:08:16 | INFO    |   vc_200_750 - Istanza  1/10 | w=8548 | lb=6171 (gap=38.5%) | opt=N/A (gap=N/A) | fe_best=2790 | fe_tot=20000 | reinits=8 | t=116.89s
+2026-09-12 16:10:16 | INFO    |   vc_200_750 - Istanza  2/10 | w=8240 | lb=5666 (gap=45.4%) | opt=N/A (gap=N/A) | fe_best=3139 | fe_tot=20000 | reinits=8 | t=119.63s
+2026-09-12 16:13:04 | INFO    |   vc_200_750 - Istanza  3/10 | w=8479 | lb=6178 (gap=37.2%) | opt=N/A (gap=N/A) | fe_best=3160 | fe_tot=20000 | reinits=8 | t=167.87s
+2026-09-12 16:15:04 | INFO    |   vc_200_750 - Istanza  4/10 | w=7943 | lb=5690 (gap=39.6%) | opt=N/A (gap=N/A) | fe_best=2956 | fe_tot=20000 | reinits=8 | t=119.93s
+2026-09-12 16:17:01 | INFO    |   vc_200_750 - Istanza  5/10 | w=8761 | lb=6341 (gap=38.2%) | opt=N/A (gap=N/A) | fe_best=1686 | fe_tot=20000 | reinits=9 | t=117.42s
+2026-09-12 16:18:58 | INFO    |   vc_200_750 - Istanza  6/10 | w=8153 | lb=5826 (gap=39.9%) | opt=N/A (gap=N/A) | fe_best=1896 | fe_tot=20000 | reinits=9 | t=116.61s
+2026-09-12 16:20:52 | INFO    |   vc_200_750 - Istanza  7/10 | w=7635 | lb=5658 (gap=34.9%) | opt=N/A (gap=N/A) | fe_best=1780 | fe_tot=20000 | reinits=9 | t=114.28s
+2026-09-12 16:22:45 | INFO    |   vc_200_750 - Istanza  8/10 | w=8376 | lb=5869 (gap=42.7%) | opt=N/A (gap=N/A) | fe_best=10290 | fe_tot=20000 | reinits=6 | t=113.27s
+2026-09-12 16:24:37 | INFO    |   vc_200_750 - Istanza  9/10 | w=8422 | lb=5781 (gap=45.7%) | opt=N/A (gap=N/A) | fe_best=3660 | fe_tot=20000 | reinits=8 | t=111.43s
+2026-09-12 16:26:28 | INFO    |   vc_200_750 - Istanza 10/10 | w=8176 | lb=6064 (gap=34.8%) | opt=N/A (gap=N/A) | fe_best=1091 | fe_tot=20000 | reinits=9 | t=111.10s
+2026-09-12 16:26:28 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_750.csv
+2026-09-12 16:29:37 | INFO    |   vc_200_3000 - Istanza  1/10 | w=11506 | lb=6720 (gap=71.2%) | opt=N/A (gap=N/A) | fe_best=2004 | fe_tot=20000 | reinits=9 | t=189.04s
+2026-09-12 16:32:44 | INFO    |   vc_200_3000 - Istanza  2/10 | w=11163 | lb=6631 (gap=68.3%) | opt=N/A (gap=N/A) | fe_best=15006 | fe_tot=20000 | reinits=8 | t=187.20s
+2026-09-12 16:35:53 | INFO    |   vc_200_3000 - Istanza  3/10 | w=11805 | lb=6803 (gap=73.5%) | opt=N/A (gap=N/A) | fe_best=8842 | fe_tot=20000 | reinits=7 | t=188.60s
+2026-09-12 16:48:18 | INFO    |   vc_200_3000 - Istanza  4/10 | w=12549 | lb=7313 (gap=71.6%) | opt=N/A (gap=N/A) | fe_best=936 | fe_tot=20000 | reinits=9 | t=745.20s
+2026-09-12 16:58:10 | INFO    |   vc_200_3000 - Istanza  5/10 | w=11515 | lb=6762 (gap=70.3%) | opt=N/A (gap=N/A) | fe_best=648 | fe_tot=20000 | reinits=9 | t=592.03s
+2026-09-12 17:07:55 | INFO    |   vc_200_3000 - Istanza  6/10 | w=11121 | lb=6591 (gap=68.7%) | opt=N/A (gap=N/A) | fe_best=886 | fe_tot=20000 | reinits=9 | t=584.68s
+2026-09-12 17:17:03 | INFO    |   vc_200_3000 - Istanza  7/10 | w=11534 | lb=6769 (gap=70.4%) | opt=N/A (gap=N/A) | fe_best=1275 | fe_tot=20000 | reinits=9 | t=547.54s
+2026-09-12 17:26:42 | INFO    |   vc_200_3000 - Istanza  8/10 | w=11638 | lb=6850 (gap=69.9%) | opt=N/A (gap=N/A) | fe_best=7215 | fe_tot=20000 | reinits=8 | t=579.58s
+2026-09-12 17:36:25 | INFO    |   vc_200_3000 - Istanza  9/10 | w=11681 | lb=6902 (gap=69.2%) | opt=N/A (gap=N/A) | fe_best=14207 | fe_tot=20000 | reinits=8 | t=582.18s
+2026-09-12 17:44:13 | INFO    |   vc_200_3000 - Istanza 10/10 | w=11493 | lb=6648 (gap=72.9%) | opt=N/A (gap=N/A) | fe_best=1783 | fe_tot=20000 | reinits=9 | t=468.76s
+2026-09-12 17:44:13 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_3000.csv
+2026-09-12 17:44:13 | INFO    | 
+[LPI] Elaborazione istanze in corso...
+2026-09-12 18:13:11 | INFO    |   vc_800_10000 - Lower Bound (matching) = 26800
+2026-09-12 18:13:11 | INFO    |   vc_800_10000 - Run  1/10 | w=44712 | lb=26800 (gap=66.8%) | opt=N/A (gap=N/A) | fe_best=8672 | fe_tot=20000 | reinits=5 | t=1736.72s
+2026-09-12 18:39:01 | INFO    |   vc_800_10000 - Run  2/10 | w=44465 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=17435 | fe_tot=20000 | reinits=1 | t=1549.69s
+2026-09-12 19:04:54 | INFO    |   vc_800_10000 - Run  3/10 | w=44629 | lb=26800 (gap=66.5%) | opt=N/A (gap=N/A) | fe_best=19818 | fe_tot=20000 | reinits=3 | t=1552.97s
+2026-09-12 19:22:56 | INFO    |   vc_800_10000 - Run  4/10 | w=44467 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=18638 | fe_tot=20000 | reinits=0 | t=1081.43s
+2026-09-12 20:05:35 | INFO    |   vc_800_10000 - Run  5/10 | w=44429 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=16160 | fe_tot=20000 | reinits=1 | t=2558.45s
+2026-09-12 20:20:24 | INFO    |   vc_800_10000 - Run  6/10 | w=45313 | lb=26800 (gap=69.1%) | opt=N/A (gap=N/A) | fe_best=5427 | fe_tot=20000 | reinits=8 | t=889.06s
+2026-09-12 20:35:44 | INFO    |   vc_800_10000 - Run  7/10 | w=45241 | lb=26800 (gap=68.8%) | opt=N/A (gap=N/A) | fe_best=3151 | fe_tot=20000 | reinits=8 | t=919.32s
+2026-09-12 21:21:55 | INFO    |   vc_800_10000 - Run  8/10 | w=44409 | lb=26800 (gap=65.7%) | opt=N/A (gap=N/A) | fe_best=19718 | fe_tot=20000 | reinits=0 | t=2770.49s
+2026-09-13 13:08:25 | INFO    |   vc_800_10000 - Run  9/10 | w=44563 | lb=26800 (gap=66.3%) | opt=N/A (gap=N/A) | fe_best=12291 | fe_tot=20000 | reinits=3 | t=56789.71s
+2026-09-13 16:10:50 | INFO    |   vc_800_10000 - Run 10/10 | w=44733 | lb=26800 (gap=66.9%) | opt=N/A (gap=N/A) | fe_best=8138 | fe_tot=20000 | reinits=5 | t=10944.41s
+2026-09-13 16:10:50 | INFO    |   -> Salvato: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_800_10000.csv
+2026-09-13 16:10:50 | INFO    | 
+[SUCCESSO] Tutti i CSV salvati in: c:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv
+2026-09-13 16:10:50 | INFO    | Esegui 'python src/aggregate_results.py' per il riassunto per classe.
+2026-09-14 15:14:05 | INFO    | ============================================================
+2026-09-14 15:14:05 | INFO    | Parameter Tuning per MMAS-MWVCP
+2026-09-14 15:14:05 | INFO    | ============================================================
+2026-09-14 15:14:05 | ERROR   | Impossibile trovare l'istanza: wvcp-instances\vc_100_500_01.txt
+2026-09-14 15:15:04 | INFO    | ============================================================
+2026-09-14 15:15:04 | INFO    | Parameter Tuning per MMAS-MWVCP
+2026-09-14 15:15:04 | INFO    | ============================================================
+2026-09-14 15:15:04 | ERROR   | Impossibile trovare l'istanza: ..\wvcp-instances\vc_800_1000.txt
+2026-09-14 15:15:11 | INFO    | ============================================================
+2026-09-14 15:15:11 | INFO    | Parameter Tuning per MMAS-MWVCP
+2026-09-14 15:15:11 | INFO    | ============================================================
+2026-09-14 15:15:11 | ERROR   | Impossibile trovare l'istanza: wvcp-instances\vc_800_1000.txt
+2026-09-14 15:16:31 | INFO    | ============================================================
+2026-09-14 15:16:31 | INFO    | Parameter Tuning per MMAS-MWVCP
+2026-09-14 15:16:31 | INFO    | ============================================================
+2026-09-14 15:16:31 | INFO    | Istanza target: vc_800_10000.txt
+2026-09-14 15:16:31 | INFO    | Configurazioni da testare: 320
+2026-09-14 15:16:31 | INFO    | [ 1/320] Test: ants=5, alpha=1.0, beta=1.0, rho=0.01
+2026-09-14 15:21:33 | INFO    | ============================================================
+2026-09-14 15:21:33 | INFO    | Parameter Tuning per MMAS-MWVCP
+2026-09-14 15:21:33 | INFO    | ============================================================
+2026-09-14 15:21:33 | INFO    | Istanza target: vc_800_10000.txt
+2026-09-14 15:21:33 | INFO    | Configurazioni da testare: 256
+2026-09-14 15:21:33 | INFO    | [ 1/256] Test: ants=20, alpha=1.0, beta=1.0, rho=0.01
+2026-09-14 15:27:39 | INFO    | =================================================================
+2026-09-14 15:27:39 | INFO    | PARAMETER TUNING A 2 FASI PER MMAS-MWVCP
+2026-09-14 15:27:39 | INFO    | =================================================================
+2026-09-14 15:27:51 | INFO    | =================================================================
+2026-09-14 15:27:51 | INFO    | PARAMETER TUNING A 2 FASI PER MMAS-MWVCP
+2026-09-14 15:27:51 | INFO    | =================================================================
+2026-09-14 15:28:57 | INFO    | =================================================================
+2026-09-14 15:28:57 | INFO    | PARAMETER TUNING A 2 FASI PER MMAS-MWVCP
+2026-09-14 15:28:57 | INFO    | =================================================================
+2026-09-14 15:28:57 | INFO    | Istanza target: vc_800_10000.txt
+2026-09-14 15:28:58 | INFO    | 
+>>> AVVIO FASE 1 (alpha/beta/rho) (27 combinazioni) <<<
+2026-09-14 15:28:58 | INFO    | [ 1] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=2.0, rho=0.02
+2026-09-14 15:41:43 | INFO    |       -> w=44563 | fe_best=19019 | t=765.39s
+2026-09-14 15:41:43 | INFO    | [ 2] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=2.0, rho=0.1
+2026-09-14 16:02:37 | INFO    |       -> w=44447 | fe_best= 4049 | t=1254.49s
+2026-09-14 16:02:37 | INFO    | [ 3] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=2.0, rho=0.15
+2026-09-14 16:15:43 | INFO    |       -> w=44396 | fe_best=14364 | t=785.61s
+2026-09-14 16:15:43 | INFO    | [ 4] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=5.0, rho=0.02
+2026-09-14 16:40:21 | INFO    |       -> w=44522 | fe_best= 9321 | t=1478.33s
+2026-09-14 16:40:21 | INFO    | [ 5] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=5.0, rho=0.1
+2026-09-14 16:56:57 | INFO    |       -> w=44496 | fe_best=13151 | t=995.20s
+2026-09-14 16:56:57 | INFO    | [ 6] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=5.0, rho=0.15
+2026-09-14 17:14:34 | INFO    |       -> w=44467 | fe_best=15528 | t=1057.35s
+2026-09-14 17:14:34 | INFO    | [ 7] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=10.0, rho=0.02
+2026-09-14 17:48:39 | INFO    |       -> w=44850 | fe_best= 5561 | t=2045.20s
+2026-09-14 17:48:39 | INFO    | [ 8] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=10.0, rho=0.1
+2026-09-14 18:05:23 | INFO    |       -> w=44509 | fe_best= 5004 | t=1003.79s
+2026-09-14 18:05:23 | INFO    | [ 9] FASE 1 (alpha/beta/rho) -> ants=80, alpha=1.0, beta=10.0, rho=0.15
+2026-09-14 18:22:52 | INFO    |       -> w=44509 | fe_best= 2128 | t=1049.33s
+2026-09-14 18:22:52 | INFO    | [10] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=2.0, rho=0.02
+2026-09-14 18:45:08 | INFO    |       -> w=44555 | fe_best= 8973 | t=1335.98s
+2026-09-14 18:45:08 | INFO    | [11] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=2.0, rho=0.1
+2026-09-15 15:13:10 | INFO    |       -> w=44598 | fe_best= 8062 | t=73681.73s
+2026-09-15 15:13:10 | INFO    | [12] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=2.0, rho=0.15
+2026-09-15 15:56:44 | INFO    |       -> w=44409 | fe_best=13855 | t=2614.41s
+2026-09-15 15:56:44 | INFO    | [13] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=5.0, rho=0.02
+2026-09-15 16:44:22 | INFO    |       -> w=44477 | fe_best= 7305 | t=2857.45s
+2026-09-15 16:44:22 | INFO    | [14] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=5.0, rho=0.1
+2026-09-15 17:17:57 | INFO    |       -> w=44484 | fe_best=19790 | t=2015.61s
+2026-09-15 17:17:57 | INFO    | [15] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=5.0, rho=0.15
+2026-09-15 17:40:24 | INFO    |       -> w=44459 | fe_best=19990 | t=1346.32s
+2026-09-15 17:40:24 | INFO    | [16] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=10.0, rho=0.02
+2026-09-15 18:08:54 | INFO    |       -> w=44615 | fe_best=10113 | t=1710.68s
+2026-09-15 18:08:54 | INFO    | [17] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=10.0, rho=0.1
+2026-09-15 18:37:11 | INFO    |       -> w=44447 | fe_best=17406 | t=1696.99s
+2026-09-15 18:37:11 | INFO    | [18] FASE 1 (alpha/beta/rho) -> ants=80, alpha=2.0, beta=10.0, rho=0.15
+2026-09-15 19:11:15 | INFO    |       -> w=44486 | fe_best=11345 | t=2043.16s
+2026-09-15 19:11:15 | INFO    | [19] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=2.0, rho=0.02
+2026-09-15 19:47:30 | INFO    |       -> w=44624 | fe_best= 9620 | t=2175.56s
+2026-09-15 19:47:30 | INFO    | [20] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=2.0, rho=0.1
+2026-09-15 20:05:01 | INFO    |       -> w=44669 | fe_best=11547 | t=1051.27s
+2026-09-15 20:05:01 | INFO    | [21] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=2.0, rho=0.15
+2026-09-16 00:28:31 | INFO    |       -> w=44716 | fe_best= 7725 | t=15809.91s
+2026-09-16 00:28:31 | INFO    | [22] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=5.0, rho=0.02
+2026-09-16 11:31:25 | INFO    |       -> w=44492 | fe_best= 6161 | t=39773.71s
+2026-09-16 11:31:25 | INFO    | [23] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=5.0, rho=0.1
+2026-09-16 12:02:10 | INFO    |       -> w=44515 | fe_best= 8401 | t=1844.62s
+2026-09-16 12:02:10 | INFO    | [24] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=5.0, rho=0.15
+2026-09-16 12:56:36 | INFO    |       -> w=44457 | fe_best=19060 | t=3266.51s
+2026-09-16 12:56:36 | INFO    | [25] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=10.0, rho=0.02
+2026-09-16 13:48:43 | INFO    |       -> w=44650 | fe_best= 4806 | t=3126.87s
+2026-09-16 13:48:43 | INFO    | [26] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=10.0, rho=0.1
+2026-09-16 16:34:29 | INFO    |       -> w=44509 | fe_best= 8703 | t=9945.90s
+2026-09-16 16:34:29 | INFO    | [27] FASE 1 (alpha/beta/rho) -> ants=80, alpha=3.0, beta=10.0, rho=0.15
+2026-09-16 17:33:08 | INFO    |       -> w=44467 | fe_best=19134 | t=3518.74s
+2026-09-16 17:33:08 | INFO    | 
+=== VINCITORE FASE 1 (alpha/beta/rho) ===
+2026-09-16 17:33:08 | INFO    |   w=44396 (a FE=14364) | ants=80, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 17:33:08 | INFO    | 
+>>> AVVIO FASE 2 (n_ants) (5 combinazioni) <<<
+2026-09-16 17:33:08 | INFO    | [28] FASE 2 (n_ants) -> ants=40, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 18:01:45 | INFO    |       -> w=44456 | fe_best= 8679 | t=1717.18s
+2026-09-16 18:01:45 | INFO    | [29] FASE 2 (n_ants) -> ants=60, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 18:36:09 | INFO    |       -> w=44446 | fe_best=14326 | t=2064.06s
+2026-09-16 18:36:09 | INFO    | [30] FASE 2 (n_ants) -> ants=80, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 19:04:39 | INFO    |       -> w=44396 | fe_best=14364 | t=1710.02s
+2026-09-16 19:04:39 | INFO    | [31] FASE 2 (n_ants) -> ants=120, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 19:29:08 | INFO    |       -> w=44733 | fe_best= 3628 | t=1469.04s
+2026-09-16 19:29:08 | INFO    | [32] FASE 2 (n_ants) -> ants=160, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 21:16:17 | INFO    |       -> w=44534 | fe_best= 5247 | t=6429.25s
+2026-09-16 21:16:17 | INFO    | 
+=== VINCITORE FASE 2 (n_ants) ===
+2026-09-16 21:16:17 | INFO    |   w=44396 (a FE=14364) | ants=80, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 21:16:18 | INFO    | 
+=================================================================
+2026-09-16 21:16:18 | INFO    | TUNING A 2 FASI COMPLETATO. Salvataggio in: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\tuning_results.csv
+2026-09-16 21:16:18 | INFO    | =================================================================
+2026-09-16 21:16:18 | INFO    | 
+TOP 5 CONFIGURAZIONI GLOBALI:
+2026-09-16 21:16:18 | INFO    | 1) [FASE 1 (alpha/beta/rho)] w=44396 (a FE=14364) | ants=80, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 21:16:18 | INFO    | 2) [FASE 2 (n_ants)] w=44396 (a FE=14364) | ants=80, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 21:16:18 | INFO    | 3) [FASE 1 (alpha/beta/rho)] w=44409 (a FE=13855) | ants=80, alpha=2.0, beta=2.0, rho=0.15
+2026-09-16 21:16:18 | INFO    | 4) [FASE 2 (n_ants)] w=44446 (a FE=14326) | ants=60, alpha=1.0, beta=2.0, rho=0.15
+2026-09-16 21:16:18 | INFO    | 5) [FASE 1 (alpha/beta/rho)] w=44447 (a FE=4049) | ants=80, alpha=1.0, beta=2.0, rho=0.1
+2026-09-16 22:29:23 | INFO    | ======================================================================
+2026-09-16 22:29:23 | INFO    | AVVIO VALIDAZIONE MULTI-SEED (5 SEED) TOP CANDIDATI MMAS-MWVCP
+2026-09-16 22:29:23 | INFO    | ======================================================================
+2026-09-16 22:29:23 | INFO    | Totale task da eseguire: 25 (5 candidati x 5 seed)
+2026-09-16 22:29:23 | INFO    | Esecuzione su 20 worker di processo...
+2026-09-16 22:39:05 | INFO    | =================================================================
+2026-09-16 22:39:05 | INFO    | PARAMETER TUNING MULTI-SEED E PARALLELO PER MMAS-MWVCP
+2026-09-16 22:39:05 | INFO    | =================================================================
+2026-09-16 22:39:05 | INFO    | Istanza target: vc_800_10000.txt
+2026-09-16 22:39:05 | INFO    | 
+>>> AVVIO FASE 1 (16 combinazioni in parallelo) <<<
+2026-09-16 23:18:53 | INFO    | =================================================================
+2026-09-16 23:18:53 | INFO    | PARAMETER TUNING MULTI-SEED E PARALLELO PER MMAS-MWVCP
+2026-09-16 23:18:53 | INFO    | =================================================================
+2026-09-16 23:18:53 | INFO    | Istanza target: vc_800_10000.txt
+2026-09-16 23:18:53 | INFO    | 
+>>> AVVIO FASE 1 (16 combinazioni in parallelo) <<<
+2026-09-16 23:33:23 | INFO    |   [Cand #2 | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=3836.93s
+2026-09-16 23:46:50 | INFO    |   [Cand #1 | seed=101] w=44457 | FE_best=19280 | reinits=7 | t=4643.78s
+2026-09-16 23:47:45 | INFO    |   [Cand #1 | seed=404] w=44493 | FE_best=18532 | reinits=7 | t=4698.58s
+2026-09-16 23:49:32 | INFO    |   [Cand #4 | seed=101] w=44391 | FE_best=6298 | reinits=7 | t=4805.09s
+2026-09-16 23:50:58 | INFO    |   [Cand #3 | seed=404] w=44439 | FE_best=13520 | reinits=7 | t=4890.36s
+2026-09-16 23:51:04 | INFO    |   [Cand #1 | seed=303] w=44461 | FE_best=7448 | reinits=7 | t=4897.87s
+2026-09-16 23:51:36 | INFO    |   [Cand #1 | seed=42] w=44396 | FE_best=14364 | reinits=5 | t=4930.13s
+2026-09-16 23:51:40 | INFO    |   [Cand #3 | seed=101] w=44584 | FE_best=18573 | reinits=4 | t=4933.01s
+2026-09-16 23:53:14 | INFO    |   [Cand #3 | seed=202] w=44544 | FE_best=19823 | reinits=7 | t=5026.84s
+2026-09-16 23:54:22 | INFO    |   [Cand #4 | seed=42] w=44446 | FE_best=14326 | reinits=5 | t=5095.47s
+2026-09-16 23:55:33 | INFO    |   [Cand #3 | seed=42] w=44409 | FE_best=13855 | reinits=7 | t=5165.79s
+2026-09-16 23:56:30 | INFO    |   [Cand #4 | seed=202] w=44458 | FE_best=16975 | reinits=7 | t=5222.73s
+2026-09-16 23:56:40 | INFO    |   [Cand #1 | seed=202] w=44464 | FE_best=8736 | reinits=7 | t=5233.91s
+2026-09-16 23:57:24 | INFO    |   [Cand #2 | seed=202] w=44473 | FE_best=4773 | reinits=7 | t=5277.77s
+2026-09-16 23:58:01 | INFO    |   [Cand #4 | seed=404] w=44423 | FE_best=16284 | reinits=6 | t=5313.54s
+2026-09-16 23:58:03 | INFO    |   [Cand #2 | seed=101] w=44451 | FE_best=4830 | reinits=7 | t=5315.98s
+2026-09-16 23:58:18 | INFO    |   [10] FASE 1 -> ants=80, a=2.0, b=2.0, r=0.1 | w=44598 | fe_best= 8062 | t=2354.69s
+2026-09-16 23:58:21 | INFO    |   [Cand #3 | seed=303] w=44502 | FE_best=9273 | reinits=7 | t=5334.13s
+2026-09-16 23:58:44 | INFO    |   [Cand #2 | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=5357.23s
+2026-09-16 23:58:51 | INFO    |   [Cand #4 | seed=303] w=44379 | FE_best=12352 | reinits=5 | t=5363.46s
+2026-09-17 00:00:23 | INFO    |   [Cand #2 | seed=303] w=44473 | FE_best=3633 | reinits=8 | t=5456.43s
+2026-09-17 00:00:31 | INFO    |   [13] FASE 1 -> ants=80, a=2.0, b=5.0, r=0.02 | w=44477 | fe_best= 7305 | t=2487.21s
+2026-09-17 00:10:13 | INFO    |   [Cand #5 | seed=42] w=44467 | FE_best=15528 | reinits=6 | t=2208.7s
+2026-09-17 00:18:56 | INFO    |   [Cand #5 | seed=303] w=44447 | FE_best=19190 | reinits=6 | t=1762.72s
+2026-09-17 00:20:10 | INFO    |   [Cand #5 | seed=101] w=44462 | FE_best=19728 | reinits=8 | t=1998.54s
+2026-09-17 00:21:04 | INFO    |   [Cand #5 | seed=202] w=44501 | FE_best=4452 | reinits=7 | t=1997.25s
+2026-09-17 00:21:40 | INFO    |   [Cand #5 | seed=404] w=44442 | FE_best=18434 | reinits=6 | t=1840.33s
+2026-09-17 00:21:40 | INFO    | 
+======================================================================
+2026-09-17 00:21:40 | INFO    | RIEPILOGO STATISTICO MULTI-SEED (Media ± Dev.Std)
+2026-09-17 00:21:40 | INFO    | ======================================================================
+2026-09-17 00:23:12 | INFO    | ===========================================================================
+2026-09-17 00:23:12 | INFO    | AVVIO ABLATION STUDY: SWITCH FISSO VS CICLO-DINAMICO (5 SEED)
+2026-09-17 00:23:12 | INFO    | ===========================================================================
+2026-09-17 00:23:12 | INFO    | Totale task ablation da eseguire: 20 (4 modalità x 5 seed)
+2026-09-17 01:04:21 | INFO    |   [never        | seed=404] w=44458 | FE_best=16487 | reinits=7 | t=2466.6s
+2026-09-17 01:05:21 | INFO    |   [always       | seed=202] w=44493 | FE_best=9461 | reinits=7 | t=2527.33s
+2026-09-17 01:07:02 | INFO    |   [never        | seed=202] w=44396 | FE_best=13096 | reinits=6 | t=2628.5s
+2026-09-17 01:07:36 | INFO    |   [fixed_budget | seed=202] w=44396 | FE_best=13096 | reinits=6 | t=2662.93s
+2026-09-17 01:07:37 | INFO    |   [always       | seed=404] w=44891 | FE_best=13567 | reinits=7 | t=2663.68s
+2026-09-17 01:07:58 | INFO    |   [always       | seed=303] w=44566 | FE_best=14779 | reinits=6 | t=2684.47s
+2026-09-17 01:08:20 | INFO    |   [cycle        | seed=303] w=44461 | FE_best=7448 | reinits=7 | t=2706.4s
+2026-09-17 01:08:31 | INFO    |   [always       | seed=42] w=44498 | FE_best=14100 | reinits=7 | t=2717.6s
+2026-09-17 01:08:44 | INFO    |   [cycle        | seed=202] w=44464 | FE_best=8736 | reinits=7 | t=2730.31s
+2026-09-17 01:08:45 | INFO    |   [fixed_budget | seed=404] w=44474 | FE_best=16210 | reinits=7 | t=2731.49s
+2026-09-17 01:08:56 | INFO    |   [fixed_budget | seed=101] w=44516 | FE_best=14944 | reinits=7 | t=2742.21s
+2026-09-17 01:09:03 | INFO    |   [cycle        | seed=42] w=44396 | FE_best=14364 | reinits=5 | t=2749.4s
+2026-09-17 01:09:05 | INFO    |   [cycle        | seed=101] w=44457 | FE_best=19280 | reinits=7 | t=2752.03s
+2026-09-17 01:09:27 | INFO    |   [never        | seed=101] w=44516 | FE_best=14944 | reinits=7 | t=2773.09s
+2026-09-17 01:09:37 | INFO    |   [never        | seed=303] w=44396 | FE_best=13122 | reinits=7 | t=2783.15s
+2026-09-17 01:09:40 | INFO    |   [always       | seed=101] w=44634 | FE_best=17810 | reinits=7 | t=2786.61s
+2026-09-17 01:09:49 | INFO    |   [fixed_budget | seed=303] w=44396 | FE_best=13122 | reinits=7 | t=2795.61s
+2026-09-17 01:09:51 | INFO    |   [cycle        | seed=404] w=44493 | FE_best=18532 | reinits=7 | t=2797.32s
+2026-09-17 01:10:12 | INFO    |   [fixed_budget | seed=42] w=44436 | FE_best=17789 | reinits=6 | t=2819.09s
+2026-09-17 01:10:29 | INFO    |   [never        | seed=42] w=44440 | FE_best=14155 | reinits=6 | t=2834.95s
+2026-09-17 01:10:29 | INFO    | 
+===========================================================================
+2026-09-17 01:10:29 | INFO    | RIEPILOGO STATISTICO ABLATION SWITCH
+2026-09-17 01:10:29 | INFO    | ===========================================================================
+2026-09-17 18:08:16 | INFO    | ======================================================================
+2026-09-17 18:08:16 | INFO    | GENERAZIONE GRAFICO CONVERGENZA COLORATO PER SINGOLE RUN (3 CLASSI)
+2026-09-17 18:08:16 | INFO    | ======================================================================
+2026-09-17 18:08:16 | INFO    | Esecuzione parallelizzata di 30 run su 20 worker CPU...
+2026-09-17 18:23:53 | INFO    | ===========================================================================
+2026-09-17 18:23:53 | INFO    | AVVIO VALIDAZIONE MULTI-SEED DEDICATA N_ANTS IN {40, 60, 80, 120, 160}
+2026-09-17 18:23:53 | INFO    | ===========================================================================
+2026-09-17 18:23:53 | INFO    | Totale task da eseguire: 50 (5 popolazioni x 2 rho x 5 seed)
+2026-09-17 18:25:50 | INFO    | ===========================================================================
+2026-09-17 18:25:50 | INFO    | AVVIO ABLATION STUDY: SWITCH FISSO VS CICLO-DINAMICO (rho=0.10 e rho=0.15)
+2026-09-17 18:25:50 | INFO    | ===========================================================================
+2026-09-17 18:25:50 | INFO    | Totale task ablation da eseguire: 40 (4 modalità x 2 rho x 5 seed)
+2026-09-17 20:54:19 | INFO    | ============================================================
+2026-09-17 20:54:19 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-17 20:54:19 | INFO    | ============================================================
+2026-09-17 20:54:19 | INFO    | LEGENDA OUTPUT:
+2026-09-17 20:54:19 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-17 20:54:19 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-17 20:54:19 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-17 20:54:19 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-17 20:54:19 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-17 20:54:19 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-17 20:54:19 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-17 20:54:19 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-17 20:54:19 | INFO    | ============================================================
+2026-09-17 20:54:19 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-17 20:54:37 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=7 | fe_tot=20000 | reinits=19 | t=11.43s
+2026-09-17 20:54:47 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=9.99s
+2026-09-17 20:54:57 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=9.97s
+2026-09-17 20:55:07 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=15 | fe_tot=20000 | reinits=19 | t=9.69s
+2026-09-17 20:55:17 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=10.13s
+2026-09-17 20:55:26 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=9.60s
+2026-09-17 20:55:36 | INFO    |   vc_20_60 - Istanza  7/10 | w=972 | lb=620 (gap=56.8%) | opt=972 (gap=0.0%) | fe_best=13 | fe_tot=20000 | reinits=19 | t=9.92s
+2026-09-17 20:55:45 | INFO    |   vc_20_60 - Istanza  8/10 | w=867 | lb=672 (gap=29.0%) | opt=867 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=8.86s
+2026-09-17 20:55:55 | INFO    |   vc_20_60 - Istanza  9/10 | w=980 | lb=700 (gap=40.0%) | opt=980 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=10.03s
+2026-09-17 20:56:05 | INFO    |   vc_20_60 - Istanza 10/10 | w=875 | lb=618 (gap=41.6%) | opt=875 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=9.41s
+2026-09-17 20:56:05 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_60.csv
+2026-09-17 20:56:16 | INFO    |   vc_20_120 - Istanza  1/10 | w=844 | lb=551 (gap=53.2%) | opt=844 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=11.36s
+2026-09-17 20:56:28 | INFO    |   vc_20_120 - Istanza  2/10 | w=1009 | lb=625 (gap=61.4%) | opt=1009 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=11.95s
+2026-09-17 20:56:40 | INFO    |   vc_20_120 - Istanza  3/10 | w=994 | lb=630 (gap=57.8%) | opt=994 (gap=0.0%) | fe_best=11 | fe_tot=20000 | reinits=19 | t=12.14s
+2026-09-17 20:56:52 | INFO    |   vc_20_120 - Istanza  4/10 | w=1050 | lb=671 (gap=56.5%) | opt=1050 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.06s
+2026-09-17 20:57:05 | INFO    |   vc_20_120 - Istanza  5/10 | w=997 | lb=579 (gap=72.2%) | opt=997 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.65s
+2026-09-17 20:57:18 | INFO    |   vc_20_120 - Istanza  6/10 | w=961 | lb=574 (gap=67.4%) | opt=961 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.47s
+2026-09-17 20:57:30 | INFO    |   vc_20_120 - Istanza  7/10 | w=991 | lb=617 (gap=60.6%) | opt=991 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.06s
+2026-09-17 20:57:42 | INFO    |   vc_20_120 - Istanza  8/10 | w=1142 | lb=695 (gap=64.3%) | opt=1142 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.87s
+2026-09-17 20:57:54 | INFO    |   vc_20_120 - Istanza  9/10 | w=1261 | lb=717 (gap=75.9%) | opt=1261 (gap=0.0%) | fe_best=38 | fe_tot=20000 | reinits=19 | t=12.77s
+2026-09-17 20:58:07 | INFO    |   vc_20_120 - Istanza 10/10 | w=1133 | lb=634 (gap=78.7%) | opt=1133 (gap=0.0%) | fe_best=23 | fe_tot=20000 | reinits=19 | t=12.16s
+2026-09-17 20:58:07 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_120.csv
+2026-09-17 20:58:27 | INFO    |   vc_25_150 - Istanza  1/10 | w=1312 | lb=807 (gap=62.6%) | opt=1312 (gap=0.0%) | fe_best=7 | fe_tot=20000 | reinits=19 | t=20.11s
+2026-09-17 20:58:52 | INFO    |   vc_25_150 - Istanza  2/10 | w=1132 | lb=728 (gap=55.5%) | opt=1132 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=25.42s
+2026-09-17 20:59:18 | INFO    |   vc_25_150 - Istanza  3/10 | w=1305 | lb=823 (gap=58.6%) | opt=1305 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=25.89s
+2026-09-17 20:59:43 | INFO    |   vc_25_150 - Istanza  4/10 | w=1425 | lb=857 (gap=66.3%) | opt=1425 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=24.67s
+2026-09-17 21:00:07 | INFO    |   vc_25_150 - Istanza  5/10 | w=1307 | lb=833 (gap=56.9%) | opt=1307 (gap=0.0%) | fe_best=19 | fe_tot=20000 | reinits=19 | t=24.01s
+2026-09-17 21:00:33 | INFO    |   vc_25_150 - Istanza  6/10 | w=1249 | lb=767 (gap=62.8%) | opt=1249 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=25.89s
+2026-09-17 21:00:58 | INFO    |   vc_25_150 - Istanza  7/10 | w=1450 | lb=913 (gap=58.8%) | opt=1450 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.65s
+2026-09-17 21:01:21 | INFO    |   vc_25_150 - Istanza  8/10 | w=1151 | lb=754 (gap=52.6%) | opt=1151 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=23.62s
+2026-09-17 21:01:45 | INFO    |   vc_25_150 - Istanza  9/10 | w=1248 | lb=846 (gap=47.5%) | opt=1248 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=23.68s
+2026-09-17 21:02:09 | INFO    |   vc_25_150 - Istanza 10/10 | w=1061 | lb=682 (gap=55.6%) | opt=1061 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=23.56s
+2026-09-17 21:02:09 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_25_150.csv
+2026-09-17 21:02:09 | INFO    | 
+[MPI] Elaborazione istanze in corso...
+2026-09-17 21:03:42 | INFO    |   vc_100_500 - Istanza  1/10 | w=4475 | lb=2992 (gap=49.6%) | opt=N/A (gap=N/A) | fe_best=634 | fe_tot=20000 | reinits=9 | t=92.72s
+2026-09-17 21:05:18 | INFO    |   vc_100_500 - Istanza  2/10 | w=4872 | lb=3199 (gap=52.3%) | opt=N/A (gap=N/A) | fe_best=5841 | fe_tot=20000 | reinits=8 | t=95.90s
+2026-09-17 21:06:50 | INFO    |   vc_100_500 - Istanza  3/10 | w=4370 | lb=2964 (gap=47.4%) | opt=N/A (gap=N/A) | fe_best=413 | fe_tot=20000 | reinits=9 | t=92.64s
+2026-09-17 21:08:25 | INFO    |   vc_100_500 - Istanza  4/10 | w=4608 | lb=3061 (gap=50.5%) | opt=N/A (gap=N/A) | fe_best=81 | fe_tot=20000 | reinits=9 | t=94.38s
+2026-09-17 21:09:58 | INFO    |   vc_100_500 - Istanza  5/10 | w=4807 | lb=3237 (gap=48.5%) | opt=N/A (gap=N/A) | fe_best=11344 | fe_tot=20000 | reinits=9 | t=93.69s
+2026-09-17 21:11:31 | INFO    |   vc_100_500 - Istanza  6/10 | w=4730 | lb=3303 (gap=43.2%) | opt=N/A (gap=N/A) | fe_best=6497 | fe_tot=20000 | reinits=7 | t=92.98s
+2026-09-17 21:13:02 | INFO    |   vc_100_500 - Istanza  7/10 | w=4637 | lb=3216 (gap=44.2%) | opt=N/A (gap=N/A) | fe_best=213 | fe_tot=20000 | reinits=9 | t=90.53s
+2026-09-17 21:14:43 | INFO    |   vc_100_500 - Istanza  8/10 | w=4592 | lb=3101 (gap=48.1%) | opt=N/A (gap=N/A) | fe_best=728 | fe_tot=20000 | reinits=9 | t=100.48s
+2026-09-17 21:34:51 | INFO    |   vc_100_500 - Istanza  9/10 | w=4556 | lb=3018 (gap=51.0%) | opt=N/A (gap=N/A) | fe_best=4899 | fe_tot=20000 | reinits=9 | t=1208.10s
+2026-09-17 21:35:47 | INFO    |   vc_100_500 - Istanza 10/10 | w=4371 | lb=2929 (gap=49.2%) | opt=N/A (gap=N/A) | fe_best=4475 | fe_tot=20000 | reinits=9 | t=56.59s
+2026-09-17 21:35:47 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_500.csv
+2026-09-17 21:37:13 | INFO    |   vc_100_2000 - Istanza  1/10 | w=6057 | lb=3443 (gap=75.9%) | opt=N/A (gap=N/A) | fe_best=28 | fe_tot=20000 | reinits=9 | t=85.46s
+2026-09-17 21:38:41 | INFO    |   vc_100_2000 - Istanza  2/10 | w=5864 | lb=3323 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=215 | fe_tot=20000 | reinits=9 | t=87.75s
+2026-09-17 21:40:06 | INFO    |   vc_100_2000 - Istanza  3/10 | w=5738 | lb=3245 (gap=76.8%) | opt=N/A (gap=N/A) | fe_best=20 | fe_tot=20000 | reinits=9 | t=85.67s
+2026-09-17 21:41:33 | INFO    |   vc_100_2000 - Istanza  4/10 | w=5959 | lb=3360 (gap=77.3%) | opt=N/A (gap=N/A) | fe_best=655 | fe_tot=20000 | reinits=9 | t=86.68s
+2026-09-17 21:42:59 | INFO    |   vc_100_2000 - Istanza  5/10 | w=6292 | lb=3522 (gap=78.7%) | opt=N/A (gap=N/A) | fe_best=109 | fe_tot=20000 | reinits=9 | t=86.26s
+2026-09-17 21:44:24 | INFO    |   vc_100_2000 - Istanza  6/10 | w=5904 | lb=3345 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=53 | fe_tot=20000 | reinits=9 | t=84.21s
+2026-09-17 21:45:48 | INFO    |   vc_100_2000 - Istanza  7/10 | w=6297 | lb=3550 (gap=77.4%) | opt=N/A (gap=N/A) | fe_best=603 | fe_tot=20000 | reinits=9 | t=84.82s
+2026-09-17 21:47:15 | INFO    |   vc_100_2000 - Istanza  8/10 | w=6211 | lb=3481 (gap=78.4%) | opt=N/A (gap=N/A) | fe_best=108 | fe_tot=20000 | reinits=9 | t=86.29s
+2026-09-17 21:48:41 | INFO    |   vc_100_2000 - Istanza  9/10 | w=5957 | lb=3310 (gap=80.0%) | opt=N/A (gap=N/A) | fe_best=378 | fe_tot=20000 | reinits=9 | t=86.69s
+2026-09-17 21:50:05 | INFO    |   vc_100_2000 - Istanza 10/10 | w=6240 | lb=3527 (gap=76.9%) | opt=N/A (gap=N/A) | fe_best=24 | fe_tot=20000 | reinits=9 | t=83.92s
+2026-09-17 21:50:05 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_2000.csv
+2026-09-17 21:51:52 | INFO    |   vc_200_750 - Istanza  1/10 | w=8548 | lb=6171 (gap=38.5%) | opt=N/A (gap=N/A) | fe_best=2600 | fe_tot=20000 | reinits=8 | t=106.35s
+2026-09-17 21:53:41 | INFO    |   vc_200_750 - Istanza  2/10 | w=8240 | lb=5666 (gap=45.4%) | opt=N/A (gap=N/A) | fe_best=3139 | fe_tot=20000 | reinits=8 | t=109.15s
+2026-09-17 21:55:25 | INFO    |   vc_200_750 - Istanza  3/10 | w=8479 | lb=6178 (gap=37.2%) | opt=N/A (gap=N/A) | fe_best=3160 | fe_tot=20000 | reinits=8 | t=104.03s
+2026-09-17 21:57:13 | INFO    |   vc_200_750 - Istanza  4/10 | w=7943 | lb=5690 (gap=39.6%) | opt=N/A (gap=N/A) | fe_best=3666 | fe_tot=20000 | reinits=8 | t=107.51s
+2026-09-17 21:59:00 | INFO    |   vc_200_750 - Istanza  5/10 | w=8761 | lb=6341 (gap=38.2%) | opt=N/A (gap=N/A) | fe_best=1686 | fe_tot=20000 | reinits=9 | t=107.09s
+2026-09-17 22:00:46 | INFO    |   vc_200_750 - Istanza  6/10 | w=8153 | lb=5826 (gap=39.9%) | opt=N/A (gap=N/A) | fe_best=1896 | fe_tot=20000 | reinits=9 | t=106.54s
+2026-09-17 22:02:32 | INFO    |   vc_200_750 - Istanza  7/10 | w=7635 | lb=5658 (gap=34.9%) | opt=N/A (gap=N/A) | fe_best=1302 | fe_tot=20000 | reinits=9 | t=105.85s
+2026-09-17 22:04:21 | INFO    |   vc_200_750 - Istanza  8/10 | w=8409 | lb=5869 (gap=43.3%) | opt=N/A (gap=N/A) | fe_best=2050 | fe_tot=20000 | reinits=8 | t=109.14s
+2026-09-17 22:06:09 | INFO    |   vc_200_750 - Istanza  9/10 | w=8422 | lb=5781 (gap=45.7%) | opt=N/A (gap=N/A) | fe_best=3660 | fe_tot=20000 | reinits=8 | t=107.75s
+2026-09-17 22:07:57 | INFO    |   vc_200_750 - Istanza 10/10 | w=8176 | lb=6064 (gap=34.8%) | opt=N/A (gap=N/A) | fe_best=1091 | fe_tot=20000 | reinits=9 | t=107.89s
+2026-09-17 22:07:57 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_750.csv
+2026-09-17 22:10:41 | INFO    |   vc_200_3000 - Istanza  1/10 | w=11506 | lb=6720 (gap=71.2%) | opt=N/A (gap=N/A) | fe_best=1386 | fe_tot=20000 | reinits=9 | t=163.86s
+2026-09-17 22:13:23 | INFO    |   vc_200_3000 - Istanza  2/10 | w=11176 | lb=6631 (gap=68.5%) | opt=N/A (gap=N/A) | fe_best=1878 | fe_tot=20000 | reinits=9 | t=162.15s
+2026-09-17 22:16:07 | INFO    |   vc_200_3000 - Istanza  3/10 | w=11799 | lb=6803 (gap=73.4%) | opt=N/A (gap=N/A) | fe_best=18888 | fe_tot=20000 | reinits=8 | t=163.93s
+2026-09-17 22:18:50 | INFO    |   vc_200_3000 - Istanza  4/10 | w=12549 | lb=7313 (gap=71.6%) | opt=N/A (gap=N/A) | fe_best=1537 | fe_tot=20000 | reinits=9 | t=163.20s
+2026-09-17 22:21:32 | INFO    |   vc_200_3000 - Istanza  5/10 | w=11521 | lb=6762 (gap=70.4%) | opt=N/A (gap=N/A) | fe_best=9703 | fe_tot=20000 | reinits=8 | t=161.68s
+2026-09-17 22:24:14 | INFO    |   vc_200_3000 - Istanza  6/10 | w=11121 | lb=6591 (gap=68.7%) | opt=N/A (gap=N/A) | fe_best=886 | fe_tot=20000 | reinits=9 | t=162.32s
+2026-09-17 22:26:56 | INFO    |   vc_200_3000 - Istanza  7/10 | w=11534 | lb=6769 (gap=70.4%) | opt=N/A (gap=N/A) | fe_best=8233 | fe_tot=20000 | reinits=8 | t=161.06s
+2026-09-17 22:29:37 | INFO    |   vc_200_3000 - Istanza  8/10 | w=11638 | lb=6850 (gap=69.9%) | opt=N/A (gap=N/A) | fe_best=10613 | fe_tot=20000 | reinits=7 | t=161.39s
+2026-09-17 22:32:18 | INFO    |   vc_200_3000 - Istanza  9/10 | w=11695 | lb=6902 (gap=69.4%) | opt=N/A (gap=N/A) | fe_best=1342 | fe_tot=20000 | reinits=9 | t=161.16s
+2026-09-17 22:35:01 | INFO    |   vc_200_3000 - Istanza 10/10 | w=11493 | lb=6648 (gap=72.9%) | opt=N/A (gap=N/A) | fe_best=2518 | fe_tot=20000 | reinits=8 | t=162.89s
+2026-09-17 22:35:01 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_3000.csv
+2026-09-17 22:35:01 | INFO    | 
+[LPI] Elaborazione istanze in corso...
+2026-09-17 22:48:08 | INFO    |   vc_800_10000 - Lower Bound (matching) = 26800
+2026-09-17 22:48:08 | INFO    |   vc_800_10000 - Run  1/10 | w=44900 | lb=26800 (gap=67.5%) | opt=N/A (gap=N/A) | fe_best=5646 | fe_tot=20000 | reinits=7 | t=787.06s
+2026-09-17 23:01:14 | INFO    |   vc_800_10000 - Run  2/10 | w=45000 | lb=26800 (gap=67.9%) | opt=N/A (gap=N/A) | fe_best=5618 | fe_tot=20000 | reinits=7 | t=785.81s
+2026-09-17 23:14:24 | INFO    |   vc_800_10000 - Run  3/10 | w=45323 | lb=26800 (gap=69.1%) | opt=N/A (gap=N/A) | fe_best=16025 | fe_tot=20000 | reinits=8 | t=789.26s
+2026-09-17 23:27:25 | INFO    |   vc_800_10000 - Run  4/10 | w=44588 | lb=26800 (gap=66.4%) | opt=N/A (gap=N/A) | fe_best=10519 | fe_tot=20000 | reinits=4 | t=781.33s
+2026-09-17 23:40:33 | INFO    |   vc_800_10000 - Run  5/10 | w=45092 | lb=26800 (gap=68.2%) | opt=N/A (gap=N/A) | fe_best=3932 | fe_tot=20000 | reinits=8 | t=787.98s
+2026-09-17 23:53:34 | INFO    |   vc_800_10000 - Run  6/10 | w=44540 | lb=26800 (gap=66.2%) | opt=N/A (gap=N/A) | fe_best=17238 | fe_tot=20000 | reinits=4 | t=780.82s
+2026-09-18 00:06:39 | INFO    |   vc_800_10000 - Run  7/10 | w=44732 | lb=26800 (gap=66.9%) | opt=N/A (gap=N/A) | fe_best=8747 | fe_tot=20000 | reinits=5 | t=784.23s
+2026-09-18 00:19:39 | INFO    |   vc_800_10000 - Run  8/10 | w=44558 | lb=26800 (gap=66.3%) | opt=N/A (gap=N/A) | fe_best=11725 | fe_tot=20000 | reinits=4 | t=779.68s
+2026-09-18 00:26:25 | INFO    | ============================================================
+2026-09-18 00:26:25 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-18 00:26:25 | INFO    | ============================================================
+2026-09-18 00:26:25 | INFO    | LEGENDA OUTPUT:
+2026-09-18 00:26:25 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-18 00:26:25 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-18 00:26:25 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-18 00:26:25 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-18 00:26:25 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-18 00:26:25 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-18 00:26:25 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-18 00:26:25 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-18 00:26:25 | INFO    | ============================================================
+2026-09-18 00:26:25 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-18 00:26:41 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=7 | fe_tot=20000 | reinits=19 | t=10.30s
+2026-09-18 00:26:52 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=11.41s
+2026-09-18 00:27:03 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=10.37s
+2026-09-18 00:27:33 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=15 | fe_tot=20000 | reinits=19 | t=30.46s
+2026-09-18 00:27:58 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=24.93s
+2026-09-18 00:28:19 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=20.46s
+2026-09-18 00:28:30 | INFO    |   vc_20_60 - Istanza  7/10 | w=972 | lb=620 (gap=56.8%) | opt=972 (gap=0.0%) | fe_best=13 | fe_tot=20000 | reinits=19 | t=11.33s
+2026-09-18 00:28:39 | INFO    |   vc_20_60 - Istanza  8/10 | w=867 | lb=672 (gap=29.0%) | opt=867 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=9.06s
+2026-09-18 00:28:50 | INFO    |   vc_20_60 - Istanza  9/10 | w=980 | lb=700 (gap=40.0%) | opt=980 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=10.18s
+2026-09-18 00:28:59 | INFO    |   vc_20_60 - Istanza 10/10 | w=875 | lb=618 (gap=41.6%) | opt=875 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=9.54s
+2026-09-18 00:28:59 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_60.csv
+2026-09-18 00:29:11 | INFO    |   vc_20_120 - Istanza  1/10 | w=844 | lb=551 (gap=53.2%) | opt=844 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=11.89s
+2026-09-18 00:29:23 | INFO    |   vc_20_120 - Istanza  2/10 | w=1009 | lb=625 (gap=61.4%) | opt=1009 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=12.24s
+2026-09-18 00:29:36 | INFO    |   vc_20_120 - Istanza  3/10 | w=994 | lb=630 (gap=57.8%) | opt=994 (gap=0.0%) | fe_best=11 | fe_tot=20000 | reinits=19 | t=12.40s
+2026-09-18 00:29:48 | INFO    |   vc_20_120 - Istanza  4/10 | w=1050 | lb=671 (gap=56.5%) | opt=1050 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.27s
+2026-09-18 00:30:01 | INFO    |   vc_20_120 - Istanza  5/10 | w=997 | lb=579 (gap=72.2%) | opt=997 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.90s
+2026-09-18 00:30:14 | INFO    |   vc_20_120 - Istanza  6/10 | w=961 | lb=574 (gap=67.4%) | opt=961 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.51s
+2026-09-18 00:30:26 | INFO    |   vc_20_120 - Istanza  7/10 | w=991 | lb=617 (gap=60.6%) | opt=991 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.20s
+2026-09-18 00:30:38 | INFO    |   vc_20_120 - Istanza  8/10 | w=1142 | lb=695 (gap=64.3%) | opt=1142 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.81s
+2026-09-18 00:30:50 | INFO    |   vc_20_120 - Istanza  9/10 | w=1261 | lb=717 (gap=75.9%) | opt=1261 (gap=0.0%) | fe_best=38 | fe_tot=20000 | reinits=19 | t=12.76s
+2026-09-18 00:31:03 | INFO    |   vc_20_120 - Istanza 10/10 | w=1133 | lb=634 (gap=78.7%) | opt=1133 (gap=0.0%) | fe_best=23 | fe_tot=20000 | reinits=19 | t=12.33s
+2026-09-18 00:31:03 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_120.csv
+2026-09-18 00:31:18 | INFO    |   vc_25_150 - Istanza  1/10 | w=1312 | lb=807 (gap=62.6%) | opt=1312 (gap=0.0%) | fe_best=7 | fe_tot=20000 | reinits=19 | t=15.08s
+2026-09-18 00:31:43 | INFO    |   vc_25_150 - Istanza  2/10 | w=1132 | lb=728 (gap=55.5%) | opt=1132 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.96s
+2026-09-18 00:32:08 | INFO    |   vc_25_150 - Istanza  3/10 | w=1305 | lb=823 (gap=58.6%) | opt=1305 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=25.44s
+2026-09-18 00:32:34 | INFO    |   vc_25_150 - Istanza  4/10 | w=1425 | lb=857 (gap=66.3%) | opt=1425 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=24.98s
+2026-09-18 00:32:59 | INFO    |   vc_25_150 - Istanza  5/10 | w=1307 | lb=833 (gap=56.9%) | opt=1307 (gap=0.0%) | fe_best=19 | fe_tot=20000 | reinits=19 | t=25.03s
+2026-09-18 00:33:25 | INFO    |   vc_25_150 - Istanza  6/10 | w=1249 | lb=767 (gap=62.8%) | opt=1249 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=26.27s
+2026-09-18 00:33:50 | INFO    |   vc_25_150 - Istanza  7/10 | w=1450 | lb=913 (gap=58.8%) | opt=1450 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=25.30s
+2026-09-18 00:34:14 | INFO    |   vc_25_150 - Istanza  8/10 | w=1151 | lb=754 (gap=52.6%) | opt=1151 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.07s
+2026-09-18 00:34:39 | INFO    |   vc_25_150 - Istanza  9/10 | w=1248 | lb=846 (gap=47.5%) | opt=1248 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.06s
+2026-09-18 00:35:03 | INFO    |   vc_25_150 - Istanza 10/10 | w=1061 | lb=682 (gap=55.6%) | opt=1061 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=23.91s
+2026-09-18 00:35:03 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_25_150.csv
+2026-09-18 00:35:03 | INFO    | 
+[MPI] Elaborazione istanze in corso...
+2026-09-18 00:35:19 | INFO    |   vc_800_10000 - Run  9/10 | w=44837 | lb=26800 (gap=67.3%) | opt=N/A (gap=N/A) | fe_best=7747 | fe_tot=20000 | reinits=6 | t=939.94s
+2026-09-18 00:36:36 | INFO    |   vc_100_500 - Istanza  1/10 | w=4475 | lb=2992 (gap=49.6%) | opt=N/A (gap=N/A) | fe_best=634 | fe_tot=20000 | reinits=9 | t=93.73s
+2026-09-18 00:38:11 | INFO    |   vc_100_500 - Istanza  2/10 | w=4872 | lb=3199 (gap=52.3%) | opt=N/A (gap=N/A) | fe_best=5841 | fe_tot=20000 | reinits=8 | t=94.99s
+2026-09-18 00:39:43 | INFO    |   vc_100_500 - Istanza  3/10 | w=4370 | lb=2964 (gap=47.4%) | opt=N/A (gap=N/A) | fe_best=413 | fe_tot=20000 | reinits=9 | t=91.86s
+2026-09-18 00:41:19 | INFO    |   vc_100_500 - Istanza  4/10 | w=4608 | lb=3061 (gap=50.5%) | opt=N/A (gap=N/A) | fe_best=81 | fe_tot=20000 | reinits=9 | t=95.23s
+2026-09-18 00:42:53 | INFO    |   vc_100_500 - Istanza  5/10 | w=4807 | lb=3237 (gap=48.5%) | opt=N/A (gap=N/A) | fe_best=11344 | fe_tot=20000 | reinits=9 | t=94.28s
+2026-09-18 00:44:25 | INFO    |   vc_100_500 - Istanza  6/10 | w=4730 | lb=3303 (gap=43.2%) | opt=N/A (gap=N/A) | fe_best=6497 | fe_tot=20000 | reinits=7 | t=91.53s
+2026-09-18 00:45:56 | INFO    |   vc_100_500 - Istanza  7/10 | w=4637 | lb=3216 (gap=44.2%) | opt=N/A (gap=N/A) | fe_best=213 | fe_tot=20000 | reinits=9 | t=91.33s
+2026-09-18 00:47:32 | INFO    |   vc_100_500 - Istanza  8/10 | w=4592 | lb=3101 (gap=48.1%) | opt=N/A (gap=N/A) | fe_best=728 | fe_tot=20000 | reinits=9 | t=95.29s
+2026-09-18 00:49:03 | INFO    |   vc_100_500 - Istanza  9/10 | w=4556 | lb=3018 (gap=51.0%) | opt=N/A (gap=N/A) | fe_best=4899 | fe_tot=20000 | reinits=9 | t=91.29s
+2026-09-18 00:50:37 | INFO    |   vc_100_500 - Istanza 10/10 | w=4371 | lb=2929 (gap=49.2%) | opt=N/A (gap=N/A) | fe_best=4475 | fe_tot=20000 | reinits=9 | t=94.41s
+2026-09-18 00:50:37 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_500.csv
+2026-09-18 00:53:01 | INFO    |   vc_100_2000 - Istanza  1/10 | w=6057 | lb=3443 (gap=75.9%) | opt=N/A (gap=N/A) | fe_best=28 | fe_tot=20000 | reinits=9 | t=143.31s
+2026-09-18 00:55:25 | INFO    |   vc_100_2000 - Istanza  2/10 | w=5864 | lb=3323 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=215 | fe_tot=20000 | reinits=9 | t=144.40s
+2026-09-18 00:57:29 | INFO    |   vc_800_10000 - Run 10/10 | w=45192 | lb=26800 (gap=68.6%) | opt=N/A (gap=N/A) | fe_best=3729 | fe_tot=20000 | reinits=8 | t=1330.39s
+2026-09-18 00:57:29 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_800_10000.csv
+2026-09-18 00:57:29 | INFO    | 
+[SUCCESSO] Tutti i CSV salvati in: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv
+2026-09-18 00:57:29 | INFO    | Esegui 'python src/aggregate_results.py' per il riassunto per classe.
+2026-09-18 00:57:48 | INFO    |   vc_100_2000 - Istanza  3/10 | w=5738 | lb=3245 (gap=76.8%) | opt=N/A (gap=N/A) | fe_best=20 | fe_tot=20000 | reinits=9 | t=142.50s
+2026-09-18 01:00:12 | INFO    |   vc_100_2000 - Istanza  4/10 | w=5959 | lb=3360 (gap=77.3%) | opt=N/A (gap=N/A) | fe_best=655 | fe_tot=20000 | reinits=9 | t=144.49s
+2026-09-18 01:02:39 | INFO    |   vc_100_2000 - Istanza  5/10 | w=6292 | lb=3522 (gap=78.7%) | opt=N/A (gap=N/A) | fe_best=109 | fe_tot=20000 | reinits=9 | t=146.69s
+2026-09-18 01:05:02 | INFO    |   vc_100_2000 - Istanza  6/10 | w=5904 | lb=3345 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=53 | fe_tot=20000 | reinits=9 | t=143.43s
+2026-09-18 01:07:25 | INFO    |   vc_100_2000 - Istanza  7/10 | w=6297 | lb=3550 (gap=77.4%) | opt=N/A (gap=N/A) | fe_best=603 | fe_tot=20000 | reinits=9 | t=142.09s
+2026-09-18 01:09:49 | INFO    |   vc_100_2000 - Istanza  8/10 | w=6211 | lb=3481 (gap=78.4%) | opt=N/A (gap=N/A) | fe_best=108 | fe_tot=20000 | reinits=9 | t=144.08s
+2026-09-18 01:11:42 | INFO    |   vc_100_2000 - Istanza  9/10 | w=5957 | lb=3310 (gap=80.0%) | opt=N/A (gap=N/A) | fe_best=378 | fe_tot=20000 | reinits=9 | t=113.14s
+2026-09-18 01:11:49 | INFO    | ============================================================
+2026-09-18 01:11:49 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-18 01:11:49 | INFO    | ============================================================
+2026-09-18 01:11:49 | INFO    | LEGENDA OUTPUT:
+2026-09-18 01:11:49 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-18 01:11:49 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-18 01:11:49 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-18 01:11:49 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-18 01:11:49 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-18 01:11:49 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-18 01:11:49 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-18 01:11:49 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-18 01:11:49 | INFO    | ============================================================
+2026-09-18 01:11:49 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-18 01:12:00 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=10.25s
+2026-09-18 01:12:10 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=9.42s
+2026-09-18 01:12:19 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=9.79s
+2026-09-18 01:12:29 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=10 | fe_tot=20000 | reinits=19 | t=9.40s
+2026-09-18 01:12:39 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=9.86s
+2026-09-18 01:12:48 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=9.29s
+2026-09-18 01:12:58 | INFO    |   vc_20_60 - Istanza  7/10 | w=972 | lb=620 (gap=56.8%) | opt=972 (gap=0.0%) | fe_best=24 | fe_tot=20000 | reinits=19 | t=9.83s
+2026-09-18 01:13:06 | INFO    |   vc_20_60 - Istanza  8/10 | w=867 | lb=672 (gap=29.0%) | opt=867 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=8.61s
+2026-09-18 01:13:09 | INFO    |   vc_100_2000 - Istanza 10/10 | w=6240 | lb=3527 (gap=76.9%) | opt=N/A (gap=N/A) | fe_best=24 | fe_tot=20000 | reinits=9 | t=87.27s
+2026-09-18 01:13:09 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_2000.csv
+2026-09-18 01:13:19 | INFO    |   vc_20_60 - Istanza  9/10 | w=980 | lb=700 (gap=40.0%) | opt=980 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=12.95s
+2026-09-18 01:13:31 | INFO    |   vc_20_60 - Istanza 10/10 | w=875 | lb=618 (gap=41.6%) | opt=875 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.94s
+2026-09-18 01:13:31 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_60.csv
+2026-09-18 01:13:43 | INFO    |   vc_20_120 - Istanza  1/10 | w=844 | lb=551 (gap=53.2%) | opt=844 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=11.32s
+2026-09-18 01:13:55 | INFO    |   vc_20_120 - Istanza  2/10 | w=1009 | lb=625 (gap=61.4%) | opt=1009 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=11.93s
+2026-09-18 01:14:07 | INFO    |   vc_20_120 - Istanza  3/10 | w=994 | lb=630 (gap=57.8%) | opt=994 (gap=0.0%) | fe_best=11 | fe_tot=20000 | reinits=19 | t=12.02s
+2026-09-18 01:14:19 | INFO    |   vc_20_120 - Istanza  4/10 | w=1050 | lb=671 (gap=56.5%) | opt=1050 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.03s
+2026-09-18 01:14:31 | INFO    |   vc_20_120 - Istanza  5/10 | w=997 | lb=579 (gap=72.2%) | opt=997 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.99s
+2026-09-18 01:14:43 | INFO    |   vc_20_120 - Istanza  6/10 | w=961 | lb=574 (gap=67.4%) | opt=961 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.39s
+2026-09-18 01:14:55 | INFO    |   vc_20_120 - Istanza  7/10 | w=991 | lb=617 (gap=60.6%) | opt=991 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.86s
+2026-09-18 01:15:04 | INFO    |   vc_200_750 - Istanza  1/10 | w=8548 | lb=6171 (gap=38.5%) | opt=N/A (gap=N/A) | fe_best=2600 | fe_tot=20000 | reinits=8 | t=114.40s
+2026-09-18 01:15:07 | INFO    |   vc_20_120 - Istanza  8/10 | w=1142 | lb=695 (gap=64.3%) | opt=1142 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.32s
+2026-09-18 01:15:19 | INFO    |   vc_20_120 - Istanza  9/10 | w=1261 | lb=717 (gap=75.9%) | opt=1261 (gap=0.0%) | fe_best=9 | fe_tot=20000 | reinits=19 | t=12.27s
+2026-09-18 01:15:31 | INFO    |   vc_20_120 - Istanza 10/10 | w=1133 | lb=634 (gap=78.7%) | opt=1133 (gap=0.0%) | fe_best=28 | fe_tot=20000 | reinits=19 | t=11.78s
+2026-09-18 01:15:31 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_120.csv
+2026-09-18 01:15:45 | INFO    |   vc_25_150 - Istanza  1/10 | w=1312 | lb=807 (gap=62.6%) | opt=1312 (gap=0.0%) | fe_best=45 | fe_tot=20000 | reinits=19 | t=14.27s
+2026-09-18 01:15:59 | INFO    |   vc_25_150 - Istanza  2/10 | w=1132 | lb=728 (gap=55.5%) | opt=1132 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=14.13s
+2026-09-18 01:16:14 | INFO    |   vc_25_150 - Istanza  3/10 | w=1305 | lb=823 (gap=58.6%) | opt=1305 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=14.62s
+2026-09-18 01:16:33 | INFO    |   vc_25_150 - Istanza  4/10 | w=1425 | lb=857 (gap=66.3%) | opt=1425 (gap=0.0%) | fe_best=8 | fe_tot=20000 | reinits=19 | t=18.67s
+2026-09-18 01:16:56 | INFO    |   vc_25_150 - Istanza  5/10 | w=1307 | lb=833 (gap=56.9%) | opt=1307 (gap=0.0%) | fe_best=9 | fe_tot=20000 | reinits=19 | t=23.35s
+2026-09-18 01:17:16 | INFO    |   vc_200_750 - Istanza  2/10 | w=8240 | lb=5666 (gap=45.4%) | opt=N/A (gap=N/A) | fe_best=3139 | fe_tot=20000 | reinits=8 | t=132.61s
+2026-09-18 01:17:22 | INFO    |   vc_25_150 - Istanza  6/10 | w=1249 | lb=767 (gap=62.8%) | opt=1249 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=25.44s
+2026-09-18 01:17:46 | INFO    |   vc_25_150 - Istanza  7/10 | w=1450 | lb=913 (gap=58.8%) | opt=1450 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.43s
+2026-09-18 01:18:10 | INFO    |   vc_25_150 - Istanza  8/10 | w=1151 | lb=754 (gap=52.6%) | opt=1151 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=23.46s
+2026-09-18 01:18:33 | INFO    |   vc_25_150 - Istanza  9/10 | w=1248 | lb=846 (gap=47.5%) | opt=1248 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=23.22s
+2026-09-18 01:18:56 | INFO    |   vc_25_150 - Istanza 10/10 | w=1061 | lb=682 (gap=55.6%) | opt=1061 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=23.23s
+2026-09-18 01:18:56 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_25_150.csv
+2026-09-18 01:18:56 | INFO    | 
+[MPI] Elaborazione istanze in corso...
+2026-09-18 01:20:11 | INFO    |   vc_200_750 - Istanza  3/10 | w=8479 | lb=6178 (gap=37.2%) | opt=N/A (gap=N/A) | fe_best=3160 | fe_tot=20000 | reinits=8 | t=174.59s
+2026-09-18 01:20:24 | INFO    |   vc_100_500 - Istanza  1/10 | w=4475 | lb=2992 (gap=49.6%) | opt=N/A (gap=N/A) | fe_best=142 | fe_tot=20000 | reinits=9 | t=87.96s
+2026-09-18 01:21:54 | INFO    |   vc_100_500 - Istanza  2/10 | w=4872 | lb=3199 (gap=52.3%) | opt=N/A (gap=N/A) | fe_best=2278 | fe_tot=20000 | reinits=9 | t=89.59s
+2026-09-18 01:23:11 | INFO    |   vc_200_750 - Istanza  4/10 | w=7943 | lb=5690 (gap=39.6%) | opt=N/A (gap=N/A) | fe_best=3666 | fe_tot=20000 | reinits=8 | t=180.57s
+2026-09-18 01:23:20 | INFO    |   vc_100_500 - Istanza  3/10 | w=4370 | lb=2964 (gap=47.4%) | opt=N/A (gap=N/A) | fe_best=146 | fe_tot=20000 | reinits=9 | t=86.18s
+2026-09-18 01:24:48 | INFO    |   vc_100_500 - Istanza  4/10 | w=4608 | lb=3061 (gap=50.5%) | opt=N/A (gap=N/A) | fe_best=1625 | fe_tot=20000 | reinits=9 | t=87.71s
+2026-09-18 01:26:12 | INFO    |   vc_200_750 - Istanza  5/10 | w=8761 | lb=6341 (gap=38.2%) | opt=N/A (gap=N/A) | fe_best=1686 | fe_tot=20000 | reinits=9 | t=180.48s
+2026-09-18 01:26:16 | INFO    |   vc_100_500 - Istanza  5/10 | w=4807 | lb=3237 (gap=48.5%) | opt=N/A (gap=N/A) | fe_best=6356 | fe_tot=20000 | reinits=9 | t=87.96s
+2026-09-18 01:27:41 | INFO    |   vc_100_500 - Istanza  6/10 | w=4730 | lb=3303 (gap=43.2%) | opt=N/A (gap=N/A) | fe_best=6394 | fe_tot=20000 | reinits=9 | t=85.80s
+2026-09-18 01:29:08 | INFO    |   vc_100_500 - Istanza  7/10 | w=4637 | lb=3216 (gap=44.2%) | opt=N/A (gap=N/A) | fe_best=2501 | fe_tot=20000 | reinits=9 | t=86.68s
+2026-09-18 01:29:10 | INFO    |   vc_200_750 - Istanza  6/10 | w=8153 | lb=5826 (gap=39.9%) | opt=N/A (gap=N/A) | fe_best=1896 | fe_tot=20000 | reinits=9 | t=178.21s
+2026-09-18 01:30:37 | INFO    |   vc_100_500 - Istanza  8/10 | w=4592 | lb=3101 (gap=48.1%) | opt=N/A (gap=N/A) | fe_best=4757 | fe_tot=20000 | reinits=9 | t=88.65s
+2026-09-18 01:32:05 | INFO    |   vc_100_500 - Istanza  9/10 | w=4556 | lb=3018 (gap=51.0%) | opt=N/A (gap=N/A) | fe_best=6364 | fe_tot=20000 | reinits=9 | t=87.95s
+2026-09-18 01:32:09 | INFO    |   vc_200_750 - Istanza  7/10 | w=7635 | lb=5658 (gap=34.9%) | opt=N/A (gap=N/A) | fe_best=1302 | fe_tot=20000 | reinits=9 | t=178.48s
+2026-09-18 01:33:34 | INFO    |   vc_100_500 - Istanza 10/10 | w=4430 | lb=2929 (gap=51.2%) | opt=N/A (gap=N/A) | fe_best=237 | fe_tot=20000 | reinits=9 | t=88.91s
+2026-09-18 01:33:34 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_500.csv
+2026-09-18 01:35:12 | INFO    |   vc_200_750 - Istanza  8/10 | w=8409 | lb=5869 (gap=43.3%) | opt=N/A (gap=N/A) | fe_best=2050 | fe_tot=20000 | reinits=8 | t=182.87s
+2026-09-18 01:35:53 | INFO    |   vc_100_2000 - Istanza  1/10 | w=6057 | lb=3443 (gap=75.9%) | opt=N/A (gap=N/A) | fe_best=4137 | fe_tot=20000 | reinits=9 | t=138.95s
+2026-09-18 01:38:10 | INFO    |   vc_200_750 - Istanza  9/10 | w=8422 | lb=5781 (gap=45.7%) | opt=N/A (gap=N/A) | fe_best=3660 | fe_tot=20000 | reinits=8 | t=178.04s
+2026-09-18 01:38:11 | INFO    |   vc_100_2000 - Istanza  2/10 | w=5864 | lb=3323 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=2115 | fe_tot=20000 | reinits=9 | t=138.55s
+2026-09-18 01:40:31 | INFO    |   vc_100_2000 - Istanza  3/10 | w=5738 | lb=3245 (gap=76.8%) | opt=N/A (gap=N/A) | fe_best=47 | fe_tot=20000 | reinits=9 | t=139.58s
+2026-09-18 01:41:08 | INFO    |   vc_200_750 - Istanza 10/10 | w=8176 | lb=6064 (gap=34.8%) | opt=N/A (gap=N/A) | fe_best=1091 | fe_tot=20000 | reinits=9 | t=178.42s
+2026-09-18 01:41:08 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_750.csv
+2026-09-18 01:42:49 | INFO    |   vc_100_2000 - Istanza  4/10 | w=5959 | lb=3360 (gap=77.3%) | opt=N/A (gap=N/A) | fe_best=114 | fe_tot=20000 | reinits=9 | t=137.94s
+2026-09-18 01:45:07 | INFO    |   vc_100_2000 - Istanza  5/10 | w=6292 | lb=3522 (gap=78.7%) | opt=N/A (gap=N/A) | fe_best=59 | fe_tot=20000 | reinits=9 | t=138.22s
+2026-09-18 01:45:43 | INFO    |   vc_200_3000 - Istanza  1/10 | w=11506 | lb=6720 (gap=71.2%) | opt=N/A (gap=N/A) | fe_best=1386 | fe_tot=20000 | reinits=9 | t=274.58s
+2026-09-18 01:47:26 | INFO    |   vc_100_2000 - Istanza  6/10 | w=5904 | lb=3345 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=46 | fe_tot=20000 | reinits=9 | t=138.49s
+2026-09-18 01:49:42 | INFO    |   vc_100_2000 - Istanza  7/10 | w=6297 | lb=3550 (gap=77.4%) | opt=N/A (gap=N/A) | fe_best=221 | fe_tot=20000 | reinits=9 | t=136.23s
+2026-09-18 01:50:14 | INFO    |   vc_200_3000 - Istanza  2/10 | w=11176 | lb=6631 (gap=68.5%) | opt=N/A (gap=N/A) | fe_best=1878 | fe_tot=20000 | reinits=9 | t=271.13s
+2026-09-18 01:52:01 | INFO    |   vc_100_2000 - Istanza  8/10 | w=6211 | lb=3481 (gap=78.4%) | opt=N/A (gap=N/A) | fe_best=13 | fe_tot=20000 | reinits=9 | t=139.40s
+2026-09-18 01:54:22 | INFO    |   vc_100_2000 - Istanza  9/10 | w=5957 | lb=3310 (gap=80.0%) | opt=N/A (gap=N/A) | fe_best=306 | fe_tot=20000 | reinits=9 | t=140.19s
+2026-09-18 01:54:50 | INFO    |   vc_200_3000 - Istanza  3/10 | w=11799 | lb=6803 (gap=73.4%) | opt=N/A (gap=N/A) | fe_best=18888 | fe_tot=20000 | reinits=8 | t=276.09s
+2026-09-18 01:56:41 | INFO    |   vc_100_2000 - Istanza 10/10 | w=6240 | lb=3527 (gap=76.9%) | opt=N/A (gap=N/A) | fe_best=178 | fe_tot=20000 | reinits=9 | t=139.37s
+2026-09-18 01:56:41 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_2000.csv
+2026-09-18 01:59:26 | INFO    |   vc_200_3000 - Istanza  4/10 | w=12549 | lb=7313 (gap=71.6%) | opt=N/A (gap=N/A) | fe_best=1537 | fe_tot=20000 | reinits=9 | t=276.21s
+2026-09-18 01:59:29 | INFO    |   vc_200_750 - Istanza  1/10 | w=8548 | lb=6171 (gap=38.5%) | opt=N/A (gap=N/A) | fe_best=590 | fe_tot=20000 | reinits=9 | t=167.53s
+2026-09-18 02:02:20 | INFO    |   vc_200_750 - Istanza  2/10 | w=8240 | lb=5666 (gap=45.4%) | opt=N/A (gap=N/A) | fe_best=621 | fe_tot=20000 | reinits=9 | t=171.40s
+2026-09-18 02:03:57 | INFO    |   vc_200_3000 - Istanza  5/10 | w=11521 | lb=6762 (gap=70.4%) | opt=N/A (gap=N/A) | fe_best=9703 | fe_tot=20000 | reinits=8 | t=270.31s
+2026-09-18 02:05:02 | INFO    |   vc_200_750 - Istanza  3/10 | w=8479 | lb=6178 (gap=37.2%) | opt=N/A (gap=N/A) | fe_best=724 | fe_tot=20000 | reinits=9 | t=161.78s
+2026-09-18 02:07:50 | INFO    |   vc_200_750 - Istanza  4/10 | w=7943 | lb=5690 (gap=39.6%) | opt=N/A (gap=N/A) | fe_best=11209 | fe_tot=20000 | reinits=9 | t=168.47s
+2026-09-18 02:08:29 | INFO    |   vc_200_3000 - Istanza  6/10 | w=11121 | lb=6591 (gap=68.7%) | opt=N/A (gap=N/A) | fe_best=886 | fe_tot=20000 | reinits=9 | t=272.11s
+2026-09-18 02:10:37 | INFO    |   vc_200_750 - Istanza  5/10 | w=8761 | lb=6341 (gap=38.2%) | opt=N/A (gap=N/A) | fe_best=376 | fe_tot=20000 | reinits=9 | t=166.63s
+2026-09-18 02:12:59 | INFO    |   vc_200_3000 - Istanza  7/10 | w=11534 | lb=6769 (gap=70.4%) | opt=N/A (gap=N/A) | fe_best=8233 | fe_tot=20000 | reinits=8 | t=269.57s
+2026-09-18 02:13:27 | INFO    |   vc_200_750 - Istanza  6/10 | w=8153 | lb=5826 (gap=39.9%) | opt=N/A (gap=N/A) | fe_best=4875 | fe_tot=20000 | reinits=9 | t=169.38s
+2026-09-18 02:16:13 | INFO    |   vc_200_750 - Istanza  7/10 | w=7635 | lb=5658 (gap=34.9%) | opt=N/A (gap=N/A) | fe_best=514 | fe_tot=20000 | reinits=9 | t=166.33s
+2026-09-18 02:17:29 | INFO    |   vc_200_3000 - Istanza  8/10 | w=11638 | lb=6850 (gap=69.9%) | opt=N/A (gap=N/A) | fe_best=10613 | fe_tot=20000 | reinits=7 | t=270.49s
+2026-09-18 02:19:06 | INFO    |   vc_200_750 - Istanza  8/10 | w=8376 | lb=5869 (gap=42.7%) | opt=N/A (gap=N/A) | fe_best=10698 | fe_tot=20000 | reinits=8 | t=172.55s
+2026-09-18 02:21:52 | INFO    |   vc_200_750 - Istanza  9/10 | w=8422 | lb=5781 (gap=45.7%) | opt=N/A (gap=N/A) | fe_best=7738 | fe_tot=20000 | reinits=8 | t=166.45s
+2026-09-18 02:21:59 | INFO    |   vc_200_3000 - Istanza  9/10 | w=11695 | lb=6902 (gap=69.4%) | opt=N/A (gap=N/A) | fe_best=1342 | fe_tot=20000 | reinits=9 | t=270.28s
+2026-09-18 02:24:38 | INFO    |   vc_200_750 - Istanza 10/10 | w=8176 | lb=6064 (gap=34.8%) | opt=N/A (gap=N/A) | fe_best=276 | fe_tot=20000 | reinits=9 | t=165.51s
+2026-09-18 02:24:38 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_750.csv
+2026-09-18 02:26:32 | INFO    |   vc_200_3000 - Istanza 10/10 | w=11493 | lb=6648 (gap=72.9%) | opt=N/A (gap=N/A) | fe_best=2518 | fe_tot=20000 | reinits=8 | t=272.70s
+2026-09-18 02:26:32 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_3000.csv
+2026-09-18 02:26:32 | INFO    | 
+[LPI] Elaborazione istanze in corso...
+2026-09-18 02:29:00 | INFO    |   vc_200_3000 - Istanza  1/10 | w=11506 | lb=6720 (gap=71.2%) | opt=N/A (gap=N/A) | fe_best=3107 | fe_tot=20000 | reinits=9 | t=262.65s
+2026-09-18 02:33:22 | INFO    |   vc_200_3000 - Istanza  2/10 | w=11176 | lb=6631 (gap=68.5%) | opt=N/A (gap=N/A) | fe_best=678 | fe_tot=20000 | reinits=9 | t=261.20s
+2026-09-18 02:37:48 | INFO    |   vc_200_3000 - Istanza  3/10 | w=11796 | lb=6803 (gap=73.4%) | opt=N/A (gap=N/A) | fe_best=793 | fe_tot=20000 | reinits=9 | t=266.12s
+2026-09-18 02:42:08 | INFO    |   vc_200_3000 - Istanza  4/10 | w=12549 | lb=7313 (gap=71.6%) | opt=N/A (gap=N/A) | fe_best=359 | fe_tot=20000 | reinits=9 | t=260.21s
+2026-09-18 02:46:31 | INFO    |   vc_200_3000 - Istanza  5/10 | w=11515 | lb=6762 (gap=70.3%) | opt=N/A (gap=N/A) | fe_best=13118 | fe_tot=20000 | reinits=9 | t=263.32s
+2026-09-18 02:48:40 | INFO    |   vc_800_10000 - Lower Bound (matching) = 26800
+2026-09-18 02:48:40 | INFO    |   vc_800_10000 - Run  1/10 | w=44900 | lb=26800 (gap=67.5%) | opt=N/A (gap=N/A) | fe_best=5646 | fe_tot=20000 | reinits=7 | t=1327.78s
+2026-09-18 02:50:53 | INFO    |   vc_200_3000 - Istanza  6/10 | w=11121 | lb=6591 (gap=68.7%) | opt=N/A (gap=N/A) | fe_best=225 | fe_tot=20000 | reinits=9 | t=261.36s
+2026-09-18 02:55:11 | INFO    |   vc_200_3000 - Istanza  7/10 | w=11540 | lb=6769 (gap=70.5%) | opt=N/A (gap=N/A) | fe_best=244 | fe_tot=20000 | reinits=9 | t=257.91s
+2026-09-18 02:59:29 | INFO    |   vc_200_3000 - Istanza  8/10 | w=11638 | lb=6850 (gap=69.9%) | opt=N/A (gap=N/A) | fe_best=14597 | fe_tot=20000 | reinits=8 | t=258.76s
+2026-09-18 03:03:47 | INFO    |   vc_200_3000 - Istanza  9/10 | w=11695 | lb=6902 (gap=69.4%) | opt=N/A (gap=N/A) | fe_best=502 | fe_tot=20000 | reinits=9 | t=258.09s
+2026-09-18 08:28:00 | INFO    |   vc_200_3000 - Istanza 10/10 | w=11455 | lb=6648 (gap=72.3%) | opt=N/A (gap=N/A) | fe_best=12639 | fe_tot=20000 | reinits=8 | t=19452.81s
+2026-09-18 08:28:00 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_3000.csv
+2026-09-18 08:28:00 | INFO    | 
+[LPI] Elaborazione istanze in corso...
+2026-09-18 08:29:41 | INFO    |   vc_800_10000 - Run  2/10 | w=45000 | lb=26800 (gap=67.9%) | opt=N/A (gap=N/A) | fe_best=5618 | fe_tot=20000 | reinits=7 | t=20460.69s
+2026-09-18 08:44:47 | INFO    |   vc_800_10000 - Run  3/10 | w=45323 | lb=26800 (gap=69.1%) | opt=N/A (gap=N/A) | fe_best=16025 | fe_tot=20000 | reinits=8 | t=905.60s
+2026-09-18 08:44:50 | INFO    |   vc_800_10000 - Lower Bound (matching) = 26800
+2026-09-18 08:44:50 | INFO    |   vc_800_10000 - Run  1/10 | w=44446 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=4202 | fe_tot=20000 | reinits=7 | t=1009.23s
+2026-09-18 09:01:28 | INFO    |   vc_800_10000 - Run  2/10 | w=44461 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=4003 | fe_tot=20000 | reinits=8 | t=997.91s
+2026-09-18 09:01:40 | INFO    |   vc_800_10000 - Run  4/10 | w=44588 | lb=26800 (gap=66.4%) | opt=N/A (gap=N/A) | fe_best=10519 | fe_tot=20000 | reinits=4 | t=1012.93s
+2026-09-18 09:18:08 | INFO    |   vc_800_10000 - Run  3/10 | w=44457 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=3297 | fe_tot=20000 | reinits=8 | t=999.59s
+2026-09-18 09:19:01 | INFO    |   vc_800_10000 - Run  5/10 | w=45092 | lb=26800 (gap=68.2%) | opt=N/A (gap=N/A) | fe_best=3932 | fe_tot=20000 | reinits=8 | t=1040.96s
+2026-09-18 09:35:18 | INFO    |   vc_800_10000 - Run  4/10 | w=44463 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=3860 | fe_tot=20000 | reinits=8 | t=1030.34s
+2026-09-18 09:36:19 | INFO    |   vc_800_10000 - Run  6/10 | w=44540 | lb=26800 (gap=66.2%) | opt=N/A (gap=N/A) | fe_best=17238 | fe_tot=20000 | reinits=4 | t=1037.54s
+2026-09-18 10:01:45 | INFO    |   vc_800_10000 - Run  5/10 | w=44428 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=4648 | fe_tot=20000 | reinits=7 | t=1586.31s
+2026-09-18 10:03:53 | INFO    |   vc_800_10000 - Run  7/10 | w=44732 | lb=26800 (gap=66.9%) | opt=N/A (gap=N/A) | fe_best=8747 | fe_tot=20000 | reinits=5 | t=1654.13s
+2026-09-18 10:27:10 | INFO    |   vc_800_10000 - Run  6/10 | w=44694 | lb=26800 (gap=66.8%) | opt=N/A (gap=N/A) | fe_best=19831 | fe_tot=20000 | reinits=7 | t=1524.98s
+2026-09-18 10:29:50 | INFO    |   vc_800_10000 - Run  8/10 | w=44558 | lb=26800 (gap=66.3%) | opt=N/A (gap=N/A) | fe_best=11725 | fe_tot=20000 | reinits=4 | t=1556.55s
+2026-09-18 10:51:46 | INFO    |   vc_800_10000 - Run  7/10 | w=44510 | lb=26800 (gap=66.1%) | opt=N/A (gap=N/A) | fe_best=4556 | fe_tot=20000 | reinits=7 | t=1475.36s
+2026-09-18 10:54:57 | INFO    |   vc_800_10000 - Run  9/10 | w=44837 | lb=26800 (gap=67.3%) | opt=N/A (gap=N/A) | fe_best=7747 | fe_tot=20000 | reinits=6 | t=1506.79s
+2026-09-18 11:15:49 | INFO    |   vc_800_10000 - Run  8/10 | w=44433 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=4580 | fe_tot=20000 | reinits=7 | t=1443.05s
+2026-09-18 11:19:37 | INFO    |   vc_800_10000 - Run 10/10 | w=45192 | lb=26800 (gap=68.6%) | opt=N/A (gap=N/A) | fe_best=3729 | fe_tot=20000 | reinits=8 | t=1478.77s
+2026-09-18 11:19:37 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_800_10000.csv
+2026-09-18 11:19:37 | INFO    | 
+[SUCCESSO] Tutti i CSV salvati in: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv
+2026-09-18 11:19:37 | INFO    | Esegui 'python src/aggregate_results.py' per il riassunto per classe.
+2026-09-18 11:39:20 | INFO    |   vc_800_10000 - Run  9/10 | w=44472 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=4293 | fe_tot=20000 | reinits=7 | t=1411.01s
+2026-09-18 12:02:52 | INFO    |   vc_800_10000 - Run 10/10 | w=44535 | lb=26800 (gap=66.2%) | opt=N/A (gap=N/A) | fe_best=4499 | fe_tot=20000 | reinits=7 | t=1411.95s
+2026-09-18 12:02:52 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_800_10000.csv
+2026-09-18 12:02:52 | INFO    | 
+[SUCCESSO] Tutti i CSV salvati in: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv
+2026-09-18 12:02:52 | INFO    | Esegui 'python src/aggregate_results.py' per il riassunto per classe.
+2026-09-18 12:37:04 | INFO    | ===========================================================================
+2026-09-18 12:37:04 | INFO    | AVVIO ABLATION STUDY: SWITCH FISSO VS CICLO-DINAMICO (rho=0.10 e rho=0.15)
+2026-09-18 12:37:04 | INFO    | ===========================================================================
+2026-09-18 12:37:04 | INFO    | Totale task ablation da eseguire: 40 (4 modalità x 2 rho x 5 seed)
+2026-09-18 13:15:36 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=2310.92s
+2026-09-18 13:18:04 | INFO    |   [rho=0.1 | mode=cycle        | seed=202] w=44473 | FE_best=4773 | reinits=7 | t=2458.15s
+2026-09-18 13:18:31 | INFO    |   [rho=0.1 | mode=always       | seed=404] w=44714 | FE_best=10738 | reinits=6 | t=2484.52s
+2026-09-18 13:19:02 | INFO    |   [rho=0.1 | mode=never        | seed=303] w=44473 | FE_best=3633 | reinits=8 | t=2516.15s
+2026-09-18 13:19:08 | INFO    |   [rho=0.1 | mode=always       | seed=42] w=44492 | FE_best=17164 | reinits=5 | t=2521.72s
+2026-09-18 13:19:26 | INFO    |   [rho=0.1 | mode=always       | seed=101] w=44749 | FE_best=16696 | reinits=6 | t=2539.66s
+2026-09-18 13:19:43 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=303] w=44447 | FE_best=17071 | reinits=7 | t=2557.49s
+2026-09-18 13:19:45 | INFO    |   [rho=0.1 | mode=cycle        | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=2559.89s
+2026-09-18 13:19:50 | INFO    |   [rho=0.1 | mode=cycle        | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=2564.17s
+2026-09-18 13:19:54 | INFO    |   [rho=0.1 | mode=never        | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=2568.59s
+2026-09-18 13:20:06 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=101] w=44417 | FE_best=16929 | reinits=6 | t=2580.45s
+2026-09-18 13:20:47 | INFO    |   [rho=0.1 | mode=always       | seed=202] w=44472 | FE_best=12529 | reinits=5 | t=2621.11s
+2026-09-18 13:20:48 | INFO    |   [rho=0.1 | mode=always       | seed=303] w=44537 | FE_best=3736 | reinits=8 | t=2622.03s
+2026-09-18 13:21:04 | INFO    |   [rho=0.1 | mode=cycle        | seed=303] w=44473 | FE_best=3633 | reinits=8 | t=2638.21s
+2026-09-18 13:59:39 | INFO    |   [rho=0.1 | mode=never        | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=4952.93s
+2026-09-18 13:59:46 | INFO    |   [rho=0.1 | mode=never        | seed=202] w=44473 | FE_best=4773 | reinits=7 | t=4960.21s
+2026-09-18 13:59:46 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=202] w=44457 | FE_best=16794 | reinits=6 | t=4960.86s
+2026-09-18 13:59:50 | INFO    |   [rho=0.1 | mode=never        | seed=101] w=44451 | FE_best=4830 | reinits=7 | t=4964.03s
+2026-09-18 14:00:06 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=4980.62s
+2026-09-18 14:01:34 | INFO    |   [rho=0.1 | mode=cycle        | seed=101] w=44451 | FE_best=4830 | reinits=7 | t=5068.77s
+2026-09-18 14:22:30 | INFO    |   [rho=0.15 | mode=cycle        | seed=42] w=44396 | FE_best=14364 | reinits=5 | t=4013.12s
+2026-09-18 14:23:29 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=202] w=44396 | FE_best=13096 | reinits=6 | t=3823.09s
+2026-09-18 14:24:22 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=101] w=44516 | FE_best=14944 | reinits=7 | t=3877.82s
+2026-09-18 14:24:29 | INFO    |   [rho=0.15 | mode=never        | seed=303] w=44396 | FE_best=13122 | reinits=7 | t=3804.83s
+2026-09-18 14:26:12 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=42] w=44436 | FE_best=17789 | reinits=6 | t=4005.59s
+2026-09-18 14:26:15 | INFO    |   [rho=0.15 | mode=never        | seed=42] w=44440 | FE_best=14155 | reinits=6 | t=3968.46s
+2026-09-18 14:26:16 | INFO    |   [rho=0.15 | mode=cycle        | seed=202] w=44464 | FE_best=8736 | reinits=7 | t=4064.82s
+2026-09-18 14:26:33 | INFO    |   [rho=0.15 | mode=cycle        | seed=303] w=44461 | FE_best=7448 | reinits=7 | t=4050.52s
+2026-09-18 14:26:49 | INFO    |   [rho=0.15 | mode=cycle        | seed=404] w=44493 | FE_best=18532 | reinits=7 | t=4060.92s
+2026-09-18 14:27:04 | INFO    |   [rho=0.15 | mode=always       | seed=202] w=44493 | FE_best=9461 | reinits=7 | t=1633.91s
+2026-09-18 14:27:21 | INFO    |   [rho=0.15 | mode=never        | seed=202] w=44396 | FE_best=13096 | reinits=6 | t=3992.16s
+2026-09-18 14:27:32 | INFO    |   [rho=0.15 | mode=always       | seed=101] w=44634 | FE_best=17810 | reinits=7 | t=1664.63s
+2026-09-18 14:27:41 | INFO    |   [rho=0.15 | mode=cycle        | seed=101] w=44457 | FE_best=19280 | reinits=7 | t=4176.49s
+2026-09-18 14:27:45 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=303] w=44396 | FE_best=13122 | reinits=7 | t=4074.33s
+2026-09-18 14:27:49 | INFO    |   [rho=0.15 | mode=always       | seed=42] w=44498 | FE_best=14100 | reinits=7 | t=1682.6s
+2026-09-18 14:27:57 | INFO    |   [rho=0.15 | mode=always       | seed=404] w=44891 | FE_best=13567 | reinits=7 | t=1582.69s
+2026-09-18 14:27:59 | INFO    |   [rho=0.15 | mode=never        | seed=404] w=44458 | FE_best=16487 | reinits=7 | t=1699.82s
+2026-09-18 14:27:59 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=404] w=44474 | FE_best=16210 | reinits=7 | t=4084.27s
+2026-09-18 14:28:10 | INFO    |   [rho=0.15 | mode=never        | seed=101] w=44516 | FE_best=14944 | reinits=7 | t=4041.86s
+2026-09-18 14:28:11 | INFO    |   [rho=0.15 | mode=always       | seed=303] w=44566 | FE_best=14779 | reinits=6 | t=1683.79s
+2026-09-18 14:28:11 | INFO    | 
+===========================================================================
+2026-09-18 14:28:11 | INFO    | RIEPILOGO STATISTICO ABLATION SWITCH
+2026-09-18 14:28:11 | INFO    | ===========================================================================
+2026-09-18 14:33:49 | INFO    | ============================================================
+2026-09-18 14:33:49 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-18 14:33:49 | INFO    | ============================================================
+2026-09-18 14:33:49 | INFO    | LEGENDA OUTPUT:
+2026-09-18 14:33:49 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-18 14:33:49 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-18 14:33:49 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-18 14:33:49 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-18 14:33:49 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-18 14:33:49 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-18 14:33:49 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-18 14:33:49 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-18 14:33:49 | INFO    | ============================================================
+2026-09-18 14:33:49 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-18 14:34:06 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=9.43s
+2026-09-18 14:34:15 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=8.68s
+2026-09-18 14:34:24 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=9.33s
+2026-09-18 14:34:34 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=10 | fe_tot=20000 | reinits=19 | t=9.45s
+2026-09-18 20:17:40 | INFO    | =================================================================
+2026-09-18 20:17:40 | INFO    | PARAMETER TUNING MULTI-SEED E PARALLELO PER MMAS-MWVCP
+2026-09-18 20:17:40 | INFO    | =================================================================
+2026-09-18 20:17:40 | INFO    | Istanza target: vc_800_10000.txt
+2026-09-18 20:17:40 | INFO    | 
+>>> AVVIO FASE 1 (16 combinazioni in parallelo) <<<
+2026-09-18 20:44:17 | INFO    |   [ 3] FASE 1 -> ants=80, a=1.0, b=2.0, r=0.15 | w=44396 | fe_best=14364 | t=1595.63s
+2026-09-18 20:44:51 | INFO    |   [12] FASE 1 -> ants=80, a=2.0, b=2.0, r=0.2 | w=44470 | fe_best=17831 | t=1629.54s
+2026-09-18 20:44:57 | INFO    |   [ 4] FASE 1 -> ants=80, a=1.0, b=2.0, r=0.2 | w=44463 | fe_best= 7615 | t=1635.68s
+2026-09-18 20:45:32 | INFO    |   [11] FASE 1 -> ants=80, a=2.0, b=2.0, r=0.15 | w=44409 | fe_best=13855 | t=1670.33s
+2026-09-18 20:46:34 | INFO    |   [ 1] FASE 1 -> ants=80, a=1.0, b=2.0, r=0.02 | w=44563 | fe_best=19019 | t=1733.16s
+2026-09-18 20:46:38 | INFO    |   [10] FASE 1 -> ants=80, a=2.0, b=2.0, r=0.1 | w=44598 | fe_best= 8062 | t=1736.65s
+2026-09-18 20:46:49 | INFO    |   [ 2] FASE 1 -> ants=80, a=1.0, b=2.0, r=0.1 | w=44447 | fe_best= 4049 | t=1747.97s
+2026-09-18 20:47:45 | INFO    |   [ 9] FASE 1 -> ants=80, a=2.0, b=2.0, r=0.02 | w=44555 | fe_best= 8973 | t=1803.32s
+2026-09-18 20:57:48 | INFO    |   [ 8] FASE 1 -> ants=80, a=1.0, b=5.0, r=0.2 | w=44457 | fe_best=17615 | t=2406.92s
+2026-09-18 20:57:57 | INFO    |   [15] FASE 1 -> ants=80, a=2.0, b=5.0, r=0.15 | w=44459 | fe_best=19990 | t=2415.88s
+2026-09-18 20:58:02 | INFO    |   [16] FASE 1 -> ants=80, a=2.0, b=5.0, r=0.2 | w=44516 | fe_best=13023 | t=2420.88s
+2026-09-18 20:58:13 | INFO    |   [ 7] FASE 1 -> ants=80, a=1.0, b=5.0, r=0.15 | w=44467 | fe_best=15528 | t=2431.54s
+2026-09-18 20:58:29 | INFO    |   [ 6] FASE 1 -> ants=80, a=1.0, b=5.0, r=0.1 | w=44496 | fe_best=13151 | t=2447.97s
+2026-09-18 20:58:52 | INFO    |   [14] FASE 1 -> ants=80, a=2.0, b=5.0, r=0.1 | w=44484 | fe_best=19790 | t=2470.32s
+2026-09-18 20:59:14 | INFO    |   [ 5] FASE 1 -> ants=80, a=1.0, b=5.0, r=0.02 | w=44522 | fe_best= 9321 | t=2492.43s
+2026-09-18 20:59:44 | INFO    |   [13] FASE 1 -> ants=80, a=2.0, b=5.0, r=0.02 | w=44477 | fe_best= 7305 | t=2522.34s
+2026-09-18 20:59:45 | INFO    | 
+>>> AVVIO VALIDAZIONE MULTI-SEED sui Top 3 Candidati su 5 seed <<<
+2026-09-18 21:33:33 | INFO    | 
+=== RISULTATI VALIDAZIONE MULTI-SEED ===
+2026-09-18 21:33:33 | INFO    |   Candidato #1 (a=1.0, b=2.0, r=0.15): w_medio = 44454.20 ± 31.76 | min=44396 | max=44493 | FE_medio = 13672.0
+2026-09-18 21:33:33 | INFO    |   Candidato #2 (a=2.0, b=2.0, r=0.15): w_medio = 44495.60 ± 64.65 | min=44409 | max=44584 | FE_medio = 15008.8
+2026-09-18 21:33:33 | INFO    |   Candidato #3 (a=1.0, b=2.0, r=0.1): w_medio = 44450.60 ± 23.44 | min=44409 | max=44473 | FE_medio = 4136.0
+2026-09-18 21:33:33 | INFO    | 
+>>> VINCITORE MULTI-SEED ROBUSTO: a=1.0, b=2.0, r=0.1 <<<
+2026-09-18 21:33:33 | INFO    | 
+>>> AVVIO FASE 2 (n_ants) (5 combinazioni in parallelo) <<<
+2026-09-18 21:50:53 | INFO    |   [18] FASE 2 (n_ants) -> ants=60, a=1.0, b=2.0, r=0.1 | w=44504 | fe_best=15336 | t=1038.59s
+2026-09-18 21:51:16 | INFO    |   [17] FASE 2 (n_ants) -> ants=40, a=1.0, b=2.0, r=0.1 | w=44453 | fe_best=14749 | t=1061.77s
+2026-09-18 21:51:28 | INFO    |   [19] FASE 2 (n_ants) -> ants=80, a=1.0, b=2.0, r=0.1 | w=44447 | fe_best= 4049 | t=1073.74s
+2026-09-18 21:51:32 | INFO    |   [21] FASE 2 (n_ants) -> ants=160, a=1.0, b=2.0, r=0.1 | w=44493 | fe_best= 7309 | t=1077.29s
+2026-09-18 21:51:32 | INFO    |   [20] FASE 2 (n_ants) -> ants=120, a=1.0, b=2.0, r=0.1 | w=44472 | fe_best= 6082 | t=1077.86s
+2026-09-18 21:51:32 | INFO    | 
+======================================================================================================================
+TOP 5 CONFIGURAZIONI UNICHE GLOBALI DA TUNING
+======================================================================================================================
+----------------------------------------------------------------------------------------------------------------------
+Rank   | Fase              | Seed   | N_ants   | Alpha   | Beta   | Rho    | Best Weight   | FE at Best   | Time (s)  
+----------------------------------------------------------------------------------------------------------------------
+1      | FASE 1            | 42     | 80       | 1.0     | 2.0    | 0.15   | 44396         | 14364        | 1595.63   
+2      | MULTI-SEED        | 404    | 80       | 1.0     | 2.0    | 0.1    | 44409         | 3395         | 2022.62   
+3      | FASE 1            | 42     | 80       | 2.0     | 2.0    | 0.15   | 44409         | 13855        | 1670.33   
+4      | FASE 2 (n_ants)   | 42     | 40       | 1.0     | 2.0    | 0.1    | 44453         | 14749        | 1061.77   
+5      | FASE 1            | 42     | 80       | 1.0     | 5.0    | 0.2    | 44457         | 17615        | 2406.92   
+----------------------------------------------------------------------------------------------------------------------
+
+2026-09-18 21:51:33 | INFO    | ======================================================================
+2026-09-18 21:51:33 | INFO    | AVVIO VALIDAZIONE MULTI-SEED (5 SEED) TOP CANDIDATI MMAS-MWVCP
+2026-09-18 21:51:33 | INFO    | ======================================================================
+2026-09-18 21:51:33 | INFO    | Totale task da eseguire: 25 (5 candidati x 5 seed)
+2026-09-18 21:51:33 | INFO    | Esecuzione su 20 worker di processo...
+2026-09-18 22:15:55 | INFO    |   [Cand #2 | seed=101] w=44451 | FE_best=4830 | reinits=7 | t=1460.89s
+2026-09-18 22:16:50 | INFO    |   [Cand #3 | seed=303] w=44502 | FE_best=9273 | reinits=7 | t=1515.75s
+2026-09-18 22:17:24 | INFO    |   [Cand #4 | seed=202] w=44458 | FE_best=16975 | reinits=7 | t=1549.58s
+2026-09-18 22:17:24 | INFO    |   [Cand #4 | seed=303] w=44379 | FE_best=12352 | reinits=5 | t=1549.53s
+2026-09-18 22:18:14 | INFO    |   [Cand #1 | seed=42] w=44396 | FE_best=14364 | reinits=5 | t=1600.05s
+2026-09-18 22:18:42 | INFO    |   [Cand #2 | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=1627.5s
+2026-09-18 22:19:13 | INFO    |   [Cand #4 | seed=42] w=44446 | FE_best=14326 | reinits=5 | t=1658.06s
+2026-09-18 22:19:22 | INFO    |   [Cand #4 | seed=404] w=44423 | FE_best=16284 | reinits=6 | t=1667.23s
+2026-09-18 22:19:53 | INFO    |   [Cand #3 | seed=404] w=44439 | FE_best=13520 | reinits=7 | t=1698.41s
+2026-09-18 22:19:53 | INFO    |   [Cand #4 | seed=101] w=44391 | FE_best=6298 | reinits=7 | t=1698.39s
+2026-09-18 22:19:53 | INFO    |   [Cand #3 | seed=202] w=44544 | FE_best=19823 | reinits=7 | t=1698.79s
+2026-09-18 22:20:16 | INFO    |   [Cand #2 | seed=303] w=44473 | FE_best=3633 | reinits=8 | t=1721.71s
+2026-09-18 22:20:21 | INFO    |   [Cand #1 | seed=101] w=44457 | FE_best=19280 | reinits=7 | t=1726.83s
+2026-09-18 22:20:23 | INFO    |   [Cand #1 | seed=202] w=44464 | FE_best=8736 | reinits=7 | t=1728.92s
+2026-09-18 22:20:25 | INFO    |   [Cand #3 | seed=42] w=44409 | FE_best=13855 | reinits=7 | t=1730.11s
+2026-09-18 22:20:52 | INFO    |   [Cand #3 | seed=101] w=44584 | FE_best=18573 | reinits=4 | t=1757.93s
+2026-09-18 22:20:54 | INFO    |   [Cand #2 | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=1759.75s
+2026-09-18 22:21:30 | INFO    |   [Cand #1 | seed=303] w=44461 | FE_best=7448 | reinits=7 | t=1795.32s
+2026-09-18 22:21:41 | INFO    |   [Cand #1 | seed=404] w=44493 | FE_best=18532 | reinits=7 | t=1807.15s
+2026-09-18 22:21:52 | INFO    |   [Cand #2 | seed=202] w=44473 | FE_best=4773 | reinits=7 | t=1818.07s
+2026-09-18 22:42:04 | INFO    |   [Cand #5 | seed=404] w=44442 | FE_best=18434 | reinits=6 | t=1429.03s
+2026-09-18 22:42:11 | INFO    |   [Cand #5 | seed=202] w=44501 | FE_best=4452 | reinits=7 | t=1486.53s
+2026-09-18 22:42:14 | INFO    |   [Cand #5 | seed=101] w=44462 | FE_best=19728 | reinits=8 | t=1523.01s
+2026-09-18 22:42:19 | INFO    |   [Cand #5 | seed=303] w=44447 | FE_best=19190 | reinits=6 | t=1494.48s
+2026-09-18 22:43:53 | INFO    |   [Cand #5 | seed=42] w=44467 | FE_best=15528 | reinits=6 | t=1677.56s
+2026-09-18 22:43:53 | INFO    | 
+======================================================================
+2026-09-18 22:43:53 | INFO    | RIEPILOGO STATISTICO MULTI-SEED (Media ± Dev.Std)
+2026-09-18 22:43:53 | INFO    | ======================================================================
+2026-09-18 22:43:53 | INFO    | 
+===========================================================================================================================================================================
+RANKING FINALE MULTI-SEED TOP CANDIDATI (CONFIGURAZIONI UNICHE)
+===========================================================================================================================================================================
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Rank   | Candidato                                        | N_ants   | Alpha   | Beta   | Rho    | Media Peso (mu +- sigma)   | Min W   | Max W   | Mean FE   | Tempo (s)  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1      | ants=60, a=1.0, b=2.0, r=0.15 (Rank 4)           | 60       | 1.0     | 2.0    | 0.15   | 44419.40 ± 30.49           | 44379   | 44458   | 13247.0   | 1624.6s    
+2      | ants=80, a=1.0, b=2.0, r=0.10 (Relazione prev)   | 80       | 1.0     | 2.0    | 0.1    | 44450.60 ± 23.44           | 44409   | 44473   | 4136.0    | 1677.6s    
+3      | ants=80, a=1.0, b=2.0, r=0.15 (Vincitore)        | 80       | 1.0     | 2.0    | 0.15   | 44454.20 ± 31.76           | 44396   | 44493   | 13672.0   | 1731.7s    
+4      | ants=80, a=1.0, b=5.0, r=0.15 (Beta=5)           | 80       | 1.0     | 5.0    | 0.15   | 44463.80 ± 20.76           | 44442   | 44501   | 15466.4   | 1522.1s    
+5      | ants=80, a=2.0, b=2.0, r=0.15 (Rank 3)           | 80       | 2.0     | 2.0    | 0.15   | 44495.60 ± 64.65           | 44409   | 44584   | 15008.8   | 1680.2s    
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2026-09-18 22:43:55 | INFO    | ===========================================================================
+2026-09-18 22:43:55 | INFO    | AVVIO VALIDAZIONE MULTI-SEED DEDICATA N_ANTS IN {40, 60, 80, 120, 160}
+2026-09-18 22:43:55 | INFO    | ===========================================================================
+2026-09-18 22:43:55 | INFO    | Totale task da eseguire: 50 (5 popolazioni x 2 rho x 5 seed)
+2026-09-18 23:27:43 | INFO    |   [ants=60  | rho=0.1 | seed=101] w=44409 | FE_best=11269 | reinits=5 | t=2626.76s
+2026-09-18 23:28:05 | INFO    |   [ants=60  | rho=0.1 | seed=303] w=44437 | FE_best=6366 | reinits=6 | t=2648.22s
+2026-09-18 23:28:53 | INFO    |   [ants=80  | rho=0.1 | seed=202] w=44473 | FE_best=4773 | reinits=7 | t=2696.15s
+2026-09-18 23:30:27 | INFO    |   [ants=40  | rho=0.1 | seed=404] w=44471 | FE_best=15796 | reinits=7 | t=2790.16s
+2026-09-18 23:30:34 | INFO    |   [ants=40  | rho=0.1 | seed=303] w=44462 | FE_best=8035 | reinits=7 | t=2797.43s
+2026-09-18 23:30:37 | INFO    |   [ants=80  | rho=0.1 | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=2800.08s
+2026-09-18 23:31:17 | INFO    |   [ants=120 | rho=0.1 | seed=101] w=44442 | FE_best=6973 | reinits=5 | t=2840.14s
+2026-09-18 23:31:56 | INFO    |   [ants=60  | rho=0.1 | seed=202] w=44447 | FE_best=2852 | reinits=8 | t=2879.63s
+2026-09-18 23:32:18 | INFO    |   [ants=120 | rho=0.1 | seed=303] w=44482 | FE_best=5476 | reinits=6 | t=2900.87s
+2026-09-18 23:32:18 | INFO    |   [ants=60  | rho=0.1 | seed=42] w=44504 | FE_best=15336 | reinits=7 | t=2902.08s
+2026-09-18 23:32:35 | INFO    |   [ants=80  | rho=0.1 | seed=303] w=44473 | FE_best=3633 | reinits=8 | t=2917.96s
+2026-09-18 23:33:00 | INFO    |   [ants=120 | rho=0.1 | seed=202] w=44520 | FE_best=6397 | reinits=5 | t=2943.34s
+2026-09-18 23:33:15 | INFO    |   [ants=80  | rho=0.1 | seed=101] w=44451 | FE_best=4830 | reinits=7 | t=2958.6s
+2026-09-18 23:33:34 | INFO    |   [ants=80  | rho=0.1 | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=2977.79s
+2026-09-18 23:34:18 | INFO    |   [ants=120 | rho=0.1 | seed=42] w=44472 | FE_best=6082 | reinits=5 | t=3021.12s
+2026-09-18 23:34:22 | INFO    |   [ants=120 | rho=0.1 | seed=404] w=44538 | FE_best=5354 | reinits=6 | t=3024.74s
+2026-09-18 23:34:43 | INFO    |   [ants=40  | rho=0.1 | seed=42] w=44453 | FE_best=14749 | reinits=6 | t=3046.63s
+2026-09-18 23:34:56 | INFO    |   [ants=40  | rho=0.1 | seed=202] w=44396 | FE_best=6695 | reinits=7 | t=3059.68s
+2026-09-18 23:35:19 | INFO    |   [ants=60  | rho=0.1 | seed=404] w=44447 | FE_best=3151 | reinits=8 | t=3082.78s
+2026-09-18 23:35:50 | INFO    |   [ants=40  | rho=0.1 | seed=101] w=44477 | FE_best=3911 | reinits=8 | t=3113.78s
+2026-09-19 00:15:20 | INFO    |   [ants=160 | rho=0.1 | seed=101] w=44409 | FE_best=5900 | reinits=4 | t=2834.05s
+2026-09-19 00:16:06 | INFO    |   [ants=160 | rho=0.1 | seed=202] w=44798 | FE_best=7098 | reinits=4 | t=2832.68s
+2026-09-19 00:16:49 | INFO    |   [ants=160 | rho=0.1 | seed=42] w=44493 | FE_best=7309 | reinits=4 | t=2943.99s
+2026-09-19 00:18:15 | INFO    |   [ants=40  | rho=0.15 | seed=42] w=44456 | FE_best=8679 | reinits=7 | t=2858.03s
+2026-09-19 00:19:50 | INFO    |   [ants=40  | rho=0.15 | seed=101] w=44442 | FE_best=15133 | reinits=7 | t=2911.87s
+2026-09-19 00:20:28 | INFO    |   [ants=160 | rho=0.1 | seed=303] w=44494 | FE_best=10068 | reinits=3 | t=3000.84s
+2026-09-19 00:20:34 | INFO    |   [ants=40  | rho=0.15 | seed=404] w=44461 | FE_best=14386 | reinits=6 | t=2894.59s
+2026-09-19 00:21:17 | INFO    |   [ants=60  | rho=0.15 | seed=202] w=44458 | FE_best=16975 | reinits=7 | t=2880.45s
+2026-09-19 00:21:27 | INFO    |   [ants=60  | rho=0.15 | seed=303] w=44379 | FE_best=12352 | reinits=5 | t=2872.08s
+2026-09-19 00:21:31 | INFO    |   [ants=40  | rho=0.15 | seed=202] w=44446 | FE_best=18666 | reinits=7 | t=2974.08s
+2026-09-19 00:21:43 | INFO    |   [ants=160 | rho=0.1 | seed=404] w=44434 | FE_best=7063 | reinits=4 | t=3068.99s
+2026-09-19 00:21:58 | INFO    |   [ants=40  | rho=0.15 | seed=303] w=44510 | FE_best=16812 | reinits=7 | t=2979.02s
+2026-09-19 00:22:20 | INFO    |   [ants=60  | rho=0.15 | seed=42] w=44446 | FE_best=14326 | reinits=5 | t=2984.62s
+2026-09-19 00:22:49 | INFO    |   [ants=60  | rho=0.15 | seed=404] w=44423 | FE_best=16284 | reinits=6 | t=2910.75s
+2026-09-19 00:22:58 | INFO    |   [ants=80  | rho=0.15 | seed=303] w=44461 | FE_best=7448 | reinits=7 | t=2858.01s
+2026-09-19 00:23:01 | INFO    |   [ants=60  | rho=0.15 | seed=101] w=44391 | FE_best=6298 | reinits=7 | t=3000.37s
+2026-09-19 00:23:54 | INFO    |   [ants=80  | rho=0.15 | seed=404] w=44493 | FE_best=18532 | reinits=7 | t=2883.6s
+2026-09-19 00:24:01 | INFO    |   [ants=80  | rho=0.15 | seed=42] w=44396 | FE_best=14364 | reinits=5 | t=2977.33s
+2026-09-19 00:24:31 | INFO    |   [ants=80  | rho=0.15 | seed=101] w=44457 | FE_best=19280 | reinits=7 | t=2987.31s
+2026-09-19 00:24:56 | INFO    |   [ants=80  | rho=0.15 | seed=202] w=44464 | FE_best=8736 | reinits=7 | t=2999.59s
+2026-09-19 00:50:27 | INFO    |   [ants=120 | rho=0.15 | seed=42] w=44733 | FE_best=3628 | reinits=6 | t=2105.93s
+2026-09-19 00:50:36 | INFO    |   [ants=120 | rho=0.15 | seed=101] w=44551 | FE_best=4040 | reinits=6 | t=2068.75s
+2026-09-19 00:50:49 | INFO    |   [ants=120 | rho=0.15 | seed=303] w=44461 | FE_best=3101 | reinits=7 | t=1952.75s
+2026-09-19 00:50:59 | INFO    |   [ants=120 | rho=0.15 | seed=202] w=44493 | FE_best=3997 | reinits=6 | t=2049.1s
+2026-09-19 00:51:29 | INFO    |   [ants=120 | rho=0.15 | seed=404] w=44693 | FE_best=4432 | reinits=6 | t=1898.84s
+2026-09-19 09:03:13 | INFO    |   [ants=160 | rho=0.15 | seed=101] w=44599 | FE_best=6474 | reinits=4 | t=1870.3s
+2026-09-19 09:03:20 | INFO    |   [ants=160 | rho=0.15 | seed=42] w=44534 | FE_best=5247 | reinits=4 | t=31371.64s
+2026-09-19 09:03:25 | INFO    |   [ants=160 | rho=0.15 | seed=202] w=44417 | FE_best=14256 | reinits=2 | t=31328.04s
+2026-09-19 09:03:40 | INFO    |   [ants=160 | rho=0.15 | seed=303] w=44483 | FE_best=4804 | reinits=4 | t=31332.41s
+2026-09-19 09:07:27 | INFO    | ===========================================================================
+2026-09-19 09:07:27 | INFO    | AVVIO VALIDAZIONE MULTI-SEED DEDICATA N_ANTS IN {40, 60, 80, 120, 160}
+2026-09-19 09:07:27 | INFO    | ===========================================================================
+2026-09-19 09:07:27 | WARNING | Rilevata esecuzione anomala nel CSV per [ants=160 | rho=0.15 | seed=42] (t=31371.64s > 3600s). Verrà rieseguita.
+2026-09-19 09:07:27 | WARNING | Rilevata esecuzione anomala nel CSV per [ants=160 | rho=0.15 | seed=202] (t=31328.04s > 3600s). Verrà rieseguita.
+2026-09-19 09:07:27 | WARNING | Rilevata esecuzione anomala nel CSV per [ants=160 | rho=0.15 | seed=303] (t=31332.41s > 3600s). Verrà rieseguita.
+2026-09-19 09:07:27 | INFO    | Trovate 46 esecuzioni valide già completate nel CSV.
+2026-09-19 09:07:27 | INFO    | Totale task previsti: 50. Task rimanenti da eseguire: 4.
+2026-09-19 09:08:16 | INFO    | ===========================================================================
+2026-09-19 09:08:16 | INFO    | AVVIO VALIDAZIONE MULTI-SEED DEDICATA N_ANTS IN {40, 60, 80, 120, 160}
+2026-09-19 09:08:16 | INFO    | ===========================================================================
+2026-09-19 09:08:16 | WARNING | Rilevata esecuzione anomala nel CSV per [ants=160 | rho=0.15 | seed=42] (t=31371.64s > 3600s). Verrà rieseguita.
+2026-09-19 09:08:16 | WARNING | Rilevata esecuzione anomala nel CSV per [ants=160 | rho=0.15 | seed=202] (t=31328.04s > 3600s). Verrà rieseguita.
+2026-09-19 09:08:16 | WARNING | Rilevata esecuzione anomala nel CSV per [ants=160 | rho=0.15 | seed=303] (t=31332.41s > 3600s). Verrà rieseguita.
+2026-09-19 09:08:16 | INFO    | Trovate 46 esecuzioni valide già completate nel CSV.
+2026-09-19 09:08:16 | INFO    | Totale task previsti: 50. Task rimanenti da eseguire: 4.
+2026-09-19 09:21:39 | INFO    |   [ants=160 | rho=0.15 | seed=202] w=44417 | FE_best=14256 | reinits=2 | t=802.51s
+2026-09-19 09:21:50 | INFO    |   [ants=160 | rho=0.15 | seed=42] w=44534 | FE_best=5247 | reinits=4 | t=813.84s
+2026-09-19 09:21:52 | INFO    |   [ants=160 | rho=0.15 | seed=303] w=44483 | FE_best=4804 | reinits=4 | t=815.51s
+2026-09-19 09:21:53 | INFO    |   [ants=160 | rho=0.15 | seed=404] w=44487 | FE_best=5633 | reinits=4 | t=816.69s
+2026-09-19 09:21:53 | INFO    | 
+===========================================================================================
+RISULTATI MULTI-SEED DIMENSIONE COLONIA PER rho = 0.1
+===========================================================================================
+-------------------------------------------------------------------------------------------
+Rank   | N_ants   | Rho   | Media Peso (mu +- sigma)   | Min W   | Max W   | Mean FE Best  
+-------------------------------------------------------------------------------------------
+1      | 40       | 0.1   | 44451.80 ± 29.06           | 44396   | 44477   | 9837.2        
+2      | 60       | 0.1   | 44448.80 ± 30.91           | 44409   | 44504   | 7794.8        
+3      | 80       | 0.1   | 44450.60 ± 23.44           | 44409   | 44473   | 4136.0        
+4      | 120      | 0.1   | 44490.80 ± 34.33           | 44442   | 44538   | 6056.4        
+5      | 160      | 0.1   | 44525.60 ± 140.18          | 44409   | 44798   | 7487.6        
+-------------------------------------------------------------------------------------------
+
+2026-09-19 09:21:53 | INFO    | 
+============================================================================================
+RISULTATI MULTI-SEED DIMENSIONE COLONIA PER rho = 0.15
+============================================================================================
+--------------------------------------------------------------------------------------------
+Rank   | N_ants   | Rho    | Media Peso (mu +- sigma)   | Min W   | Max W   | Mean FE Best  
+--------------------------------------------------------------------------------------------
+1      | 40       | 0.15   | 44463.00 ± 24.46           | 44442   | 44510   | 14735.2       
+2      | 60       | 0.15   | 44419.40 ± 30.49           | 44379   | 44458   | 13247.0       
+3      | 80       | 0.15   | 44454.20 ± 31.76           | 44396   | 44493   | 13672.0       
+4      | 120      | 0.15   | 44586.20 ± 108.22          | 44461   | 44733   | 3839.6        
+5      | 160      | 0.15   | 44504.00 ± 60.37           | 44417   | 44599   | 7282.8        
+--------------------------------------------------------------------------------------------
+
+2026-09-19 09:21:55 | INFO    | ===========================================================================
+2026-09-19 09:21:55 | INFO    | AVVIO ABLATION STUDY: SWITCH FISSO VS CICLO-DINAMICO (rho=0.10 e rho=0.15)
+2026-09-19 09:21:55 | INFO    | ===========================================================================
+2026-09-19 09:21:55 | INFO    | Totale task ablation da eseguire: 40 (4 modalità x 2 rho x 5 seed)
+2026-09-19 09:45:33 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=101] w=44417 | FE_best=16929 | reinits=6 | t=1416.91s
+2026-09-19 09:46:29 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=1472.7s
+2026-09-19 09:46:54 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=202] w=44457 | FE_best=16794 | reinits=6 | t=1497.88s
+2026-09-19 09:47:09 | INFO    |   [rho=0.1 | mode=cycle        | seed=202] w=44473 | FE_best=4773 | reinits=7 | t=1513.11s
+2026-09-19 09:47:22 | INFO    |   [rho=0.1 | mode=cycle        | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=1525.81s
+2026-09-19 09:48:10 | INFO    |   [rho=0.1 | mode=cycle        | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=1574.3s
+2026-09-19 09:48:43 | INFO    |   [rho=0.1 | mode=cycle        | seed=101] w=44451 | FE_best=4830 | reinits=7 | t=1607.32s
+2026-09-19 09:48:56 | INFO    |   [rho=0.1 | mode=always       | seed=42] w=44492 | FE_best=17164 | reinits=5 | t=1619.55s
+2026-09-19 09:49:06 | INFO    |   [rho=0.1 | mode=cycle        | seed=303] w=44473 | FE_best=3633 | reinits=8 | t=1630.09s
+2026-09-19 09:49:35 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=1659.37s
+2026-09-19 09:49:53 | INFO    |   [rho=0.1 | mode=never        | seed=404] w=44409 | FE_best=3395 | reinits=8 | t=1677.42s
+2026-09-19 09:50:02 | INFO    |   [rho=0.1 | mode=never        | seed=42] w=44447 | FE_best=4049 | reinits=8 | t=1685.76s
+2026-09-19 09:50:18 | INFO    |   [rho=0.1 | mode=always       | seed=202] w=44472 | FE_best=12529 | reinits=5 | t=1701.45s
+2026-09-19 09:50:34 | INFO    |   [rho=0.1 | mode=always       | seed=303] w=44537 | FE_best=3736 | reinits=8 | t=1718.1s
+2026-09-19 09:51:32 | INFO    |   [rho=0.1 | mode=never        | seed=303] w=44473 | FE_best=3633 | reinits=8 | t=1775.78s
+2026-09-19 09:51:58 | INFO    |   [rho=0.1 | mode=always       | seed=404] w=44714 | FE_best=10738 | reinits=6 | t=1801.14s
+2026-09-19 09:52:22 | INFO    |   [rho=0.1 | mode=always       | seed=101] w=44749 | FE_best=16696 | reinits=6 | t=1825.84s
+2026-09-19 09:52:32 | INFO    |   [rho=0.1 | mode=never        | seed=101] w=44451 | FE_best=4830 | reinits=7 | t=1836.52s
+2026-09-19 09:54:00 | INFO    |   [rho=0.1 | mode=fixed_budget | seed=303] w=44447 | FE_best=17071 | reinits=7 | t=1923.79s
+2026-09-19 09:54:09 | INFO    |   [rho=0.1 | mode=never        | seed=202] w=44473 | FE_best=4773 | reinits=7 | t=1933.19s
+2026-09-19 10:17:48 | INFO    |   [rho=0.15 | mode=cycle        | seed=101] w=44457 | FE_best=19280 | reinits=7 | t=1879.16s
+2026-09-19 10:18:51 | INFO    | ===========================================================================
+2026-09-19 10:18:51 | INFO    | ANALISI E RANKING TOP 5 CONFIGURAZIONI DELLA FASE 1 (GRID SEARCH)
+2026-09-19 10:18:51 | INFO    | ===========================================================================
+2026-09-19 10:18:51 | INFO    | Caricate 16 esecuzioni di tuning.
+2026-09-19 10:18:51 | INFO    | 
+=======================================================================================================================
+TOP 5 MIGLIORI CONFIGURAZIONI ELETTE DALLA FASE 1
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Min Peso   | Media Peso (mu +- sigma)   | Mean FE   | Tempo Medio (s)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 80       | 44396      | 44396.00 ± 0.00            | 14364.0   | 1595.63s         
+2      | 2.0     | 2.0    | 0.15   | 80       | 44409      | 44409.00 ± 0.00            | 13855.0   | 1670.33s         
+3      | 1.0     | 2.0    | 0.1    | 80       | 44447      | 44447.00 ± 0.00            | 4049.0    | 1747.97s         
+4      | 1.0     | 5.0    | 0.2    | 80       | 44457      | 44457.00 ± 0.00            | 17615.0   | 2406.92s         
+5      | 2.0     | 5.0    | 0.15   | 80       | 44459      | 44459.00 ± 0.00            | 19990.0   | 2415.88s         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 10:20:25 | INFO    |   [rho=0.15 | mode=cycle        | seed=202] w=44464 | FE_best=8736 | reinits=7 | t=2011.27s
+2026-09-19 10:21:06 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=42] w=44436 | FE_best=17789 | reinits=6 | t=1975.55s
+2026-09-19 10:21:51 | INFO    |   [rho=0.15 | mode=cycle        | seed=303] w=44461 | FE_best=7448 | reinits=7 | t=2081.8s
+2026-09-19 10:22:07 | INFO    |   [rho=0.15 | mode=cycle        | seed=42] w=44396 | FE_best=14364 | reinits=5 | t=2193.88s
+2026-09-19 10:22:08 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=101] w=44516 | FE_best=14944 | reinits=7 | t=2004.51s
+2026-09-19 10:22:12 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=303] w=44396 | FE_best=13122 | reinits=7 | t=1985.19s
+2026-09-19 10:23:55 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=202] w=44396 | FE_best=13096 | reinits=6 | t=2098.83s
+2026-09-19 10:23:56 | INFO    |   [rho=0.15 | mode=fixed_budget | seed=404] w=44474 | FE_best=16210 | reinits=7 | t=2060.68s
+2026-09-19 10:24:26 | INFO    |   [rho=0.15 | mode=never        | seed=303] w=44396 | FE_best=13122 | reinits=7 | t=2031.62s
+2026-09-19 10:24:39 | INFO    |   [rho=0.15 | mode=never        | seed=101] w=44516 | FE_best=14944 | reinits=7 | t=2076.58s
+2026-09-19 10:24:45 | INFO    |   [rho=0.15 | mode=never        | seed=202] w=44396 | FE_best=13096 | reinits=6 | t=2066.96s
+2026-09-19 10:25:39 | INFO    |   [rho=0.15 | mode=never        | seed=42] w=44440 | FE_best=14155 | reinits=6 | t=2145.54s
+2026-09-19 10:25:56 | INFO    |   [rho=0.15 | mode=cycle        | seed=404] w=44493 | FE_best=18532 | reinits=7 | t=2314.56s
+2026-09-19 10:26:53 | INFO    |   [rho=0.15 | mode=always       | seed=101] w=44634 | FE_best=17810 | reinits=7 | t=2070.88s
+2026-09-19 10:26:59 | INFO    |   [rho=0.15 | mode=always       | seed=42] w=44498 | FE_best=14100 | reinits=7 | t=2101.0s
+2026-09-19 10:27:04 | INFO    |   [rho=0.15 | mode=always       | seed=202] w=44493 | FE_best=9461 | reinits=7 | t=2070.65s
+2026-09-19 10:27:15 | INFO    |   [rho=0.15 | mode=always       | seed=404] w=44891 | FE_best=13567 | reinits=7 | t=1985.25s
+2026-09-19 10:27:33 | INFO    | ===========================================================================
+2026-09-19 10:27:33 | INFO    | ANALISI E RANKING TOP 5 CONFIGURAZIONI DELLA FASE 1 (GRID SEARCH)
+2026-09-19 10:27:33 | INFO    | ===========================================================================
+2026-09-19 10:27:33 | INFO    | Caricate 16 esecuzioni di tuning.
+2026-09-19 10:27:33 | INFO    | 
+=======================================================================================================================
+TOP 5 MIGLIORI CONFIGURAZIONI ELETTE DALLA FASE 1
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Min Peso   | Media Peso (mu +- sigma)   | Mean FE   | Tempo Medio (s)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 80       | 44396      | 44396.00 ± 0.00            | 14364.0   | 1595.63s         
+2      | 2.0     | 2.0    | 0.15   | 80       | 44409      | 44409.00 ± 0.00            | 13855.0   | 1670.33s         
+3      | 1.0     | 2.0    | 0.1    | 80       | 44447      | 44447.00 ± 0.00            | 4049.0    | 1747.97s         
+4      | 1.0     | 5.0    | 0.2    | 80       | 44457      | 44457.00 ± 0.00            | 17615.0   | 2406.92s         
+5      | 2.0     | 5.0    | 0.15   | 80       | 44459      | 44459.00 ± 0.00            | 19990.0   | 2415.88s         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 10:27:33 | INFO    | Classifica salvata con successo in: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\top5_phase1_ranking.csv
+2026-09-19 10:28:00 | INFO    |   [rho=0.15 | mode=never        | seed=404] w=44458 | FE_best=16487 | reinits=7 | t=2187.53s
+2026-09-19 10:28:28 | INFO    |   [rho=0.15 | mode=always       | seed=303] w=44566 | FE_best=14779 | reinits=6 | t=2068.32s
+2026-09-19 10:28:29 | INFO    | 
+=======================================================================================================================
+RANKING ABLATION SWITCH PER rho = 0.1 (MODALITÀ UNICHE)
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Modalità Switch   | Rho   | Descrizione                                           | Media Peso (mu +- sigma)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | cycle             | 0.1   | Ciclo-Dinamica (Sincronizzata col Reset - Proposta)   | 44450.60 ± 23.44          
+2      | fixed_budget      | 0.1   | Switch Fisso (75% FE_max - Tradizionale)              | 44435.40 ± 18.82          
+3      | never             | 0.1   | Solo Iteration-Best (Esplorazione pura)               | 44450.60 ± 23.44          
+4      | always            | 0.1   | Solo Global-Best (Intensificazione pura)              | 44592.80 ± 115.72         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 10:28:29 | INFO    | 
+========================================================================================================================
+RANKING ABLATION SWITCH PER rho = 0.15 (MODALITÀ UNICHE)
+========================================================================================================================
+------------------------------------------------------------------------------------------------------------------------
+Rank   | Modalità Switch   | Rho    | Descrizione                                           | Media Peso (mu +- sigma)  
+------------------------------------------------------------------------------------------------------------------------
+1      | cycle             | 0.15   | Ciclo-Dinamica (Sincronizzata col Reset - Proposta)   | 44454.20 ± 31.76          
+2      | fixed_budget      | 0.15   | Switch Fisso (75% FE_max - Tradizionale)              | 44443.60 ± 46.38          
+3      | never             | 0.15   | Solo Iteration-Best (Esplorazione pura)               | 44441.20 ± 44.64          
+4      | always            | 0.15   | Solo Global-Best (Intensificazione pura)              | 44616.40 ± 146.63         
+------------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 12:42:48 | INFO    | ===========================================================================
+2026-09-19 12:42:48 | INFO    | ELEZIONE E RANKING TOP 5 CONFIGURAZIONI (FASE 1 & MULTI-SEED)
+2026-09-19 12:42:48 | INFO    | ===========================================================================
+2026-09-19 12:42:48 | INFO    | 
+=======================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (FASE 1 - GRID SEARCH)
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Min Peso   | Media Peso (mu +- sigma)   | Mean FE   | Tempo Medio (s)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 80       | 44396      | 44396.00 ± 0.00            | 14364.0   | 1595.63s         
+2      | 2.0     | 2.0    | 0.15   | 80       | 44409      | 44409.00 ± 0.00            | 13855.0   | 1670.33s         
+3      | 1.0     | 2.0    | 0.1    | 80       | 44447      | 44447.00 ± 0.00            | 4049.0    | 1747.97s         
+4      | 1.0     | 5.0    | 0.2    | 80       | 44457      | 44457.00 ± 0.00            | 17615.0   | 2406.92s         
+5      | 2.0     | 5.0    | 0.15   | 80       | 44459      | 44459.00 ± 0.00            | 19990.0   | 2415.88s         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 12:42:48 | INFO    | 
+==============================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (MULTI-SEED ROBUSTEZZA - 5 SEEDS)
+==============================================================================================================================
+------------------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Media Peso (mu +- sigma)   | Min W   | Max W   | Mean FE   | Tempo Medio (s)  
+------------------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 60       | 44419.40 ± 30.49           | 44379   | 44458   | 13247.0   | 1624.56s         
+2      | 1.0     | 2.0    | 0.1    | 80       | 44450.60 ± 23.44           | 44409   | 44473   | 4136.0    | 1677.58s         
+3      | 1.0     | 2.0    | 0.15   | 80       | 44454.20 ± 31.76           | 44396   | 44493   | 13672.0   | 1731.65s         
+4      | 1.0     | 5.0    | 0.15   | 80       | 44463.80 ± 20.76           | 44442   | 44501   | 15466.4   | 1522.12s         
+5      | 2.0     | 2.0    | 0.15   | 80       | 44495.60 ± 64.65           | 44409   | 44584   | 15008.8   | 1680.20s         
+------------------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 12:44:14 | INFO    | ===========================================================================
+2026-09-19 12:44:14 | INFO    | ELEZIONE E RANKING TOP 5 CONFIGURAZIONI (FASE 1 & MULTI-SEED)
+2026-09-19 12:44:14 | INFO    | ===========================================================================
+2026-09-19 12:44:14 | INFO    | 
+=======================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (FASE 1 - GRID SEARCH)
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Min Peso   | Media Peso (mu +- sigma)   | Mean FE   | Tempo Medio (s)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 80       | 44396      | 44396.00 ± 0.00            | 14364.0   | 1595.63s         
+2      | 2.0     | 2.0    | 0.15   | 80       | 44409      | 44409.00 ± 0.00            | 13855.0   | 1670.33s         
+3      | 1.0     | 2.0    | 0.1    | 80       | 44447      | 44447.00 ± 0.00            | 4049.0    | 1747.97s         
+4      | 1.0     | 5.0    | 0.2    | 80       | 44457      | 44457.00 ± 0.00            | 17615.0   | 2406.92s         
+5      | 2.0     | 5.0    | 0.15   | 80       | 44459      | 44459.00 ± 0.00            | 19990.0   | 2415.88s         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 12:44:14 | INFO    | 
+==============================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (MULTI-SEED ROBUSTEZZA - 5 SEEDS)
+==============================================================================================================================
+------------------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Media Peso (mu +- sigma)   | Min W   | Max W   | Mean FE   | Tempo Medio (s)  
+------------------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 60       | 44419.40 ± 30.49           | 44379   | 44458   | 13247.0   | 1624.56s         
+2      | 1.0     | 2.0    | 0.1    | 80       | 44450.60 ± 23.44           | 44409   | 44473   | 4136.0    | 1677.58s         
+3      | 1.0     | 2.0    | 0.15   | 80       | 44454.20 ± 31.76           | 44396   | 44493   | 13672.0   | 1731.65s         
+4      | 1.0     | 5.0    | 0.15   | 80       | 44463.80 ± 20.76           | 44442   | 44501   | 15466.4   | 1522.12s         
+5      | 2.0     | 2.0    | 0.15   | 80       | 44495.60 ± 64.65           | 44409   | 44584   | 15008.8   | 1680.20s         
+------------------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 13:02:31 | INFO    | ===========================================================================
+2026-09-19 13:02:31 | INFO    | AVVIO ABLATION STUDY: SWITCH FISSO VS CICLO-DINAMICO (rho=0.10 e rho=0.15)
+2026-09-19 13:02:31 | INFO    | ===========================================================================
+2026-09-19 13:02:31 | INFO    | Trovate 40 esecuzioni ablation valide nel CSV.
+2026-09-19 13:02:31 | INFO    | Task rimanenti da eseguire: 0
+2026-09-19 13:02:31 | INFO    | 
+=======================================================================================================================
+RANKING ABLATION SWITCH PER rho = 0.1 (ORDINATO PER MEDIA PESO)
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Modalità Switch   | Rho   | Descrizione                                           | Media Peso (mu +- sigma)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | fixed_budget      | 0.1   | Switch Fisso (75% FE_max - Tradizionale)              | 44435.40 ± 18.82          
+2      | cycle             | 0.1   | Ciclo-Dinamica (Sincronizzata col Reset - Proposta)   | 44450.60 ± 23.44          
+3      | never             | 0.1   | Solo Iteration-Best (Esplorazione pura)               | 44450.60 ± 23.44          
+4      | always            | 0.1   | Solo Global-Best (Intensificazione pura)              | 44592.80 ± 115.72         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 13:02:31 | INFO    | 
+========================================================================================================================
+RANKING ABLATION SWITCH PER rho = 0.15 (ORDINATO PER MEDIA PESO)
+========================================================================================================================
+------------------------------------------------------------------------------------------------------------------------
+Rank   | Modalità Switch   | Rho    | Descrizione                                           | Media Peso (mu +- sigma)  
+------------------------------------------------------------------------------------------------------------------------
+1      | never             | 0.15   | Solo Iteration-Best (Esplorazione pura)               | 44441.20 ± 44.64          
+2      | fixed_budget      | 0.15   | Switch Fisso (75% FE_max - Tradizionale)              | 44443.60 ± 46.38          
+3      | cycle             | 0.15   | Ciclo-Dinamica (Sincronizzata col Reset - Proposta)   | 44454.20 ± 31.76          
+4      | always            | 0.15   | Solo Global-Best (Intensificazione pura)              | 44616.40 ± 146.63         
+------------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 15:02:49 | INFO    | ===========================================================================
+2026-09-19 15:02:49 | INFO    | ELEZIONE E RANKING TOP 5 CONFIGURAZIONI (FASE 1 & MULTI-SEED)
+2026-09-19 15:02:49 | INFO    | ===========================================================================
+2026-09-19 15:02:49 | INFO    | 
+=======================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (FASE 1 - GRID SEARCH)
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Min Peso   | Media Peso (mu +- sigma)   | Mean FE   | Tempo Medio (s)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 80       | 44396      | 44396.00 ± 0.00            | 14364.0   | 1595.63s         
+2      | 2.0     | 2.0    | 0.15   | 80       | 44409      | 44409.00 ± 0.00            | 13855.0   | 1670.33s         
+3      | 1.0     | 2.0    | 0.1    | 80       | 44447      | 44447.00 ± 0.00            | 4049.0    | 1747.97s         
+4      | 1.0     | 5.0    | 0.2    | 80       | 44457      | 44457.00 ± 0.00            | 17615.0   | 2406.92s         
+5      | 2.0     | 5.0    | 0.15   | 80       | 44459      | 44459.00 ± 0.00            | 19990.0   | 2415.88s         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 15:02:49 | INFO    | 
+==============================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (MULTI-SEED ROBUSTEZZA - 5 SEEDS)
+==============================================================================================================================
+------------------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Media Peso (mu +- sigma)   | Min W   | Max W   | Mean FE   | Tempo Medio (s)  
+------------------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 60       | 44419.40 ± 30.49           | 44379   | 44458   | 13247.0   | 1624.56s         
+2      | 1.0     | 2.0    | 0.1    | 80       | 44450.60 ± 23.44           | 44409   | 44473   | 4136.0    | 1677.58s         
+3      | 1.0     | 2.0    | 0.15   | 80       | 44454.20 ± 31.76           | 44396   | 44493   | 13672.0   | 1731.65s         
+4      | 1.0     | 5.0    | 0.15   | 80       | 44463.80 ± 20.76           | 44442   | 44501   | 15466.4   | 1522.12s         
+5      | 2.0     | 2.0    | 0.15   | 80       | 44495.60 ± 64.65           | 44409   | 44584   | 15008.8   | 1680.20s         
+------------------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 15:03:04 | INFO    | ===========================================================================
+2026-09-19 15:03:04 | INFO    | ELEZIONE E RANKING TOP 5 CONFIGURAZIONI (FASE 1 & MULTI-SEED)
+2026-09-19 15:03:04 | INFO    | ===========================================================================
+2026-09-19 15:03:04 | INFO    | 
+=======================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (FASE 1 - GRID SEARCH)
+=======================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Min Peso   | Media Peso (mu +- sigma)   | Mean FE   | Tempo Medio (s)  
+-----------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 80       | 44396      | 44396.00 ± 0.00            | 14364.0   | 1595.63s         
+2      | 2.0     | 2.0    | 0.15   | 80       | 44409      | 44409.00 ± 0.00            | 13855.0   | 1670.33s         
+3      | 1.0     | 2.0    | 0.1    | 80       | 44447      | 44447.00 ± 0.00            | 4049.0    | 1747.97s         
+4      | 1.0     | 5.0    | 0.2    | 80       | 44457      | 44457.00 ± 0.00            | 17615.0   | 2406.92s         
+5      | 2.0     | 5.0    | 0.15   | 80       | 44459      | 44459.00 ± 0.00            | 19990.0   | 2415.88s         
+-----------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 15:03:04 | INFO    | 
+==============================================================================================================================
+CLASSIFICA TOP 5 CONFIGURAZIONI (MULTI-SEED ROBUSTEZZA - 5 SEEDS)
+==============================================================================================================================
+------------------------------------------------------------------------------------------------------------------------------
+Rank   | Alpha   | Beta   | Rho    | N_ants   | Media Peso (mu +- sigma)   | Min W   | Max W   | Mean FE   | Tempo Medio (s)  
+------------------------------------------------------------------------------------------------------------------------------
+1      | 1.0     | 2.0    | 0.15   | 60       | 44419.40 ± 30.49           | 44379   | 44458   | 13247.0   | 1624.56s         
+2      | 1.0     | 2.0    | 0.1    | 80       | 44450.60 ± 23.44           | 44409   | 44473   | 4136.0    | 1677.58s         
+3      | 1.0     | 2.0    | 0.15   | 80       | 44454.20 ± 31.76           | 44396   | 44493   | 13672.0   | 1731.65s         
+4      | 1.0     | 5.0    | 0.15   | 80       | 44463.80 ± 20.76           | 44442   | 44501   | 15466.4   | 1522.12s         
+5      | 2.0     | 2.0    | 0.15   | 80       | 44495.60 ± 64.65           | 44409   | 44584   | 15008.8   | 1680.20s         
+------------------------------------------------------------------------------------------------------------------------------
+
+2026-09-19 15:08:40 | INFO    | ============================================================
+2026-09-19 15:08:40 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-19 15:08:40 | INFO    | ============================================================
+2026-09-19 15:08:40 | INFO    | LEGENDA OUTPUT:
+2026-09-19 15:08:40 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-19 15:08:40 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-19 15:08:40 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-19 15:08:40 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-19 15:08:40 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-19 15:08:40 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-19 15:08:40 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-19 15:08:40 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-19 15:08:40 | INFO    | ============================================================
+2026-09-19 15:08:40 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-19 15:08:52 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=10.41s
+2026-09-19 15:09:03 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=10.69s
+2026-09-19 15:09:14 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=11.51s
+2026-09-19 15:09:25 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=10 | fe_tot=20000 | reinits=19 | t=10.69s
+2026-09-19 15:09:36 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=11.48s
+2026-09-19 15:09:47 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=10.70s
+2026-09-19 15:09:59 | INFO    |   vc_20_60 - Istanza  7/10 | w=972 | lb=620 (gap=56.8%) | opt=972 (gap=0.0%) | fe_best=24 | fe_tot=20000 | reinits=19 | t=11.86s
+2026-09-19 15:10:12 | INFO    |   vc_20_60 - Istanza  8/10 | w=867 | lb=672 (gap=29.0%) | opt=867 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.68s
+2026-09-19 15:10:23 | INFO    |   vc_20_60 - Istanza  9/10 | w=980 | lb=700 (gap=40.0%) | opt=980 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=10.79s
+2026-09-19 15:10:32 | INFO    |   vc_20_60 - Istanza 10/10 | w=875 | lb=618 (gap=41.6%) | opt=875 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=9.59s
+2026-09-19 15:10:32 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_60.csv
+2026-09-19 15:10:44 | INFO    |   vc_20_120 - Istanza  1/10 | w=844 | lb=551 (gap=53.2%) | opt=844 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=11.88s
+2026-09-19 15:10:57 | INFO    |   vc_20_120 - Istanza  2/10 | w=1009 | lb=625 (gap=61.4%) | opt=1009 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=12.33s
+2026-09-19 15:11:09 | INFO    |   vc_20_120 - Istanza  3/10 | w=994 | lb=630 (gap=57.8%) | opt=994 (gap=0.0%) | fe_best=11 | fe_tot=20000 | reinits=19 | t=12.56s
+2026-09-19 15:11:22 | INFO    |   vc_20_120 - Istanza  4/10 | w=1050 | lb=671 (gap=56.5%) | opt=1050 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.50s
+2026-09-19 15:11:34 | INFO    |   vc_20_120 - Istanza  5/10 | w=997 | lb=579 (gap=72.2%) | opt=997 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.61s
+2026-09-19 15:11:47 | INFO    |   vc_20_120 - Istanza  6/10 | w=961 | lb=574 (gap=67.4%) | opt=961 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=13.00s
+2026-09-19 15:12:00 | INFO    |   vc_20_120 - Istanza  7/10 | w=991 | lb=617 (gap=60.6%) | opt=991 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.74s
+2026-09-19 15:12:12 | INFO    |   vc_20_120 - Istanza  8/10 | w=1142 | lb=695 (gap=64.3%) | opt=1142 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.07s
+2026-09-19 15:12:25 | INFO    |   vc_20_120 - Istanza  9/10 | w=1261 | lb=717 (gap=75.9%) | opt=1261 (gap=0.0%) | fe_best=9 | fe_tot=20000 | reinits=19 | t=13.04s
+2026-09-19 15:12:38 | INFO    |   vc_20_120 - Istanza 10/10 | w=1133 | lb=634 (gap=78.7%) | opt=1133 (gap=0.0%) | fe_best=28 | fe_tot=20000 | reinits=19 | t=12.50s
+2026-09-19 15:12:38 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_120.csv
+2026-09-19 15:12:53 | INFO    |   vc_25_150 - Istanza  1/10 | w=1312 | lb=807 (gap=62.6%) | opt=1312 (gap=0.0%) | fe_best=45 | fe_tot=20000 | reinits=19 | t=15.00s
+2026-09-19 15:13:08 | INFO    |   vc_25_150 - Istanza  2/10 | w=1132 | lb=728 (gap=55.5%) | opt=1132 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=14.94s
+2026-09-19 15:13:34 | INFO    |   vc_25_150 - Istanza  3/10 | w=1305 | lb=823 (gap=58.6%) | opt=1305 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=25.43s
+2026-09-19 15:14:00 | INFO    |   vc_25_150 - Istanza  4/10 | w=1425 | lb=857 (gap=66.3%) | opt=1425 (gap=0.0%) | fe_best=8 | fe_tot=20000 | reinits=19 | t=26.49s
+2026-09-19 15:14:25 | INFO    |   vc_25_150 - Istanza  5/10 | w=1307 | lb=833 (gap=56.9%) | opt=1307 (gap=0.0%) | fe_best=9 | fe_tot=20000 | reinits=19 | t=25.04s
+2026-09-19 15:14:52 | INFO    |   vc_25_150 - Istanza  6/10 | w=1249 | lb=767 (gap=62.8%) | opt=1249 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=26.89s
+2026-09-19 15:15:18 | INFO    |   vc_25_150 - Istanza  7/10 | w=1450 | lb=913 (gap=58.8%) | opt=1450 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=26.00s
+2026-09-19 15:15:43 | INFO    |   vc_25_150 - Istanza  8/10 | w=1151 | lb=754 (gap=52.6%) | opt=1151 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.67s
+2026-09-19 15:16:08 | INFO    |   vc_25_150 - Istanza  9/10 | w=1248 | lb=846 (gap=47.5%) | opt=1248 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.91s
+2026-09-19 15:16:33 | INFO    |   vc_25_150 - Istanza 10/10 | w=1061 | lb=682 (gap=55.6%) | opt=1061 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=24.85s
+2026-09-19 15:16:33 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_25_150.csv
+2026-09-19 15:16:33 | INFO    | 
+[MPI] Elaborazione istanze in corso...
+2026-09-19 15:18:05 | INFO    |   vc_100_500 - Istanza  1/10 | w=4475 | lb=2992 (gap=49.6%) | opt=N/A (gap=N/A) | fe_best=142 | fe_tot=20000 | reinits=9 | t=91.79s
+2026-09-19 15:19:13 | INFO    |   vc_100_500 - Istanza  2/10 | w=4872 | lb=3199 (gap=52.3%) | opt=N/A (gap=N/A) | fe_best=2278 | fe_tot=20000 | reinits=9 | t=68.26s
+2026-09-19 15:20:09 | INFO    |   vc_100_500 - Istanza  3/10 | w=4370 | lb=2964 (gap=47.4%) | opt=N/A (gap=N/A) | fe_best=146 | fe_tot=20000 | reinits=9 | t=55.51s
+2026-09-19 15:21:04 | INFO    |   vc_100_500 - Istanza  4/10 | w=4608 | lb=3061 (gap=50.5%) | opt=N/A (gap=N/A) | fe_best=1625 | fe_tot=20000 | reinits=9 | t=55.55s
+2026-09-19 15:22:18 | INFO    |   vc_100_500 - Istanza  5/10 | w=4807 | lb=3237 (gap=48.5%) | opt=N/A (gap=N/A) | fe_best=6356 | fe_tot=20000 | reinits=9 | t=73.66s
+2026-09-19 15:23:49 | INFO    |   vc_100_500 - Istanza  6/10 | w=4730 | lb=3303 (gap=43.2%) | opt=N/A (gap=N/A) | fe_best=6394 | fe_tot=20000 | reinits=9 | t=90.98s
+2026-09-19 15:25:21 | INFO    |   vc_100_500 - Istanza  7/10 | w=4637 | lb=3216 (gap=44.2%) | opt=N/A (gap=N/A) | fe_best=2501 | fe_tot=20000 | reinits=9 | t=91.99s
+2026-09-19 15:26:56 | INFO    |   vc_100_500 - Istanza  8/10 | w=4592 | lb=3101 (gap=48.1%) | opt=N/A (gap=N/A) | fe_best=4757 | fe_tot=20000 | reinits=9 | t=94.32s
+2026-09-19 15:28:27 | INFO    |   vc_100_500 - Istanza  9/10 | w=4556 | lb=3018 (gap=51.0%) | opt=N/A (gap=N/A) | fe_best=6364 | fe_tot=20000 | reinits=9 | t=91.69s
+2026-09-19 15:30:01 | INFO    |   vc_100_500 - Istanza 10/10 | w=4430 | lb=2929 (gap=51.2%) | opt=N/A (gap=N/A) | fe_best=237 | fe_tot=20000 | reinits=9 | t=94.00s
+2026-09-19 15:30:01 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_500.csv
+2026-09-19 15:32:27 | INFO    |   vc_100_2000 - Istanza  1/10 | w=6057 | lb=3443 (gap=75.9%) | opt=N/A (gap=N/A) | fe_best=4137 | fe_tot=20000 | reinits=9 | t=145.34s
+2026-09-19 15:34:53 | INFO    |   vc_100_2000 - Istanza  2/10 | w=5864 | lb=3323 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=2115 | fe_tot=20000 | reinits=9 | t=146.23s
+2026-09-19 15:37:19 | INFO    |   vc_100_2000 - Istanza  3/10 | w=5738 | lb=3245 (gap=76.8%) | opt=N/A (gap=N/A) | fe_best=47 | fe_tot=20000 | reinits=9 | t=146.26s
+2026-09-19 15:39:45 | INFO    |   vc_100_2000 - Istanza  4/10 | w=5959 | lb=3360 (gap=77.3%) | opt=N/A (gap=N/A) | fe_best=114 | fe_tot=20000 | reinits=9 | t=145.17s
+2026-09-19 15:42:11 | INFO    |   vc_100_2000 - Istanza  5/10 | w=6292 | lb=3522 (gap=78.7%) | opt=N/A (gap=N/A) | fe_best=59 | fe_tot=20000 | reinits=9 | t=146.82s
+2026-09-19 15:44:36 | INFO    |   vc_100_2000 - Istanza  6/10 | w=5904 | lb=3345 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=46 | fe_tot=20000 | reinits=9 | t=144.45s
+2026-09-19 15:46:59 | INFO    |   vc_100_2000 - Istanza  7/10 | w=6297 | lb=3550 (gap=77.4%) | opt=N/A (gap=N/A) | fe_best=221 | fe_tot=20000 | reinits=9 | t=142.50s
+2026-09-19 15:49:25 | INFO    |   vc_100_2000 - Istanza  8/10 | w=6211 | lb=3481 (gap=78.4%) | opt=N/A (gap=N/A) | fe_best=13 | fe_tot=20000 | reinits=9 | t=146.88s
+2026-09-19 15:51:52 | INFO    |   vc_100_2000 - Istanza  9/10 | w=5957 | lb=3310 (gap=80.0%) | opt=N/A (gap=N/A) | fe_best=306 | fe_tot=20000 | reinits=9 | t=146.48s
+2026-09-19 15:54:15 | INFO    |   vc_100_2000 - Istanza 10/10 | w=6240 | lb=3527 (gap=76.9%) | opt=N/A (gap=N/A) | fe_best=178 | fe_tot=20000 | reinits=9 | t=142.79s
+2026-09-19 15:54:15 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_2000.csv
+2026-09-19 15:56:20 | INFO    |   vc_200_750 - Istanza  1/10 | w=8548 | lb=6171 (gap=38.5%) | opt=N/A (gap=N/A) | fe_best=590 | fe_tot=20000 | reinits=9 | t=125.25s
+2026-09-19 15:58:10 | INFO    |   vc_200_750 - Istanza  2/10 | w=8240 | lb=5666 (gap=45.4%) | opt=N/A (gap=N/A) | fe_best=621 | fe_tot=20000 | reinits=9 | t=109.57s
+2026-09-19 16:00:42 | INFO    |   vc_200_750 - Istanza  3/10 | w=8479 | lb=6178 (gap=37.2%) | opt=N/A (gap=N/A) | fe_best=724 | fe_tot=20000 | reinits=9 | t=152.42s
+2026-09-19 16:03:40 | INFO    |   vc_200_750 - Istanza  4/10 | w=7943 | lb=5690 (gap=39.6%) | opt=N/A (gap=N/A) | fe_best=11209 | fe_tot=20000 | reinits=9 | t=177.87s
+2026-09-19 16:06:36 | INFO    |   vc_200_750 - Istanza  5/10 | w=8761 | lb=6341 (gap=38.2%) | opt=N/A (gap=N/A) | fe_best=376 | fe_tot=20000 | reinits=9 | t=175.83s
+2026-09-19 16:09:34 | INFO    |   vc_200_750 - Istanza  6/10 | w=8153 | lb=5826 (gap=39.9%) | opt=N/A (gap=N/A) | fe_best=4875 | fe_tot=20000 | reinits=9 | t=177.23s
+2026-09-19 16:12:28 | INFO    |   vc_200_750 - Istanza  7/10 | w=7635 | lb=5658 (gap=34.9%) | opt=N/A (gap=N/A) | fe_best=514 | fe_tot=20000 | reinits=9 | t=174.69s
+2026-09-19 16:15:32 | INFO    |   vc_200_750 - Istanza  8/10 | w=8376 | lb=5869 (gap=42.7%) | opt=N/A (gap=N/A) | fe_best=10698 | fe_tot=20000 | reinits=8 | t=183.24s
+2026-09-19 16:18:27 | INFO    |   vc_200_750 - Istanza  9/10 | w=8422 | lb=5781 (gap=45.7%) | opt=N/A (gap=N/A) | fe_best=7738 | fe_tot=20000 | reinits=8 | t=175.11s
+2026-09-19 16:21:06 | INFO    |   vc_200_750 - Istanza 10/10 | w=8176 | lb=6064 (gap=34.8%) | opt=N/A (gap=N/A) | fe_best=276 | fe_tot=20000 | reinits=9 | t=159.44s
+2026-09-19 16:21:06 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_750.csv
+2026-09-19 16:24:08 | INFO    |   vc_200_3000 - Istanza  1/10 | w=11506 | lb=6720 (gap=71.2%) | opt=N/A (gap=N/A) | fe_best=3107 | fe_tot=20000 | reinits=9 | t=181.38s
+2026-09-19 16:27:04 | INFO    |   vc_200_3000 - Istanza  2/10 | w=11176 | lb=6631 (gap=68.5%) | opt=N/A (gap=N/A) | fe_best=678 | fe_tot=20000 | reinits=9 | t=176.05s
+2026-09-19 16:30:02 | INFO    |   vc_200_3000 - Istanza  3/10 | w=11796 | lb=6803 (gap=73.4%) | opt=N/A (gap=N/A) | fe_best=793 | fe_tot=20000 | reinits=9 | t=178.35s
+2026-09-19 16:33:19 | INFO    |   vc_200_3000 - Istanza  4/10 | w=12549 | lb=7313 (gap=71.6%) | opt=N/A (gap=N/A) | fe_best=359 | fe_tot=20000 | reinits=9 | t=196.58s
+2026-09-19 16:36:42 | INFO    |   vc_200_3000 - Istanza  5/10 | w=11515 | lb=6762 (gap=70.3%) | opt=N/A (gap=N/A) | fe_best=13118 | fe_tot=20000 | reinits=9 | t=203.04s
+2026-09-19 16:40:25 | INFO    |   vc_200_3000 - Istanza  6/10 | w=11121 | lb=6591 (gap=68.7%) | opt=N/A (gap=N/A) | fe_best=225 | fe_tot=20000 | reinits=9 | t=222.38s
+2026-09-19 16:43:05 | INFO    |   vc_200_3000 - Istanza  7/10 | w=11540 | lb=6769 (gap=70.5%) | opt=N/A (gap=N/A) | fe_best=244 | fe_tot=20000 | reinits=9 | t=160.16s
+2026-09-19 16:45:46 | INFO    |   vc_200_3000 - Istanza  8/10 | w=11638 | lb=6850 (gap=69.9%) | opt=N/A (gap=N/A) | fe_best=14597 | fe_tot=20000 | reinits=8 | t=161.17s
+2026-09-19 16:48:26 | INFO    |   vc_200_3000 - Istanza  9/10 | w=11695 | lb=6902 (gap=69.4%) | opt=N/A (gap=N/A) | fe_best=502 | fe_tot=20000 | reinits=9 | t=160.13s
+2026-09-19 16:51:10 | INFO    |   vc_200_3000 - Istanza 10/10 | w=11455 | lb=6648 (gap=72.3%) | opt=N/A (gap=N/A) | fe_best=12639 | fe_tot=20000 | reinits=8 | t=163.56s
+2026-09-19 16:51:10 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_3000.csv
+2026-09-19 16:51:10 | INFO    | 
+[LPI] Elaborazione istanze in corso...
+2026-09-19 20:54:28 | ERROR   | [ERRORE TEMPO NON PLAUSIBILE] Istanza 'vc_800_10000.txt' (seed 49): tempo misurato 14597.72s > limite 3600s (probabile standby del PC). Riesecuzione automatica in corso... (tentativo 1/3)
+2026-09-19 21:38:40 | INFO    |   vc_800_10000 - Lower Bound (matching) = 26800
+2026-09-19 21:38:40 | INFO    |   vc_800_10000 - Run  1/10 | w=44446 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=4202 | fe_tot=20000 | reinits=7 | t=2651.71s
+2026-09-20 19:57:08 | INFO    | ============================================================
+2026-09-20 19:57:08 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-20 19:57:08 | INFO    | ============================================================
+2026-09-20 19:57:08 | INFO    | LEGENDA OUTPUT:
+2026-09-20 19:57:08 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-20 19:57:08 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-20 19:57:08 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-20 19:57:08 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-20 19:57:08 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-20 19:57:08 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-20 19:57:08 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-20 19:57:08 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-20 19:57:08 | INFO    | ============================================================
+2026-09-20 19:57:08 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-20 19:57:45 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=28.80s
+2026-09-20 19:58:17 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=32.03s
+2026-09-20 19:58:51 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=34.00s
+2026-09-20 19:59:25 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=10 | fe_tot=20000 | reinits=19 | t=33.70s
+2026-09-20 20:00:01 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=35.58s
+2026-09-20 20:00:34 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=33.33s
+2026-09-20 20:01:09 | INFO    |   vc_20_60 - Istanza  7/10 | w=972 | lb=620 (gap=56.8%) | opt=972 (gap=0.0%) | fe_best=24 | fe_tot=20000 | reinits=19 | t=35.22s
+2026-09-20 20:01:41 | INFO    |   vc_20_60 - Istanza  8/10 | w=867 | lb=672 (gap=29.0%) | opt=867 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=31.25s
+2026-09-20 20:02:17 | INFO    |   vc_20_60 - Istanza  9/10 | w=980 | lb=700 (gap=40.0%) | opt=980 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=35.85s
+2026-09-20 20:02:50 | INFO    |   vc_20_60 - Istanza 10/10 | w=875 | lb=618 (gap=41.6%) | opt=875 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=33.42s
+2026-09-20 20:02:50 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_60.csv
+2026-09-23 05:35:14 | INFO    | ============================================================
+2026-09-23 05:35:14 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-23 05:35:14 | INFO    | ============================================================
+2026-09-23 05:35:14 | INFO    | LEGENDA OUTPUT:
+2026-09-23 05:35:14 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-23 05:35:14 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-23 05:35:14 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-23 05:35:14 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-23 05:35:14 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-23 05:35:14 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-23 05:35:14 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-23 05:35:14 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-23 05:35:14 | INFO    | ============================================================
+2026-09-23 05:35:14 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-23 05:35:29 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=9.33s
+2026-09-23 05:35:38 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=8.58s
+2026-09-23 05:35:47 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=9.35s
+2026-09-23 05:35:57 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=10 | fe_tot=20000 | reinits=19 | t=9.41s
+2026-09-23 05:36:07 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=9.80s
+2026-09-23 05:36:16 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=9.23s
+2026-09-23 05:36:26 | INFO    |   vc_20_60 - Istanza  7/10 | w=972 | lb=620 (gap=56.8%) | opt=972 (gap=0.0%) | fe_best=24 | fe_tot=20000 | reinits=19 | t=9.74s
+2026-09-23 05:36:34 | INFO    |   vc_20_60 - Istanza  8/10 | w=867 | lb=672 (gap=29.0%) | opt=867 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=8.52s
+2026-09-23 05:36:44 | INFO    |   vc_20_60 - Istanza  9/10 | w=980 | lb=700 (gap=40.0%) | opt=980 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=9.88s
+2026-09-23 05:36:53 | INFO    |   vc_20_60 - Istanza 10/10 | w=875 | lb=618 (gap=41.6%) | opt=875 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=9.22s
+2026-09-23 05:36:53 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_60.csv
+2026-09-23 05:37:05 | INFO    |   vc_20_120 - Istanza  1/10 | w=844 | lb=551 (gap=53.2%) | opt=844 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=11.49s
+2026-09-23 05:37:17 | INFO    |   vc_20_120 - Istanza  2/10 | w=1009 | lb=625 (gap=61.4%) | opt=1009 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=11.80s
+2026-09-23 05:37:29 | INFO    |   vc_20_120 - Istanza  3/10 | w=994 | lb=630 (gap=57.8%) | opt=994 (gap=0.0%) | fe_best=11 | fe_tot=20000 | reinits=19 | t=11.95s
+2026-09-23 05:37:41 | INFO    |   vc_20_120 - Istanza  4/10 | w=1050 | lb=671 (gap=56.5%) | opt=1050 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.79s
+2026-09-23 05:37:53 | INFO    |   vc_20_120 - Istanza  5/10 | w=997 | lb=579 (gap=72.2%) | opt=997 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.11s
+2026-09-23 05:38:05 | INFO    |   vc_20_120 - Istanza  6/10 | w=961 | lb=574 (gap=67.4%) | opt=961 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.53s
+2026-09-23 05:38:17 | INFO    |   vc_20_120 - Istanza  7/10 | w=991 | lb=617 (gap=60.6%) | opt=991 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=12.12s
+2026-09-23 05:38:29 | INFO    |   vc_20_120 - Istanza  8/10 | w=1142 | lb=695 (gap=64.3%) | opt=1142 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=11.23s
+2026-09-23 05:38:41 | INFO    |   vc_20_120 - Istanza  9/10 | w=1261 | lb=717 (gap=75.9%) | opt=1261 (gap=0.0%) | fe_best=9 | fe_tot=20000 | reinits=19 | t=12.42s
+2026-09-23 05:38:55 | INFO    |   vc_20_120 - Istanza 10/10 | w=1133 | lb=634 (gap=78.7%) | opt=1133 (gap=0.0%) | fe_best=28 | fe_tot=20000 | reinits=19 | t=13.74s
+2026-09-23 05:38:55 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_20_120.csv
+2026-09-23 09:34:57 | ERROR   | [ERRORE TEMPO NON PLAUSIBILE] Istanza 'vc_25_150_01.txt' (seed 42): tempo misurato 14161.83s > limite 120s (probabile standby del PC). Riesecuzione automatica in corso... (tentativo 1/3)
+2026-09-23 09:35:12 | INFO    |   vc_25_150 - Istanza  1/10 | w=1312 | lb=807 (gap=62.6%) | opt=1312 (gap=0.0%) | fe_best=45 | fe_tot=20000 | reinits=19 | t=15.50s
+2026-09-23 09:35:27 | INFO    |   vc_25_150 - Istanza  2/10 | w=1132 | lb=728 (gap=55.5%) | opt=1132 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=15.00s
+2026-09-23 09:35:43 | INFO    |   vc_25_150 - Istanza  3/10 | w=1305 | lb=823 (gap=58.6%) | opt=1305 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=15.52s
+2026-09-23 09:35:58 | INFO    |   vc_25_150 - Istanza  4/10 | w=1425 | lb=857 (gap=66.3%) | opt=1425 (gap=0.0%) | fe_best=8 | fe_tot=20000 | reinits=19 | t=14.93s
+2026-09-23 09:36:13 | INFO    |   vc_25_150 - Istanza  5/10 | w=1307 | lb=833 (gap=56.9%) | opt=1307 (gap=0.0%) | fe_best=9 | fe_tot=20000 | reinits=19 | t=14.81s
+2026-09-23 09:36:29 | INFO    |   vc_25_150 - Istanza  6/10 | w=1249 | lb=767 (gap=62.8%) | opt=1249 (gap=0.0%) | fe_best=2 | fe_tot=20000 | reinits=20 | t=15.90s
+2026-09-23 09:36:44 | INFO    |   vc_25_150 - Istanza  7/10 | w=1450 | lb=913 (gap=58.8%) | opt=1450 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=15.63s
+2026-09-23 09:37:00 | INFO    |   vc_25_150 - Istanza  8/10 | w=1151 | lb=754 (gap=52.6%) | opt=1151 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=15.04s
+2026-09-23 09:37:19 | INFO    |   vc_25_150 - Istanza  9/10 | w=1248 | lb=846 (gap=47.5%) | opt=1248 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=19.71s
+2026-09-23 09:37:38 | INFO    |   vc_25_150 - Istanza 10/10 | w=1061 | lb=682 (gap=55.6%) | opt=1061 (gap=0.0%) | fe_best=1 | fe_tot=20000 | reinits=20 | t=18.69s
+2026-09-23 09:37:38 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_25_150.csv
+2026-09-23 09:37:38 | INFO    | 
+[MPI] Elaborazione istanze in corso...
+2026-09-23 09:38:34 | INFO    |   vc_100_500 - Istanza  1/10 | w=4475 | lb=2992 (gap=49.6%) | opt=N/A (gap=N/A) | fe_best=142 | fe_tot=20000 | reinits=9 | t=55.54s
+2026-09-23 09:39:29 | INFO    |   vc_100_500 - Istanza  2/10 | w=4872 | lb=3199 (gap=52.3%) | opt=N/A (gap=N/A) | fe_best=2278 | fe_tot=20000 | reinits=9 | t=55.70s
+2026-09-23 09:40:23 | INFO    |   vc_100_500 - Istanza  3/10 | w=4370 | lb=2964 (gap=47.4%) | opt=N/A (gap=N/A) | fe_best=146 | fe_tot=20000 | reinits=9 | t=53.46s
+2026-09-23 09:41:19 | INFO    |   vc_100_500 - Istanza  4/10 | w=4608 | lb=3061 (gap=50.5%) | opt=N/A (gap=N/A) | fe_best=1625 | fe_tot=20000 | reinits=9 | t=56.17s
+2026-09-23 09:42:48 | INFO    |   vc_100_500 - Istanza  5/10 | w=4807 | lb=3237 (gap=48.5%) | opt=N/A (gap=N/A) | fe_best=6356 | fe_tot=20000 | reinits=9 | t=88.75s
+2026-09-23 09:44:15 | INFO    |   vc_100_500 - Istanza  6/10 | w=4730 | lb=3303 (gap=43.2%) | opt=N/A (gap=N/A) | fe_best=6394 | fe_tot=20000 | reinits=9 | t=87.21s
+2026-09-23 09:45:42 | INFO    |   vc_100_500 - Istanza  7/10 | w=4637 | lb=3216 (gap=44.2%) | opt=N/A (gap=N/A) | fe_best=2501 | fe_tot=20000 | reinits=9 | t=86.86s
+2026-09-23 09:47:10 | INFO    |   vc_100_500 - Istanza  8/10 | w=4592 | lb=3101 (gap=48.1%) | opt=N/A (gap=N/A) | fe_best=4757 | fe_tot=20000 | reinits=9 | t=87.89s
+2026-09-23 09:48:37 | INFO    |   vc_100_500 - Istanza  9/10 | w=4556 | lb=3018 (gap=51.0%) | opt=N/A (gap=N/A) | fe_best=6364 | fe_tot=20000 | reinits=9 | t=86.76s
+2026-09-23 09:50:06 | INFO    |   vc_100_500 - Istanza 10/10 | w=4430 | lb=2929 (gap=51.2%) | opt=N/A (gap=N/A) | fe_best=237 | fe_tot=20000 | reinits=9 | t=89.87s
+2026-09-23 09:50:06 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_500.csv
+2026-09-23 09:52:27 | INFO    |   vc_100_2000 - Istanza  1/10 | w=6057 | lb=3443 (gap=75.9%) | opt=N/A (gap=N/A) | fe_best=4137 | fe_tot=20000 | reinits=9 | t=140.01s
+2026-09-23 09:54:45 | INFO    |   vc_100_2000 - Istanza  2/10 | w=5864 | lb=3323 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=2115 | fe_tot=20000 | reinits=9 | t=138.60s
+2026-09-23 09:57:05 | INFO    |   vc_100_2000 - Istanza  3/10 | w=5738 | lb=3245 (gap=76.8%) | opt=N/A (gap=N/A) | fe_best=47 | fe_tot=20000 | reinits=9 | t=139.84s
+2026-09-23 09:59:22 | INFO    |   vc_100_2000 - Istanza  4/10 | w=5959 | lb=3360 (gap=77.3%) | opt=N/A (gap=N/A) | fe_best=114 | fe_tot=20000 | reinits=9 | t=137.26s
+2026-09-23 10:01:43 | INFO    |   vc_100_2000 - Istanza  5/10 | w=6292 | lb=3522 (gap=78.7%) | opt=N/A (gap=N/A) | fe_best=59 | fe_tot=20000 | reinits=9 | t=140.18s
+2026-09-23 10:04:00 | INFO    |   vc_100_2000 - Istanza  6/10 | w=5904 | lb=3345 (gap=76.5%) | opt=N/A (gap=N/A) | fe_best=46 | fe_tot=20000 | reinits=9 | t=137.47s
+2026-09-23 10:06:16 | INFO    |   vc_100_2000 - Istanza  7/10 | w=6297 | lb=3550 (gap=77.4%) | opt=N/A (gap=N/A) | fe_best=221 | fe_tot=20000 | reinits=9 | t=136.39s
+2026-09-23 10:08:36 | INFO    |   vc_100_2000 - Istanza  8/10 | w=6211 | lb=3481 (gap=78.4%) | opt=N/A (gap=N/A) | fe_best=13 | fe_tot=20000 | reinits=9 | t=139.35s
+2026-09-23 10:10:29 | INFO    |   vc_100_2000 - Istanza  9/10 | w=5957 | lb=3310 (gap=80.0%) | opt=N/A (gap=N/A) | fe_best=306 | fe_tot=20000 | reinits=9 | t=113.28s
+2026-09-23 10:11:57 | INFO    |   vc_100_2000 - Istanza 10/10 | w=6240 | lb=3527 (gap=76.9%) | opt=N/A (gap=N/A) | fe_best=178 | fe_tot=20000 | reinits=9 | t=87.73s
+2026-09-23 10:11:57 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_100_2000.csv
+2026-09-23 10:13:43 | INFO    |   vc_200_750 - Istanza  1/10 | w=8548 | lb=6171 (gap=38.5%) | opt=N/A (gap=N/A) | fe_best=590 | fe_tot=20000 | reinits=9 | t=105.74s
+2026-09-23 10:15:34 | INFO    |   vc_200_750 - Istanza  2/10 | w=8240 | lb=5666 (gap=45.4%) | opt=N/A (gap=N/A) | fe_best=621 | fe_tot=20000 | reinits=9 | t=110.97s
+2026-09-23 10:17:20 | INFO    |   vc_200_750 - Istanza  3/10 | w=8479 | lb=6178 (gap=37.2%) | opt=N/A (gap=N/A) | fe_best=724 | fe_tot=20000 | reinits=9 | t=106.67s
+2026-09-23 10:19:08 | INFO    |   vc_200_750 - Istanza  4/10 | w=7943 | lb=5690 (gap=39.6%) | opt=N/A (gap=N/A) | fe_best=11209 | fe_tot=20000 | reinits=9 | t=107.90s
+2026-09-23 10:20:52 | INFO    |   vc_200_750 - Istanza  5/10 | w=8761 | lb=6341 (gap=38.2%) | opt=N/A (gap=N/A) | fe_best=376 | fe_tot=20000 | reinits=9 | t=104.03s
+2026-09-23 10:22:35 | INFO    |   vc_200_750 - Istanza  6/10 | w=8153 | lb=5826 (gap=39.9%) | opt=N/A (gap=N/A) | fe_best=4875 | fe_tot=20000 | reinits=9 | t=102.37s
+2026-09-23 10:24:16 | INFO    |   vc_200_750 - Istanza  7/10 | w=7635 | lb=5658 (gap=34.9%) | opt=N/A (gap=N/A) | fe_best=514 | fe_tot=20000 | reinits=9 | t=101.28s
+2026-09-23 10:26:03 | INFO    |   vc_200_750 - Istanza  8/10 | w=8376 | lb=5869 (gap=42.7%) | opt=N/A (gap=N/A) | fe_best=10698 | fe_tot=20000 | reinits=8 | t=106.62s
+2026-09-23 10:27:45 | INFO    |   vc_200_750 - Istanza  9/10 | w=8422 | lb=5781 (gap=45.7%) | opt=N/A (gap=N/A) | fe_best=7738 | fe_tot=20000 | reinits=8 | t=102.17s
+2026-09-23 10:29:27 | INFO    |   vc_200_750 - Istanza 10/10 | w=8176 | lb=6064 (gap=34.8%) | opt=N/A (gap=N/A) | fe_best=276 | fe_tot=20000 | reinits=9 | t=101.74s
+2026-09-23 10:29:27 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_750.csv
+2026-09-23 10:32:07 | INFO    |   vc_200_3000 - Istanza  1/10 | w=11506 | lb=6720 (gap=71.2%) | opt=N/A (gap=N/A) | fe_best=3107 | fe_tot=20000 | reinits=9 | t=160.65s
+2026-09-23 10:34:50 | INFO    |   vc_200_3000 - Istanza  2/10 | w=11176 | lb=6631 (gap=68.5%) | opt=N/A (gap=N/A) | fe_best=678 | fe_tot=20000 | reinits=9 | t=162.41s
+2026-09-23 10:37:54 | INFO    |   vc_200_3000 - Istanza  3/10 | w=11796 | lb=6803 (gap=73.4%) | opt=N/A (gap=N/A) | fe_best=793 | fe_tot=20000 | reinits=9 | t=184.41s
+2026-09-23 10:40:30 | INFO    |   vc_200_3000 - Istanza  4/10 | w=12549 | lb=7313 (gap=71.6%) | opt=N/A (gap=N/A) | fe_best=359 | fe_tot=20000 | reinits=9 | t=155.57s
+2026-09-23 10:43:09 | INFO    |   vc_200_3000 - Istanza  5/10 | w=11515 | lb=6762 (gap=70.3%) | opt=N/A (gap=N/A) | fe_best=13118 | fe_tot=20000 | reinits=9 | t=158.86s
+2026-09-23 10:45:48 | INFO    |   vc_200_3000 - Istanza  6/10 | w=11121 | lb=6591 (gap=68.7%) | opt=N/A (gap=N/A) | fe_best=225 | fe_tot=20000 | reinits=9 | t=159.17s
+2026-09-23 10:48:26 | INFO    |   vc_200_3000 - Istanza  7/10 | w=11540 | lb=6769 (gap=70.5%) | opt=N/A (gap=N/A) | fe_best=244 | fe_tot=20000 | reinits=9 | t=157.55s
+2026-09-23 10:51:02 | INFO    |   vc_200_3000 - Istanza  8/10 | w=11638 | lb=6850 (gap=69.9%) | opt=N/A (gap=N/A) | fe_best=14597 | fe_tot=20000 | reinits=8 | t=156.10s
+2026-09-23 10:53:39 | INFO    |   vc_200_3000 - Istanza  9/10 | w=11695 | lb=6902 (gap=69.4%) | opt=N/A (gap=N/A) | fe_best=502 | fe_tot=20000 | reinits=9 | t=157.01s
+2026-09-23 10:56:22 | INFO    |   vc_200_3000 - Istanza 10/10 | w=11455 | lb=6648 (gap=72.3%) | opt=N/A (gap=N/A) | fe_best=12639 | fe_tot=20000 | reinits=8 | t=163.52s
+2026-09-23 10:56:22 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_200_3000.csv
+2026-09-23 10:56:22 | INFO    | 
+[LPI] Elaborazione istanze in corso...
+2026-09-23 11:10:26 | INFO    |   vc_800_10000 - Lower Bound (matching) = 26800
+2026-09-23 11:10:26 | INFO    |   vc_800_10000 - Run  1/10 | w=44446 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=4202 | fe_tot=20000 | reinits=7 | t=843.58s
+2026-09-23 11:23:27 | INFO    |   vc_800_10000 - Run  2/10 | w=44461 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=4003 | fe_tot=20000 | reinits=8 | t=780.45s
+2026-09-23 11:37:52 | INFO    | ============================================================
+2026-09-23 11:37:52 | INFO    | Benchmark MMAS-MWVCP  ->  output CSV per configurazione
+2026-09-23 11:37:52 | INFO    | ============================================================
+2026-09-23 11:37:52 | INFO    | LEGENDA OUTPUT:
+2026-09-23 11:37:52 | INFO    |   w       = best_weight (peso minimo trovato)
+2026-09-23 11:37:52 | INFO    |   lb      = lower bound (soglia minima teorica calcolata col matching)
+2026-09-23 11:37:52 | INFO    |   opt     = ottimo globale esatto calcolato con ILP (solo SPI)
+2026-09-23 11:37:52 | INFO    |   gap     = distanza % tra il risultato 'w' e 'lb' o 'opt' (0% = perfetto)
+2026-09-23 11:37:52 | INFO    |   fe_best = valutazione in cui è stato trovato il best_weight
+2026-09-23 11:37:52 | INFO    |   fe_tot  = valutazioni (budget) totali consumate
+2026-09-23 11:37:52 | INFO    |   reinits = numero di reset (stagnation recovery) effettuati
+2026-09-23 11:37:52 | INFO    |   t       = tempo impiegato per la singola istanza
+2026-09-23 11:37:52 | INFO    | ============================================================
+2026-09-23 11:37:52 | INFO    | 
+[SPI] Elaborazione istanze in corso...
+2026-09-23 11:38:03 | INFO    |   vc_20_60 - Istanza  1/10 | w=773 | lb=550 (gap=40.5%) | opt=773 (gap=0.0%) | fe_best=12 | fe_tot=20000 | reinits=19 | t=9.88s
+2026-09-23 11:38:13 | INFO    |   vc_20_60 - Istanza  2/10 | w=938 | lb=656 (gap=43.0%) | opt=938 (gap=0.0%) | fe_best=5 | fe_tot=20000 | reinits=20 | t=9.16s
+2026-09-23 11:38:22 | INFO    |   vc_20_60 - Istanza  3/10 | w=730 | lb=538 (gap=35.7%) | opt=730 (gap=0.0%) | fe_best=6 | fe_tot=20000 | reinits=20 | t=9.72s
+2026-09-23 11:38:32 | INFO    |   vc_20_60 - Istanza  4/10 | w=757 | lb=578 (gap=31.0%) | opt=757 (gap=0.0%) | fe_best=10 | fe_tot=20000 | reinits=19 | t=9.83s
+2026-09-23 11:38:49 | INFO    |   vc_20_60 - Istanza  5/10 | w=871 | lb=539 (gap=61.6%) | opt=871 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=16.35s
+2026-09-23 11:39:04 | INFO    |   vc_20_60 - Istanza  6/10 | w=855 | lb=562 (gap=52.1%) | opt=855 (gap=0.0%) | fe_best=4 | fe_tot=20000 | reinits=20 | t=15.03s
+2026-09-23 11:46:22 | INFO    |   vc_800_10000 - Run  3/10 | w=44457 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=3297 | fe_tot=20000 | reinits=8 | t=1374.87s
+2026-09-23 12:23:14 | INFO    |   vc_800_10000 - Run  4/10 | w=44463 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=3860 | fe_tot=20000 | reinits=8 | t=2211.32s
+2026-09-23 12:51:44 | INFO    |   vc_800_10000 - Run  5/10 | w=44428 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=4648 | fe_tot=20000 | reinits=7 | t=1709.80s
+2026-09-23 13:10:25 | INFO    |   vc_800_10000 - Run  6/10 | w=44694 | lb=26800 (gap=66.8%) | opt=N/A (gap=N/A) | fe_best=19831 | fe_tot=20000 | reinits=7 | t=1120.11s
+2026-09-23 13:35:43 | INFO    |   vc_800_10000 - Run  7/10 | w=44510 | lb=26800 (gap=66.1%) | opt=N/A (gap=N/A) | fe_best=4556 | fe_tot=20000 | reinits=7 | t=1517.80s
+2026-09-23 14:08:01 | INFO    |   vc_800_10000 - Run  8/10 | w=44433 | lb=26800 (gap=65.8%) | opt=N/A (gap=N/A) | fe_best=4580 | fe_tot=20000 | reinits=7 | t=1938.02s
+2026-09-23 14:32:31 | INFO    |   vc_800_10000 - Run  9/10 | w=44472 | lb=26800 (gap=65.9%) | opt=N/A (gap=N/A) | fe_best=4293 | fe_tot=20000 | reinits=7 | t=1469.61s
+2026-09-23 14:56:10 | INFO    |   vc_800_10000 - Run 10/10 | w=44535 | lb=26800 (gap=66.2%) | opt=N/A (gap=N/A) | fe_best=4499 | fe_tot=20000 | reinits=7 | t=1418.96s
+2026-09-23 14:56:10 | INFO    |   -> Salvato: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv\vc_800_10000.csv
+2026-09-23 14:56:10 | INFO    | 
+[SUCCESSO] Tutti i CSV salvati in: C:\Users\macca\Desktop\università\magistrale\MWVC-Optimization-HEMOL\results\csv

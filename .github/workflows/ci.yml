@@ -1,0 +1,225 @@
+name: CI — MMAS MWVCP Pipeline
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+# Evita run parallele sullo stesso branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # -----------------------------------------------------------------------
+  # JOB 1: Lint, format check e analisi statica
+  # Verifica errori di sintassi, stile del codice e ordine degli import
+  # -----------------------------------------------------------------------
+  lint:
+    name: "🔍 Lint & Format Check"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install lint tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff black isort
+
+      # Verifica sintattica veloce con py_compile (non richiede nessuna dipendenza)
+      - name: Syntax check (py_compile)
+        run: |
+          echo "=== Verifica sintattica file .py ==="
+          find src/ -name "*.py" | xargs python -m py_compile
+          python -m py_compile src/aggregate_results.py
+          echo "  [OK] Tutti i file compilano senza errori."
+
+      # ruff: linter ultra-veloce, superset di flake8/pycodestyle/pyflakes
+      - name: Lint with ruff
+        run: |
+          echo "=== Linting con ruff (errori bloccanti) ==="
+          ruff check src/ src/aggregate_results.py \
+            --select E9,F63,F7,F82,F401 \
+            --output-format=github
+          echo "  [OK] Nessun errore critico."
+
+      - name: Ruff extended (warnings)
+        run: |
+          echo "=== Ruff extended check (warnings non bloccanti) ==="
+          ruff check src/ src/aggregate_results.py \
+            --select E,W,F \
+            --ignore E501,W291,W293 \
+            --exit-zero \
+            --output-format=github
+
+      # black: verifica che la formattazione del codice sia consistente
+      - name: Format check with black
+        run: |
+          echo "=== Black format check ==="
+          black --check --diff --line-length 100 src/ src/aggregate_results.py || \
+            echo "::warning::Alcuni file non rispettano il formato Black (non bloccante)."
+
+      # isort: verifica l'ordine degli import
+      - name: Import order check with isort
+        run: |
+          echo "=== isort import order check ==="
+          isort --check-only --diff --profile black --line-length 100 src/ src/aggregate_results.py || \
+            echo "::warning::Ordine degli import non standardizzato (non bloccante)."
+
+  # -----------------------------------------------------------------------
+  # JOB 2: Type checking con mypy
+  # Controlla la correttezza delle annotazioni di tipo
+  # -----------------------------------------------------------------------
+  typecheck:
+    name: "🔎 Type Check (mypy)"
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies + mypy
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy mypy
+
+      - name: Run mypy (non bloccante — genera solo warnings)
+        run: |
+          echo "=== Type check con mypy ==="
+          mypy src/core/ \
+            --ignore-missing-imports \
+            --no-error-summary \
+            --pretty || \
+            echo "::warning::mypy ha trovato alcune annotazioni da completare."
+
+  # -----------------------------------------------------------------------
+  # JOB 3: Smoke test funzionale su grafo sintetico
+  # Carica tutti i moduli, costruisce un grafo sintetico e testa 5 componenti core end-to-end
+  # -----------------------------------------------------------------------
+  smoke-test:
+    name: "🧪 Core Smoke Test"
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy
+
+      - name: Run smoke tests
+        run: |
+          python - <<'PYEOF'
+          import sys
+          import numpy as np
+          sys.path.insert(0, ".")
+
+          print("=== [1/5] Import moduli core ===")
+          from src.core.graph import Graph
+          from src.core.solution import Solution
+          from src.core.pheromone import PheromoneManager
+          from src.core.evaluator import Evaluator
+          from src.core.pruning import pruning_greedy
+          from src.core.mmas import MMAS_Solver
+          print("  [OK] Tutti i moduli importati.")
+
+          print("\n=== [2/5] Costruzione grafo sintetico (triangolo n=3, m=3) ===")
+          g = Graph.__new__(Graph)
+          g.n = 3
+          g.m = 3
+          g.weights = np.array([20.0, 50.0, 80.0])
+          g.adj_list = [[1, 2], [0, 2], [0, 1]]
+          g.degrees  = np.array([2, 2, 2])
+          g.edge_list = [(0, 1), (1, 2), (0, 2)]
+          print("  [OK] Grafo creato.")
+
+          print("\n=== [3/5] Solution + Pruning ===")
+          sol = Solution(g)
+          sol.add_vertex(0)
+          sol.add_vertex(1)
+          assert sol.is_valid(), "La soluzione dovrebbe coprire tutti gli archi"
+          assert sol.weight == 70.0, f"Peso atteso 70, trovato {sol.weight}"
+          pruning_greedy(sol)
+          assert sol.is_valid(), "La soluzione dopo pruning non è valida"
+          print(f"  [OK] cover_size={sol.cover_size}, weight={sol.weight:.0f}")
+
+          print("\n=== [4/5] PheromoneManager ===")
+          ph = PheromoneManager(n=3, rho=0.1, initial_best_weight=70.0)
+          ph.update(sol.in_cover, sol.weight)
+          cf = ph.get_convergence_factor()
+          assert 0.0 <= cf <= 1.0, f"CF fuori range: {cf}"
+          print(f"  [OK] CF={cf:.3f}")
+
+          print("\n=== [5/5] MMAS_Solver end-to-end ===")
+          solver = MMAS_Solver(
+              g, n_ants=3, max_fe=50,
+              stagnation_limit=5, max_reinits=2, seed=42
+          )
+          res = solver.solve(verbose=False)
+          assert res["best_solution"].is_valid(), "Soluzione finale non valida!"
+          assert "fe_used" in res, "Campo 'fe_used' mancante nel dizionario risultato"
+          assert "stopped_by_reinit" in res
+          assert res["best_weight"] > 0
+          print(f"  [OK] best_weight={res['best_weight']:.0f}, "
+                f"fe_used={res['fe_used']}, reinits={res['n_reinits']}")
+
+          print("\n==========================================")
+          print("   TUTTI I 5 TEST SUPERATI — BUILD OK ✅  ")
+          print("==========================================")
+          PYEOF
+
+  # -----------------------------------------------------------------------
+  # JOB 4: Security scan con bandit (vulnerabilità nel codice Python)
+  # Cerca vulnerabilità di sicurezza nel codice Python
+  # -----------------------------------------------------------------------
+  security:
+    name: "🔒 Security Scan (bandit)"
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install bandit
+        run: pip install bandit
+
+      - name: Run bandit security scan
+        run: |
+          echo "=== Scansione sicurezza con bandit ==="
+          bandit -r src/ \
+            --severity-level medium \
+            --confidence-level medium \
+            --skip B101,B311 \
+            --exit-zero
+          echo "  [OK] Scansione completata."

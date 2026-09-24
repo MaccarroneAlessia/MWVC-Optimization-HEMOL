@@ -33,7 +33,7 @@ Il nostro algoritmo si sviluppa in cicli iterativi fino all'esaurimento del budg
 | `ant.py` | La mente probabilistica della formica. Combina $\tau_v^\alpha$ ed $\eta_v^\beta$ (euristica di Chvátal) tramite `np.random.choice` per costruire soluzioni ammissibili con selezione *roulette-wheel* vettorizzata. |
 | `pruning.py` | La *Daemon Action* deterministica. Analizza la soluzione della formica ed elimina i nodi più pesanti e ridondanti, producendo una copertura minimale di peso contenuto. Fornisce 3 strategie: `pruning_greedy`, `pruning_advanced` e `pruning_rcost`. |
 | `mmas.py` | Il direttore d'orchestra. Inizializza la colonia, gestisce l'alternanza tra *Iteration-Best* e *Global-Best* secondo le 4 modalità di switch, implementa lo stagnation recovery adattivo con reset feromonico, e coordina l'intero ciclo ACO fino all'esaurimento del budget. |
-| `exact_solver.py` | Solutore esatto e bound teorici. Fornisce: (1) Lower Bound via Maximum Weighted Matching, (2) LP Relaxation via `scipy.linprog`, (3) Soluzione ILP esatta via `scipy.optimize.milp` (solo per istanze SPI con $n \le 50$). |
+| `exact_solver.py` | Solutore esatto e bound teorici. Fornisce: (1) Lower Bound via Maximum Weighted Matching, (2) LP Relaxation via `scipy.optimize.linprog`, (3) Soluzione ILP esatta via `scipy.optimize.milp` (solutore HiGHS). |
 | `../compute_exact_bounds.py` | Script di livello super-modulo per il calcolo sistematico di $\text{OPT}_{\text{ILP}}$ e $\text{LB}_{\text{LP}}$ su tutte le 90 istanze e salvataggio su `results/csv/exact_bounds.csv`. |
 | `logger.py` | Alias di compatibilità che re-esporta `setup_logger` da `src.utils.logger`. |
 

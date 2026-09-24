@@ -25,21 +25,25 @@ MWVC-Optimization-HEMOL/
 │   ├── run_multiseed_validation.py  # Validazione multi-seed delle migliori configurazioni
 │   ├── run_multiseed_population.py  # Sensibilità della dimensione della colonia (N_ants)
 │   ├── run_ablation_switch.py       # Studio di ablazione sulle modalità di switch (Iteration-Best / Global-Best)
+│   ├── rank_phase1_top5.py          # Ranking ed elezione delle top 5 configurazioni
+│   ├── aggregate_results.py         # Aggregazione dati CSV e riepilogo per classe
 │   └── analysis/                    # Moduli di analisi e generazione grafici
-│       ├── plot_convergence.py      # Generazione curve di convergenza
-│       ├── plot_tuning.py           # Generazione mappe termiche 2D di tuning
-│       └── plot_ablation.py         # Grafici dello studio di ablazione
+│       ├── stats.py                 # Calcolo metriche di sintesi (media, std, FE)
+│       ├── plot_convergence.py      # Generazione curve di convergenza su 3 classi
+│       ├── plot_convergence_runs.py # Traiettorie di convergenza sulle 10 run LPI
+│       ├── plot_ablation.py         # Grafici dello studio di ablazione componenti
+│       ├── plot_tuning.py           # Generazione mappe termiche 2D e sensibilità N_ants
+│       ├── plot_scalability.py      # Scatterplot log-log di scalabilità temporale
+│       └── generate_improvement_plots.py # Plot traiettorie e trade-off miglioramento vs tempo
 │
 ├── doc/
 │   └── report.ipynb                 # Notebook Jupyter interattivo per la riproduzione di tabelle e grafici
 │
 ├── progetto/
-│   ├── relazioneHeuristic/          # Sorgenti LaTeX della relazione di progetto (compilabile con pdflatex)
-│   │   ├── main.tex                 # File principale LaTeX
-│   │   ├── parti/                   # Capitoli e copertina
-│   │   └── immagini/                # Figure e diagrammi di flusso TikZ
-│   └── relazioneHeuristic_corretta/ # Versione di backup sincronizzata dei sorgenti LaTeX
-│
+│   ├── RelazioneHeuristic_ACO_MWVC_FINALE.pdf  # Documento PDF finale della relazione di progetto
+│   ├── figure/                      # Figure ed asset grafici
+│   ├── slide/                       # Materiale di presentazione
+│   └── results/                     # Backup ed esportazioni dei risultati
 ├── wvcp-instances/                  # Istanze di benchmark (.txt) per le tre classi SPI, MPI, LPI
 └── results/                         # Output sperimentali
     ├── csv/                         # Risultati in formato CSV (incluso exact_bounds.csv)
@@ -81,15 +85,9 @@ Aprire ed eseguire il notebook Jupyter:
 jupyter notebook doc/report.ipynb
 ```
 
-### 4. Compilazione della Relazione LaTeX
-```bash
-cd progetto/relazioneHeuristic
-pdflatex -interaction=nonstopmode main.tex
-```
-
 ---
 
 ## 📊 Risorse e Presentazione
 
 * **Presentazione PowerPoint Online:** [presentazione_mwvc.pptx](https://1drv.ms/p/c/410bdb10d49381ae/IQDVp5k09o03Ralw5Zt-uMjwASutuYBK_iU3V3djnMWqMdU?e=mbLhZ0)
-* **Relazione PDF Finale:** [`progetto/relazioneHeuristic/main.pdf`](file:///c:/Users/macca/Desktop/università/magistrale/MWVC-Optimization-HEMOL/progetto/relazioneHeuristic/main.pdf)
+* **Relazione PDF Finale:** [`progetto/RelazioneHeuristic_ACO_MWVC_FINALE.pdf`](file:///c:/Users/macca/Desktop/università/magistrale/MWVC-Optimization-HEMOL/progetto/RelazioneHeuristic_ACO_MWVC_FINALE.pdf)
